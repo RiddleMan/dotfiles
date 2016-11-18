@@ -152,8 +152,8 @@ alias jur="open https://synergiapro.atlassian.net/browse/UR-31"
 alias dgojs="open http://gojs.net/latest/api/index.html"
 
 # Karabiner config switcher for windows keyboards
-alias kw="cp -f ~/.karabiner.d/configuration/karabiner.windows.json ~/.karabiner.d/configuration/karabiner.json"
-alias kn="cp -f ~/.karabiner.d/configuration/karabiner.native.json ~/.karabiner.d/configuration/karabiner.json"
+alias kw="cp -f ~/Projects/dotfiles/karabiner/karabiner.windows.json ~/.karabiner.d/configuration/karabiner.json"
+alias kn="cp -f ~/Projects/dotfiles/karabiner/karabiner.native.json ~/.karabiner.d/configuration/karabiner.json"
 
 EDITOR='vim'
 
