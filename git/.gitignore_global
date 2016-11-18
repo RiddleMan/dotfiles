@@ -1,0 +1,7 @@
+*~
+.DS_Store
+license-recorder.sublime-project
+license-recorder.sublime-workspace
+npm-debug.log
+
+*.swp

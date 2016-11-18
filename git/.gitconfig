@@ -1,0 +1,23 @@
+[user]
+	name = Artur Ptaszek
+	email = artur.ptaszek@gmail.com
+[core]
+	excludesfile = /Users/riddler/.gitignore_global
+	autocrlf = input
+	editor = vim
+[merge]
+	tool = p4mergetool
+[diff]
+	tool = p4mergetool
+	compactionHeuristic = true
+[push]
+	default = simple
+[mergetool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+	trustExitCode = false
+[mergetool]
+	keepBackup = false
+[difftool "p4mergetool"]
+	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[credential]
+	helper = osxkeychain
