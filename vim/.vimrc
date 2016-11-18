@@ -31,7 +31,7 @@ filetype plugin indent on
 
 " SETTINGS
 set laststatus=2
-let g:airline_theme = 'solarized' 
+let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
@@ -61,3 +61,5 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
