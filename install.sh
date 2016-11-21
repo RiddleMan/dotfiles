@@ -11,3 +11,6 @@ ln -sf ~/Projects/dotfiles/git/.gitk ~/.gitk
 # ZSH links
 ln -sf ~/Projects/dotfiles/zsh/.zshrc ~/.zshrc
 
+# OS X defaults
+source ./defaults.sh
+
