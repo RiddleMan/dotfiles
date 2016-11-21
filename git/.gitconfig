@@ -10,6 +10,9 @@
 [diff]
 	tool = p4mergetool
 	compactionHeuristic = true
+[diff "pandoc"]
+	textconv=pandoc --to=markdown
+	propmpt = false
 [push]
 	default = simple
 [mergetool "p4mergetool"]

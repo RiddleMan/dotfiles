@@ -98,7 +98,7 @@ alias gs="git status"
 alias ga="git add -A"
 alias gai="git add -i"
 alias gah="git add -h"
-alias gd="git diff --compaction-heuristic"
+alias gd="git diff --patience --color"
 gbf() {
   git checkout -b "feature/$1" && git push --set-upstream origin "feature/$1"
 }
