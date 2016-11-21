@@ -1,4 +1,4 @@
-#~/bin/sh
+#!/bin/sh
 
 #VIM links
 ln -sf ~/Projects/dotfiles/vim/.vimrc ~/.vimrc
