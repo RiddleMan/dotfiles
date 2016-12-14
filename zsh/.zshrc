@@ -50,7 +50,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew jira)
+plugins=(git brew)
 JIRA_RAPID_BOARD="true"
 # User configuration
 
@@ -131,6 +131,10 @@ task() {
   taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
   open "https://synergiapro.atlassian.net/browse/$taskId"
 }
+wl() {
+  taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
+  jira work-log add $taskId
+}
 ugojs() {
   wget -q "http://gojs.net/latest/release/go.js" -O go.js
   wget -q "http://gojs.net/latest/release/go-debug.js" -O go-debug.js
@@ -147,6 +151,7 @@ alias jcon="open https://synergiapro.atlassian.net/wiki"
 alias jsl="open https://synergiapro.atlassian.net/secure/RapidBoard.jspa?rapidView=9"
 alias jaat="open https://synergiapro.atlassian.net/browse/AAAT-1"
 alias jur="open https://synergiapro.atlassian.net/browse/UR-31"
+alias jslcon="open https://synergiapro.atlassian.net/wiki/display/SD/SL_RTView+Draw"
 
 #Online docs
 alias dgojs="open http://gojs.net/latest/api/index.html"
