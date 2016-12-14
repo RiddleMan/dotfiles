@@ -1,16 +1,15 @@
 #!/bin/sh
 
 #VIM links
-ln -sf ~/Projects/dotfiles/vim/.vimrc ~/.vimrc
+ln -sf $DOTFILES_DIR/vim/.vimrc ~/.vimrc
 
 # GIT links
-ln -sf ~/Projects/dotfiles/git/.gitconfig ~/.gitconfig
-ln -sf ~/Projects/dotfiles/git/.gitignore_global ~/.gitignore_global
-ln -sf ~/Projects/dotfiles/git/.gitk ~/.gitk
+ln -sf $DOTFILES_DIR/git/.gitconfig ~/.gitconfig
+ln -sf $DOTFILES_DIR/git/.gitignore_global ~/.gitignore_global
+ln -sf $DOTFILES_DIR/git/.gitk ~/.gitk
 
 # ZSH links
-ln -sf ~/Projects/dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
 
 # OS X defaults
 source ./defaults.sh
-
