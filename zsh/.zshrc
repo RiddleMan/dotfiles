@@ -52,7 +52,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew)
+plugins=(git brew zsh-autosuggestions alias-tips)
 JIRA_RAPID_BOARD="true"
 # User configuration
 
@@ -95,3 +95,7 @@ source $DOTFILES_DIR/zsh/aliases.sh
 
 # OPAM configuration
 . /Users/riddler/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH="$HOME/.yarn/bin:$PATH"
