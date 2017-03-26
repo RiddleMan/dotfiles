@@ -13,3 +13,7 @@ ln -sf $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
 
 # OS X defaults
 source ./defaults.sh
+
+#automation
+chmod +x ./automation/spotify/getCurrentTrack.js
+chmod +x ./automation/spotify/toggleShuffle.js
