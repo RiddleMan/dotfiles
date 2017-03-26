@@ -70,5 +70,5 @@ alias dgojs="open http://gojs.net/latest/api/index.html"
 alias spotify-current="$DOTFILES_DIR/automation/spotify/getCurrentTrack.js 1>/dev/null 2>&1 | pbcopy"
 
 # Karabiner config switcher for windows keyboards
-alias kw="cp -f ~/Projects/dotfiles/karabiner/karabiner.windows.json ~/.karabiner.d/configuration/karabiner.json"
-alias kn="cp -f ~/Projects/dotfiles/karabiner/karabiner.native.json ~/.karabiner.d/configuration/karabiner.json"
+alias kw="cp -f ~/Projects/dotfiles/karabiner/karabiner.windows.json ~/.config/karabiner/karabiner.json"
+alias kn="cp -f ~/Projects/dotfiles/karabiner/karabiner.native.json ~/.config/karabiner/karabiner.json"
