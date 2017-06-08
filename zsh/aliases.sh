@@ -6,6 +6,7 @@ alias gl="git log --oneline --all --graph --decorate  $*"
 alias gc="git commit"
 alias gs="git status"
 alias ga="git add -A"
+alias gac="ga && gc"
 alias gai="git add -i"
 alias gah="git add -h"
 alias gd="git diff --patience --color"
@@ -15,8 +16,10 @@ gbf() {
 
 alias gco="git checkout"
 alias gph="git push"
+alias gacp="ga && gc && gph"
 alias gpl="git pull"
 alias gm="git merge $1"
+alias gdpr="git diff \`git merge-base HEAD origin/develop\`"
 
 #NPM ALIASES
 alias nis="npm install --save $*"
@@ -41,6 +44,10 @@ task() {
   taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
   open "https://synergiapro.atlassian.net/browse/$taskId"
 }
+teamcity() {
+  branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
+  open "http://teamcity.synergy.codes/viewType.html?buildTypeId=SlRTDraw_ContinousBuild&branch_SlRTDraw=$branch"
+}
 wl() {
   taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
   jira work-log add $taskId
@@ -53,7 +60,7 @@ ugojs() {
 alias pls="sudo !!"
 source $(brew --prefix nvm)/nvm.sh
 source dnvm.sh
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="tmux -2"
 
 # JIRA
 alias jts="open https://synergiapro.atlassian.net/secure/TempoUserBoard!timesheet.jspa"

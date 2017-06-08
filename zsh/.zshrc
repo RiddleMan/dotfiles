@@ -99,3 +99,9 @@ source $DOTFILES_DIR/zsh/aliases.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export ANDROID_HOME=/usr/local/share/android-sdk
+
+export PATH=$PATH:/Users/riddler/bin
+
+source '/Users/riddler/lib/azure-cli/az.completion'
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
