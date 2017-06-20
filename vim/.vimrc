@@ -24,6 +24,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'w0rp/ale'
+Plugin 'flowtype/vim-flow'
 
 " Vundle END
 call vundle#end()
@@ -36,6 +37,8 @@ set conceallevel=1
 
 " SETTINGS
 set laststatus=2
+set autoread
+set backupcopy=yes
 let g:airline_theme = 'solarized'
 let g:airline_powerline_fonts = 1
 let g:jsx_ext_required = 0
