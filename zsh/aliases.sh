@@ -1,8 +1,4 @@
 alias preview="qlmanage -p "
-getCurrentBranch() {
-  branch=$(git branch | grep '* ' | sed 's/* //')
-  echo "$branch"
-}
 
 #GIT Aliases
 alias gitk="/usr/bin/wish $(which gitk)"
@@ -20,7 +16,7 @@ gbf() {
 
 alias gco="git checkout"
 gph() {
-  git push origin $(getCurrentBranch) $@
+  git push origin $(current_branch) $@
 }
 alias gacp="ga && gc && gph"
 alias gpl="git pull"
@@ -113,7 +109,7 @@ diki() {
 }
 
 gprd() {
-    branch=$(getCurrentBranch)
+    branch=$(current_branch)
     git diff $(git merge-base $branch origin/develop) HEAD
 }
 

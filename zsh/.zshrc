@@ -12,7 +12,7 @@ DEFAULT_USER="riddler"
 
 ENABLE_CORRECTION="true"
 
-plugins=(git brew zsh-autosuggestions alias-tips yarn kubectl)
+plugins=(git brew zsh-autosuggestions alias-tips yarn kubectl docker encode64)
 # User configuration
 
 export PATH="/usr/local/bin:/Users/riddler/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:/Users/riddler/work/bin:/usr/local/opt/go/libexec/bin"
