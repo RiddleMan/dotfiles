@@ -1,6 +1,19 @@
 set nocompatible
 set noesckeys
-filetype off
+filetype plugin on
+
+" Sets good tab settings for Vim
+set ts=4 sts=4 sw=4 expandtab
+
+" Sets external vim scripts
+set exrc
+set secure
+
+" Sets zsh autocomplete
+set wildmenu
+set wildmode=full
+
+set hls
 
 " Vundle setup START
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -23,7 +36,7 @@ Plugin 'geekjuice/vim-mocha'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
 Plugin 'flowtype/vim-flow'
 
 " Vundle END
@@ -33,7 +46,7 @@ filetype plugin indent on
 " Vim colors
 set background=dark
 colorscheme solarized
-set conceallevel=1
+" set conceallevel=1
 
 " SETTINGS
 set laststatus=2
@@ -45,19 +58,19 @@ let g:jsx_ext_required = 0
 set autochdir
 
 " ALE linters
-let g:ale_linters = {
-\  'javascript': ['eslint'],
-\}
-let g:ale_fixers = {
-\  'javascript': [
-\    'eslint'
-\  ],
-\}
-let g:ale_fix_on_save = 1
-let g:ale_sign_error = '‼'
-let g:ale_sign_warning = '⚠'
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+" let g:ale_linters = {
+" \  'javascript': ['eslint'],
+" \}
+" let g:ale_fixers = {
+" \  'javascript': [
+" \    'eslint'
+" \  ],
+" \}
+" let g:ale_fix_on_save = 1
+" let g:ale_sign_error = '‼'
+" let g:ale_sign_warning = '⚠'
+" nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+" nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 " Ultisnips settings
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips/"
@@ -76,19 +89,19 @@ let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules)$'
 " let g:mocha_js_command = "!node $(npm bin)/mocha {spec}"
 
 " pangloss/vim-javascript
-let g:javascript_conceal_function             = "ƒ"
-let g:javascript_conceal_null                 = "ø"
-let g:javascript_conceal_this                 = "@"
-let g:javascript_conceal_return               = "⇚"
-let g:javascript_conceal_undefined            = "¿"
-let g:javascript_conceal_NaN                  = "ℕ"
-let g:javascript_conceal_prototype            = "¶"
-let g:javascript_conceal_static               = "•"
-let g:javascript_conceal_super                = "Ω"
-let g:javascript_conceal_arrow_function       = "⇒"
-let g:javascript_conceal_noarg_arrow_function = "🞅"
-let g:javascript_conceal_underscore_arrow_function = "🞅"
-let g:javascript_plugin_flow = 1"
+" let g:javascript_conceal_function             = "ƒ"
+" let g:javascript_conceal_null                 = "ø"
+" let g:javascript_conceal_this                 = "@"
+" let g:javascript_conceal_return               = "⇚"
+" let g:javascript_conceal_undefined            = "¿"
+" let g:javascript_conceal_NaN                  = "ℕ"
+" let g:javascript_conceal_prototype            = "¶"
+" let g:javascript_conceal_static               = "•"
+" let g:javascript_conceal_super                = "Ω"
+" " let g:javascript_conceal_arrow_function       = "⇒"
+" let g:javascript_conceal_noarg_arrow_function = "🞅"
+" let g:javascript_conceal_underscore_arrow_function = "🞅"
+" let g:javascript_plugin_flow = 1"
 
 " JavaScript
 set suffixesadd+=.js
@@ -102,6 +115,7 @@ endif
 if executable(local_flow)
   let g:flow#flowpath = local_flow
 endif
+let g:flow#autoclose = 1
 
 " ag as default search
 "
@@ -118,6 +132,9 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Create test file
+nnoremap gT :new %:r.test.js<CR>imtest<C-R>=(UltiSnips#ExpandSnippet())<CR>
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
 autocmd VimEnter * Obsess

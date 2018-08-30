@@ -1,0 +1,11 @@
+export PATH=/usr/local/bin:~/npm/bin:/usr/local/sbin:$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:~/.cabal/bin
+export PATH=$PATH:~/.config/yarn/global/node_modules/.bin
+export PATH=$PATH:/Users/riddler/bin
+export PATH=$PATH:/usr/local/share/dotnet
+export PATH=$PATH:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+export NVM_DIR=~/.nvm
+export DOTFILES_DIR=~/Projects/dotfiles
+export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+export ANDROID_HOME=/usr/local/share/android-sdk
