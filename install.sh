@@ -1,5 +1,7 @@
 #!/bin/sh
 
+pip install powerline
+
 #VIM links
 ln -sf $DOTFILES_DIR/vim/.vimrc ~/.vimrc
 

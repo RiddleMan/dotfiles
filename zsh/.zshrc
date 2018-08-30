@@ -1,4 +1,7 @@
 EDITOR='vim'
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export POWERLINE_CONFIG_COMMAND=/usr/local/bin/powerline-config
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/riddler/.oh-my-zsh
