@@ -5,6 +5,7 @@ export PATH=$PATH:~/.config/yarn/global/node_modules/.bin
 export PATH=$PATH:/Users/riddler/bin
 export PATH=$PATH:/usr/local/share/dotnet
 export PATH=$PATH:/Library/Frameworks/Mono.framework/Versions/Current/Commands
+export PATH=$PATH:/usr/local/istio-1.0.2/bin
 export NVM_DIR=~/.nvm
 export DOTFILES_DIR=~/Projects/dotfiles
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"

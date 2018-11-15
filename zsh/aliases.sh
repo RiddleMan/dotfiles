@@ -1,3 +1,4 @@
+alias ra="source ${DOTFILES_DIR}/zsh/aliases.sh"
 alias preview="qlmanage -p "
 
 #GIT Aliases
@@ -126,3 +127,42 @@ gact() {
 }
 
 alias nuget="mono /usr/local/bin/nuget.exe"
+
+#K8s aliases
+alias kucl="kubectl config use-context docker-for-desktop" 
+alias kdash="kubectl port-forward svc/kubernetes-dashboard 8443:443 --namespace=kube-system & open \"https://localhost:8443\""
+
+#Kafka
+kafka_start() {
+    brew services start zookeeper
+    brew services start kafka
+}
+kafka_stop() {
+    brew services stop zookeeper
+    brew services stop kafka
+}
+
+#Elastic
+es_start() {
+    brew services start elasticsearch
+}
+es_stop() {
+    brew services stop elasticsearch
+}
+
+#GCloud Project
+gparkpal() {
+    gcloud config set account artur.ptaszek@gmail.com
+    gcloud config set project parkpal-project
+    gcloud config set compute/zone europe-west3-b 
+}
+gslrtview() {
+    gcloud config set account artur.ptaszek@synergycodes.com
+    gcloud config set project sl-rtview
+    gcloud config set compute/zone europe-west3-b 
+}
+gsl() {
+    gcloud config set account aptaszek@sl.com
+    gcloud config set project dulcet-cat-219915
+    gcloud config set compute/zone us-west2-b
+}

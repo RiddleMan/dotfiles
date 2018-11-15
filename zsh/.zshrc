@@ -1,4 +1,5 @@
-EDITOR='vim'
+export EDITOR='vim'
+export KUBE_EDITOR='vim'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export POWERLINE_CONFIG_COMMAND=/usr/local/bin/powerline-config
