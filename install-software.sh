@@ -36,7 +36,9 @@ caskList="java
     tunnelblick \
     dash3 \
     steam \
-    disk-inventory-x"
+    disk-inventory-x \
+    font-hack \
+    font-fira"
 
 brew cask install $caskList
 
