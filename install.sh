@@ -1,5 +1,8 @@
 #!/bin/sh
 
+chmod +x ./install-software.sh
+./install-software.sh
+
 # SSH Link
 ln -s $DOTFILES_DIR/ssh/config ~/.ssh
 
