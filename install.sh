@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 chmod +x ./install-software.sh
 ./install-software.sh
 

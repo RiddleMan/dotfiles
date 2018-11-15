@@ -1,24 +1,9 @@
 #!/bin/sh
 
-appList="git \
-    zsh \
-    zsh-completions \
-    zsh-syntax-highlighting \
-    tmux \
-    vim \
-    elasticsearch \
-    kafka \
-    nvm \
-    azure-cli \
-    kubernetes-helm \
-    kotlin"
+set -e 
 
-brew install $appList
-brew install yarn --without-node
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-caskList="docker \
+caskList="java8 \
+    docker \
     iterm \
     android-sdk \
     android-studio \
@@ -51,3 +36,22 @@ caskList="docker \
     disk-inventory-x"
 
 brew cask install $caskList
+
+appList="git \
+    zsh \
+    zsh-completions \
+    zsh-syntax-highlighting \
+    tmux \
+    vim \
+    elasticsearch \
+    kafka \
+    nvm \
+    azure-cli \
+    kubernetes-helm \
+    kotlin"
+
+brew install $appList
+brew install yarn --without-node
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
