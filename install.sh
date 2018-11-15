@@ -8,7 +8,7 @@ chmod +x ./install-software.sh
 # SSH Link
 ln -s $DOTFILES_DIR/ssh/config ~/.ssh
 
-pip install powerline
+pip3 install powerline
 
 #VIM links
 ln -sf $DOTFILES_DIR/vim/.vimrc ~/.vimrc
