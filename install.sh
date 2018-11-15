@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# SSH Link
+ln -s $DOTFILES_DIR/ssh/config ~/.ssh
+
 pip install powerline
 
 #VIM links

@@ -1,0 +1,13 @@
+Host bitbucket.org
+ AddKeysToAgent yes
+ UseKeychain yes
+ HostName bitbucket.org
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/synergy-codes
+
+Host private.bitbucket.org
+ AddKeysToAgent yes
+ UseKeychain yes
+ HostName bitbucket.org
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/id_rsa
