@@ -30,3 +30,9 @@ source ./defaults.sh
 #automation
 chmod +x ./automation/spotify/getCurrentTrack.js
 chmod +x ./automation/spotify/toggleShuffle.js
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+~/.tmux/plugins/tpm/bin/install_plugins
