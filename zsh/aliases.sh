@@ -68,7 +68,6 @@ ugojs() {
 }
 
 alias pls="sudo !!"
-source dnvm.sh
 alias tmux="tmux -2"
 
 # JIRA
