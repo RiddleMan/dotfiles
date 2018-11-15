@@ -6,7 +6,7 @@ chmod +x ./install-software.sh
 ./install-software.sh
 
 # SSH Link
-ln -s $DOTFILES_DIR/ssh/config ~/.ssh
+ln -sf $DOTFILES_DIR/ssh/config ~/.ssh
 
 pip3 install powerline
 
@@ -22,7 +22,7 @@ ln -sf $DOTFILES_DIR/git/.gitk ~/.gitk
 ln -sf $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
 
 # Karabiner link
-ln -s $DOTFILES_DIR/karabiner ~/.config
+ln -sf $DOTFILES_DIR/karabiner ~/.config
 
 # OS X defaults
 source ./defaults.sh
