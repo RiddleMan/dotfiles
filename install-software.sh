@@ -7,7 +7,7 @@ brew tap caskroom/versions
 caskList="java
     java8 \
     docker \
-    iterm \
+    iterm2 \
     android-sdk \
     android-studio \
     evernote \
