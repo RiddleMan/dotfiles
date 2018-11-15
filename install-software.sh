@@ -2,7 +2,10 @@
 
 set -e 
 
-caskList="java8 \
+brew tap caskroom/versions
+
+caskList="java
+    java8 \
     docker \
     iterm \
     android-sdk \
