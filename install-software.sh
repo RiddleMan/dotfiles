@@ -3,6 +3,7 @@
 set -e 
 
 brew tap caskroom/versions
+brew tap caskroom/fonts
 
 caskList="java
     java8 \
