@@ -5,6 +5,13 @@ Host bitbucket.org
  PreferredAuthentications publickey
  IdentityFile ~/.ssh/synergy-codes
 
+Host github.com
+ AddKeysToAgent yes
+ UseKeychain yes
+ HostName github.com
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/synergy-codes
+
 Host private.bitbucket.org
  AddKeysToAgent yes
  UseKeychain yes
