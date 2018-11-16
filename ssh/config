@@ -12,6 +12,13 @@ Host github.com
  PreferredAuthentications publickey
  IdentityFile ~/.ssh/synergy-codes
 
+Host private.github.com
+ AddKeysToAgent yes
+ UseKeychain yes
+ HostName github.com
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/id_rsa
+
 Host private.bitbucket.org
  AddKeysToAgent yes
  UseKeychain yes
