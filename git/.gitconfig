@@ -2,7 +2,7 @@
 	name = Artur Ptaszek
 	email = artur.ptaszek@gmail.com
 [core]
-	excludesfile = /Users/riddler/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	editor = vim
 [push]
