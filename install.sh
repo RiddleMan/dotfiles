@@ -38,3 +38,8 @@ ln -sf $DOTFILES_DIR/tmux/.tmux.conf ~
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 ~/.tmux/plugins/tpm/bin/install_plugins
+
+#### NODE
+nvm install 11.2.0
+nvm use 11.2.0
+nvm alias default 11.2.0

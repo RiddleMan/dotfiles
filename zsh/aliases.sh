@@ -31,9 +31,7 @@ alias ni="npm install"
 alias nmd="rm -Rf node_modules/"
 
 #Project aliases
-alias cdsl="cd ~/Projects/work/synergy/rtview"
-alias cdmgr="cd ~/Projects/studies/giant-privacy-spy"
-alias cddashy="cd ~/Projects/private/dashy"
+alias cdsl="cd ~/Projects/work/synergy/rtdraw"
 alias cddot="cd $DOTFILES_DIR"
 alias ad="azure site deployment list $1"
 
