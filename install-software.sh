@@ -12,7 +12,7 @@ caskList="java
     android-sdk \
     android-studio \
     evernote \
-    adobe-photoshop-lightroom \
+    adobe-creative-cloud \
     microsoft-office \
     google-cloud-sdk \
     google-chrome \
