@@ -39,7 +39,8 @@ caskList="java
     steam \
     disk-inventory-x \
     font-hack \
-    font-fira-code"
+    font-fira-code \
+    aerial"
 
 brew cask install $caskList
 
