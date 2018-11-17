@@ -12,6 +12,7 @@ caskList="java
     android-sdk \
     android-studio \
     evernote \
+    bettertouchtool \
     adobe-creative-cloud \
     microsoft-office \
     google-cloud-sdk \
@@ -25,11 +26,13 @@ caskList="java
     karabiner-elements \
     webstorm \
     rider \
+    dotnet-sdk \
     onedrive \
     cleanmymac3 \
     smcfancontrol \
     atom \
     grammarly \
+    postman \
     signal \
     spotify \
     slack \
@@ -55,6 +58,7 @@ appList="git \
     nvm \
     azure-cli \
     kubernetes-helm \
+    mono \
     kotlin"
 
 brew install $appList
