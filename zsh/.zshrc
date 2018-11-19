@@ -2,18 +2,11 @@ export EDITOR='vim'
 export KUBE_EDITOR='vim'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export POWERLINE_CONFIG_COMMAND=/usr/local/bin/powerline-config
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
 DEFAULT_USER="$(whoami)"
-
 ENABLE_CORRECTION="true"
 
 plugins=(git brew zsh-iterm-touchbar zsh-autosuggestions alias-tips yarn kubectl docker encode64)
@@ -27,6 +20,8 @@ source $DOTFILES_DIR/zsh/paths.sh
 source $DOTFILES_DIR/zsh/aliases.sh
 source $DOTFILES_DIR/zsh/passwords.sh
 source $DOTFILES_DIR/zsh/paths.sh
+
+. /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # OPAM configuration
 . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

@@ -29,6 +29,9 @@ popd
 # Karabiner link
 ln -sf $DOTFILES_DIR/karabiner ~/.config
 
+# Powerline config
+ln -sf $DOTFILES_DIR/powerline ~/.config
+
 # OS X defaults
 source ./defaults.sh
 

@@ -60,6 +60,7 @@ appList="git \
     azure-cli \
     kubernetes-helm \
     mono \
+    fzf \
     kotlin"
 
 brew install $appList
