@@ -16,7 +16,7 @@ DEFAULT_USER="$(whoami)"
 
 ENABLE_CORRECTION="true"
 
-plugins=(git brew zsh-autosuggestions alias-tips yarn kubectl docker encode64)
+plugins=(git brew zsh-iterm-touchbar zsh-autosuggestions alias-tips yarn kubectl docker encode64)
 # User configuration
 
 export PATH="/usr/local/bin:$HOME/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:$HOME/work/bin:/usr/local/opt/go/libexec/bin"

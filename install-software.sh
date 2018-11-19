@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e 
 
@@ -51,6 +51,7 @@ appList="git \
     zsh \
     zsh-completions \
     zsh-syntax-highlighting \
+    jq \
     tmux \
     vim \
     elasticsearch \
@@ -64,5 +65,5 @@ appList="git \
 brew install $appList
 brew install yarn --without-node
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
