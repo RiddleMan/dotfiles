@@ -40,6 +40,8 @@ caskList="java
     tunnelblick \
     dash3 \
     steam \
+    gog-galaxy \
+    origin \
     disk-inventory-x \
     font-hack \
     font-fira-code \
