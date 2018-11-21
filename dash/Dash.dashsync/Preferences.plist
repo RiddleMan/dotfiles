@@ -148,20 +148,6 @@
 					<string>FormidableLabs/spectacle</string>
 				</dict>
 			</dict>
-			<key>NorthwoodsSoftware/GoJS</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:20:37Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>NorthwoodsSoftware/GoJS</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>NorthwoodsSoftware/GoJS</string>
-				</dict>
-			</dict>
 			<key>acdlite/recompose</key>
 			<dict>
 				<key>date</key>
@@ -188,20 +174,6 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>airbnb/enzyme</string>
-				</dict>
-			</dict>
-			<key>alexmingoia/koa-router</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:52Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>alexmingoia/koa-router</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>alexmingoia/koa-router</string>
 				</dict>
 			</dict>
 			<key>atom/node-keytar</key>
@@ -232,52 +204,10 @@
 					<string>erikras/redux-form</string>
 				</dict>
 			</dict>
-			<key>facebook/flow</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-20T13:25:44Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>facebook/flow</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>facebook/flow</string>
-				</dict>
-			</dict>
-			<key>koajs/koa</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:23:21Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>koajs/koa</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>koajs/koa</string>
-				</dict>
-			</dict>
-			<key>ninenines/cowboy</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-20T13:24:57Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>ninenines/cowboy</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>ninenines/cowboy</string>
-				</dict>
-			</dict>
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:41Z</date>
+				<date>2018-11-21T13:26:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -386,34 +316,6 @@
 					<string>socketio/socket.io</string>
 				</dict>
 			</dict>
-			<key>steves/node-jira</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:42Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>steves/node-jira</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>steves/node-jira</string>
-				</dict>
-			</dict>
-			<key>thejameskyle/spectacle-code-slide</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:21:11Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>thejameskyle/spectacle-code-slide</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>thejameskyle/spectacle-code-slide</string>
-				</dict>
-			</dict>
 			<key>thlorenz/proxyquire</key>
 			<dict>
 				<key>date</key>
@@ -426,20 +328,6 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>thlorenz/proxyquire</string>
-				</dict>
-			</dict>
-			<key>tj/commander</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:20:11Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>tj/commander</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>tj/commander</string>
 				</dict>
 			</dict>
 			<key>tj/commander.js</key>
@@ -458,7 +346,120 @@
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>NorthwoodsSoftware/GoJS</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:26:33Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>NorthwoodsSoftware/GoJS</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>NorthwoodsSoftware/GoJS</string>
+				</dict>
+			</dict>
+			<key>alexmingoia/koa-router</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:27:23Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>alexmingoia/koa-router</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>alexmingoia/koa-router</string>
+				</dict>
+			</dict>
+			<key>facebook/flow</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:26:26Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>facebook/flow</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>facebook/flow</string>
+				</dict>
+			</dict>
+			<key>koajs/koa</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:27:28Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>koajs/koa</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>koajs/koa</string>
+				</dict>
+			</dict>
+			<key>ninenines/cowboy</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:27:54Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>ninenines/cowboy</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>ninenines/cowboy</string>
+				</dict>
+			</dict>
+			<key>steves/node-jira</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:27:18Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>steves/node-jira</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>steves/node-jira</string>
+				</dict>
+			</dict>
+			<key>thejameskyle/spectacle-code-slide</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:27:14Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>thejameskyle/spectacle-code-slide</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>thejameskyle/spectacle-code-slide</string>
+				</dict>
+			</dict>
+			<key>tj/commander</key>
+			<dict>
+				<key>date</key>
+				<date>2018-11-21T13:27:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>tj/commander</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>tj/commander</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>DHGoRepo</key>
 	<dict>

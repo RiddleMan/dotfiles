@@ -57,6 +57,7 @@ appList="git \
     zsh-syntax-highlighting \
     jq \
     tmux \
+    wget \
     vim \
     elasticsearch \
     kafka \
