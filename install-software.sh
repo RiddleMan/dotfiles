@@ -4,6 +4,7 @@ set -e
 
 brew tap caskroom/versions
 brew tap caskroom/fonts
+brew tap homebrew/cask-drivers
 
 caskList="java
     java8 \
@@ -45,6 +46,7 @@ caskList="java
     disk-inventory-x \
     font-hack \
     font-fira-code \
+    xbox360-controller-driver-unofficial \
     aerial"
 
 brew cask install $caskList

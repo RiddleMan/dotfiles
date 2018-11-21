@@ -165,7 +165,7 @@
 			<key>acdlite/recompose</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:53Z</date>
+				<date>2018-11-20T13:25:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +235,7 @@
 			<key>facebook/flow</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-17T13:24:48Z</date>
+				<date>2018-11-20T13:25:44Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -263,7 +263,7 @@
 			<key>ninenines/cowboy</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-19T13:24:58Z</date>
+				<date>2018-11-20T13:24:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -291,7 +291,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:19Z</date>
+				<date>2018-11-20T13:25:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
