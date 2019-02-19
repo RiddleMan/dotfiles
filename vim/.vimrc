@@ -22,6 +22,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins list
+Plugin 'wincent/terminus'
 Plugin 'sirver/ultisnips'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'bling/vim-airline'
