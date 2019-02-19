@@ -29,7 +29,7 @@ caskList="java
     rider \
     dotnet-sdk \
     onedrive \
-    cleanmymac3 \
+    cleanmymac \
     smcfancontrol \
     atom \
     grammarly \
@@ -55,6 +55,7 @@ appList="git \
     zsh \
     zsh-completions \
     zsh-syntax-highlighting \
+    tree \
     jq \
     tmux \
     wget \
@@ -72,4 +73,6 @@ brew install $appList
 brew install yarn --without-node
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 

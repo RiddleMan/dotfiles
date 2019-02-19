@@ -158,8 +158,23 @@ gslrtview() {
     gcloud config set project sl-rtview
     gcloud config set compute/zone europe-west3-b 
 }
-gsl() {
-    gcloud config set account aptaszek@sl.com
-    gcloud config set project dulcet-cat-219915
+//gsl() {
+//    gcloud config set account aptaszek@sl.com
+//    gcloud config set project dulcet-cat-219915
+//    gcloud config set compute/zone us-west2-b
+//}
+
+gsldev() {
+    gcloud config set account artur.ptaszek@sl.com
+    gcloud config set project sl-dev-227517
     gcloud config set compute/zone us-west2-b
 }
+
+gsl() {
+    gcloud config set account artur.ptaszek@sl.com
+    gcloud config set project sl-public
+    gcloud config set compute/zone us-west2-b
+}
+
+#### DOCKER
+alias dka="docker kill \$(docker ps -q)"

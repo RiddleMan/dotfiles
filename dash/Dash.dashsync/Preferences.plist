@@ -27,7 +27,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:25Z</date>
+				<date>2019-01-28T09:52:17Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -99,7 +99,7 @@
 			<key>Vim</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:25Z</date>
+				<date>2019-01-06T12:58:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -137,7 +137,7 @@
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:41Z</date>
+				<date>2019-02-05T10:57:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -151,7 +151,7 @@
 			<key>acdlite/recompose</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-20T13:25:34Z</date>
+				<date>2019-02-15T07:59:04Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:52Z</date>
+				<date>2019-02-17T14:33:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +179,7 @@
 			<key>atom/node-keytar</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:15Z</date>
+				<date>2019-02-07T10:57:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -193,7 +193,7 @@
 			<key>erikras/redux-form</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:05Z</date>
+				<date>2019-01-03T07:50:36Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -207,7 +207,7 @@
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-21T13:26:30Z</date>
+				<date>2019-02-19T15:03:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -221,7 +221,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-20T13:25:16Z</date>
+				<date>2019-02-19T15:03:08Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +235,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-17T13:24:30Z</date>
+				<date>2019-02-03T10:57:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -263,7 +263,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:30Z</date>
+				<date>2019-01-22T18:48:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -277,7 +277,7 @@
 			<key>request/request</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:57Z</date>
+				<date>2019-02-16T12:14:50Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -305,7 +305,7 @@
 			<key>socketio/socket.io</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:11Z</date>
+				<date>2018-12-03T09:35:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -319,7 +319,7 @@
 			<key>thlorenz/proxyquire</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:40Z</date>
+				<date>2019-02-04T10:58:28Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -333,7 +333,7 @@
 			<key>tj/commander.js</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:35Z</date>
+				<date>2018-12-30T13:03:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -526,7 +526,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:31Z</date>
+				<date>2018-12-05T09:33:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -574,7 +574,7 @@
 			<key>Jest</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:34Z</date>
+				<date>2019-02-10T17:15:04Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -605,7 +605,7 @@
 			<key>Kotlin</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:20:23Z</date>
+				<date>2018-11-24T13:24:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -645,7 +645,7 @@
 			<key>React_Native</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:33Z</date>
+				<date>2019-01-24T18:48:24Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -662,7 +662,7 @@
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/React_Native#readme</string>
 					<key>authorLinkText</key>
-					<string>Michael Sharer</string>
+					<string>Vexus2</string>
 					<key>name</key>
 					<string>React Native</string>
 					<key>platform</key>
