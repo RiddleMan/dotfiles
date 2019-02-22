@@ -12,6 +12,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker)
 # User configuration
 
 export PATH="/usr/local/opt/python@2/libexec/bin:/usr/local/bin:$HOME/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:$HOME/work/bin:/usr/local/opt/go/libexec/bin"
+export PATH="$PATH:/usr/local/MacGPG2/bin/"
 
 source $ZSH/oh-my-zsh.sh
 export DOTFILES_DIR=~/Projects/dotfiles
@@ -35,3 +36,6 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 # Helm completion
 source <(helm completion zsh)
 
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent

@@ -47,6 +47,8 @@ caskList="java
     font-hack \
     font-fira-code \
     xbox360-controller-driver-unofficial \
+	yubico-yubikey-manager \
+	yubico-authenticator \
     aerial"
 
 brew cask install $caskList
@@ -67,6 +69,7 @@ appList="git \
     kubernetes-helm \
     mono \
     fzf \
+	pam_yubico \
     kotlin"
 
 brew install $appList

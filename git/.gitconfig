@@ -1,6 +1,7 @@
 [user]
 	name = Artur Ptaszek
 	email = artur.ptaszek@gmail.com
+	signingkey = 40B81E4AB4E022F77CCB2F471E1B81C30EEF97DB
 [core]
 	excludesfile = ~/.gitignore_global
 	autocrlf = input

@@ -137,7 +137,7 @@
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2019-02-05T10:57:22Z</date>
+				<date>2019-02-21T15:02:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2019-02-17T14:33:34Z</date>
+				<date>2019-02-21T15:03:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +179,7 @@
 			<key>atom/node-keytar</key>
 			<dict>
 				<key>date</key>
-				<date>2019-02-07T10:57:21Z</date>
+				<date>2019-02-21T15:02:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -207,7 +207,7 @@
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2019-02-19T15:03:16Z</date>
+				<date>2019-02-21T15:03:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -221,7 +221,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2019-02-19T15:03:08Z</date>
+				<date>2019-02-20T15:03:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +235,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2019-02-03T10:57:34Z</date>
+				<date>2019-02-21T15:03:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -333,7 +333,7 @@
 			<key>tj/commander.js</key>
 			<dict>
 				<key>date</key>
-				<date>2018-12-30T13:03:29Z</date>
+				<date>2019-02-20T15:02:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>

@@ -178,3 +178,6 @@ gsl() {
 
 #### DOCKER
 alias dka="docker kill \$(docker ps -q)"
+
+## GPG
+alias gpgreset="gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"
