@@ -37,8 +37,19 @@ alias ad="azure site deployment list $1"
 
 #MISC
 alias ea="$EDITOR $DOTFILES_DIR/zsh/aliases.sh"
-pr() {
+urlencode() {
+  node -p 'encodeURIComponent(require("fs").readFileSync(0))'	
+}
+bitbucket_get_remote_name() {
   remoteName=$(git remote get-url origin | sed 's/git@.*:\(.*\)\.git/\1/')
+
+  echo "${remoteName}"
+}
+bitbucket_get_remote_url() {
+  echo "https://bitbucket.org/$(bitbucket_get_remote_name)"
+}
+pr() {
+  remoteName=$(bitbucket_get_remote_name)
   branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
   if [[ -z "$1" ]] then
       local destinationBranch="$remoteName::develop"
@@ -46,7 +57,17 @@ pr() {
       local destinationBranch="$remoteName::$1"
   fi
 
-  open "https://bitbucket.org/$remoteName/pull-requests/new?source=$branch&dest=$destinationBranch&t=1"
+  open "$(bitbucket_get_remote_url)/pull-requests/new?source=$branch&dest=$destinationBranch&t=1"
+}
+testurl() {
+	envName=$(current_branch | sed 's!feature/!feature-!' | tr '[:upper:]' '[:lower:]')
+
+	open "http://${envName}.sl.synergy.codes"
+}
+bpipe() {
+	branch=$(current_branch | tr -d \\n | urlencode)
+
+	open "$(bitbucket_get_remote_url)/addon/pipelines/home#!/results/branch/${branch}/page/1"
 }
 task() {
   taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
@@ -180,4 +201,4 @@ gsl() {
 alias dka="docker kill \$(docker ps -q)"
 
 ## GPG
-alias gpgreset="gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"
+alias gpgreset="pkill gpg-agent ; pkill ssh-agent ; pkill pinentry ; eval \$(gpg-agent --daemon --enable-ssh-support) ; gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"

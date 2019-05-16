@@ -1,3 +1,5 @@
+set visualbell
+set noerrorbells
 set nocompatible
 set noesckeys
 filetype plugin on
