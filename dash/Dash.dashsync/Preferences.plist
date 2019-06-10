@@ -137,7 +137,7 @@
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-08T08:06:47Z</date>
+				<date>2019-05-30T09:07:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-13T07:28:38Z</date>
+				<date>2019-06-04T17:51:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +179,7 @@
 			<key>atom/node-keytar</key>
 			<dict>
 				<key>date</key>
-				<date>2019-04-26T09:47:56Z</date>
+				<date>2019-05-28T07:12:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -193,7 +193,7 @@
 			<key>erikras/redux-form</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-07T08:07:28Z</date>
+				<date>2019-06-02T17:46:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -207,7 +207,7 @@
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-16T08:04:02Z</date>
+				<date>2019-06-08T18:05:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -221,7 +221,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-15T07:29:23Z</date>
+				<date>2019-06-08T18:05:07Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +235,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-16T08:04:17Z</date>
+				<date>2019-06-05T17:52:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -249,7 +249,7 @@
 			<key>reactjs/react-router-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:39Z</date>
+				<date>2019-06-02T17:45:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -263,7 +263,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2019-01-22T18:48:58Z</date>
+				<date>2019-06-03T17:47:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -277,7 +277,7 @@
 			<key>request/request</key>
 			<dict>
 				<key>date</key>
-				<date>2019-04-05T10:05:00Z</date>
+				<date>2019-05-30T09:08:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -319,7 +319,7 @@
 			<key>thlorenz/proxyquire</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-12T07:28:36Z</date>
+				<date>2019-06-02T17:45:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -333,7 +333,7 @@
 			<key>tj/commander.js</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-09T08:07:29Z</date>
+				<date>2019-06-03T17:47:11Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -625,7 +625,7 @@
 			<key>Ramda</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:31Z</date>
+				<date>2019-05-17T08:03:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>

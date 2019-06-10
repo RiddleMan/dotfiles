@@ -1,10 +1,13 @@
+get_task_id_from_branch() {
+  git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!'
+}
 alias ra="source ${DOTFILES_DIR}/zsh/aliases.sh"
 alias preview="qlmanage -p "
 
 #GIT Aliases
 alias gitk="/usr/bin/wish $(which gitk)"
 alias gl="git log --oneline --all --graph --decorate  $*"
-alias gc="git commit"
+alias gc="echo -n \"[$(get_task_id_from_branch)] \" > .git/.gitmessagetemplate && git commit -t .git/.gitmessagetemplate"
 alias gs="git status"
 alias ga="git add -A"
 alias gac="ga && gc"
@@ -70,7 +73,7 @@ bpipe() {
 	open "$(bitbucket_get_remote_url)/addon/pipelines/home#!/results/branch/${branch}/page/1"
 }
 task() {
-  taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
+  taskId=$(get_task_id_from_branch)
   open "https://synergiapro.atlassian.net/browse/$taskId"
 }
 teamcity() {
