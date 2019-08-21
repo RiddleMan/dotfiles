@@ -137,7 +137,7 @@
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-30T09:07:37Z</date>
+				<date>2019-08-14T16:08:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -151,7 +151,7 @@
 			<key>acdlite/recompose</key>
 			<dict>
 				<key>date</key>
-				<date>2019-04-13T18:31:59Z</date>
+				<date>2019-08-19T07:11:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-04T17:51:59Z</date>
+				<date>2019-08-01T19:14:46Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +179,7 @@
 			<key>atom/node-keytar</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-28T07:12:09Z</date>
+				<date>2019-08-20T07:10:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -193,7 +193,7 @@
 			<key>erikras/redux-form</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-02T17:46:37Z</date>
+				<date>2019-08-14T16:09:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -207,7 +207,7 @@
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-08T18:05:15Z</date>
+				<date>2019-08-21T07:11:06Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -221,7 +221,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-08T18:05:07Z</date>
+				<date>2019-08-20T07:11:02Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +235,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-05T17:52:03Z</date>
+				<date>2019-08-16T14:06:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -249,7 +249,7 @@
 			<key>reactjs/react-router-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-02T17:45:55Z</date>
+				<date>2019-06-23T10:05:49Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -263,7 +263,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-03T17:47:13Z</date>
+				<date>2019-06-24T10:05:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -319,7 +319,7 @@
 			<key>thlorenz/proxyquire</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-02T17:45:58Z</date>
+				<date>2019-08-12T15:16:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -333,7 +333,7 @@
 			<key>tj/commander.js</key>
 			<dict>
 				<key>date</key>
-				<date>2019-06-03T17:47:11Z</date>
+				<date>2019-08-13T15:15:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>

@@ -7,7 +7,17 @@ alias preview="qlmanage -p "
 #GIT Aliases
 alias gitk="/usr/bin/wish $(which gitk)"
 alias gl="git log --oneline --all --graph --decorate  $*"
-alias gc="echo -n \"[$(get_task_id_from_branch)] \" > .git/.gitmessagetemplate && git commit -t .git/.gitmessagetemplate"
+commit_with_issue_tag() {
+    taskId="$(get_task_id_from_branch)"
+
+    if [[ -z "$taskId" ]]; then
+        git commit $*
+    else
+        echo -n "[$taskId]" > .git/.gitmessagetemplate && git commit -t .git/.gitmessagetemplate $*
+    fi
+}
+alias gc="commit_with_issue_tag"
+#alias gc="g commit"
 alias gs="git status"
 alias ga="git add -A"
 alias gac="ga && gc"
@@ -37,6 +47,14 @@ alias nmd="rm -Rf node_modules/"
 alias cdsl="cd ~/Projects/work/synergy/rtdraw"
 alias cddot="cd $DOTFILES_DIR"
 alias ad="azure site deployment list $1"
+
+#Yarn
+alias y="yarn"
+alias ya="y add"
+alias yui="y upgrade-interactive"
+alias yuil="yui --latest"
+alias yt="y test"
+alias ys="y start"
 
 #MISC
 alias ea="$EDITOR $DOTFILES_DIR/zsh/aliases.sh"

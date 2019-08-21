@@ -17,6 +17,11 @@ Host private.github.com
  IdentitiesOnly yes
  IdentityFile ~/.ssh/yubikey.pub
 
+Host gitlab.com
+ HostName gitlab.com
+ IdentitiesOnly yes
+ IdentityFile ~/.ssh/yubikey.pub
+
 Host private.bitbucket.org
  HostName bitbucket.org
  IdentitiesOnly yes
