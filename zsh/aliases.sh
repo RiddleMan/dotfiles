@@ -1,5 +1,5 @@
 get_task_id_from_branch() {
-  git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!'
+  git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/\([a-zA-Z]*-[0-9]*\).*!\1!'
 }
 alias ra="source ${DOTFILES_DIR}/zsh/aliases.sh"
 alias preview="qlmanage -p "
