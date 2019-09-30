@@ -13,7 +13,7 @@ commit_with_issue_tag() {
     if [[ -z "$taskId" ]]; then
         git commit $*
     else
-        echo -n "[$taskId]" > .git/.gitmessagetemplate && git commit -t .git/.gitmessagetemplate $*
+        echo -n "[$taskId] " > .git/.gitmessagetemplate && git commit -t .git/.gitmessagetemplate $*
     fi
 }
 alias gc="commit_with_issue_tag"
@@ -223,3 +223,6 @@ alias dka="docker kill \$(docker ps -q)"
 
 ## GPG
 alias gpgreset="pkill gpg-agent ; pkill ssh-agent ; pkill pinentry ; eval \$(gpg-agent --daemon --enable-ssh-support) ; gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"
+
+## Apple Mail
+alias fixmail="rm -Rf ~/Library/Containers/com.apple.mail/Data/Library/Saved\ Application\ State/com.apple.mail.savedState && mv ~/Library/Containers/com.apple.mail ~/Desktop && mv ~/Library/Containers/com.apple.MailServiceAgent ~/Desktop"

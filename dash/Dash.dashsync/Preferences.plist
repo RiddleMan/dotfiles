@@ -137,7 +137,7 @@
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-14T16:08:40Z</date>
+				<date>2019-09-26T09:14:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-01T19:14:46Z</date>
+				<date>2019-09-28T12:53:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +179,7 @@
 			<key>atom/node-keytar</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-20T07:10:54Z</date>
+				<date>2019-09-17T13:57:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -193,7 +193,7 @@
 			<key>erikras/redux-form</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-14T16:09:26Z</date>
+				<date>2019-09-26T09:15:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -207,7 +207,7 @@
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-21T07:11:06Z</date>
+				<date>2019-09-28T12:54:24Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -221,7 +221,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-20T07:11:02Z</date>
+				<date>2019-09-16T13:55:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +235,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-16T14:06:15Z</date>
+				<date>2019-09-28T12:53:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -305,7 +305,7 @@
 			<key>socketio/socket.io</key>
 			<dict>
 				<key>date</key>
-				<date>2019-04-23T09:48:44Z</date>
+				<date>2019-09-20T19:41:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -333,7 +333,7 @@
 			<key>tj/commander.js</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-13T15:15:30Z</date>
+				<date>2019-09-26T09:14:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
