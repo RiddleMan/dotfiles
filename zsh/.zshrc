@@ -11,6 +11,7 @@ DEFAULT_USER="$(whoami)"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker)
 # User configuration
 
+fPath=(/usr/local/share/zsh-completions $fpath)
 export PATH="/usr/local/opt/python@2/libexec/bin:/usr/local/bin:$HOME/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/texbin:$HOME/work/bin:/usr/local/opt/go/libexec/bin"
 export PATH="$PATH:/usr/local/MacGPG2/bin/"
 export PATH="$PATH:/usr/local/Cellar/esptool/2.5.1/bin/"
@@ -41,3 +42,5 @@ source <(helm completion zsh)
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

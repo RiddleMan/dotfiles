@@ -2,7 +2,6 @@
 
 set -e 
 
-brew tap caskroom/versions
 brew tap caskroom/fonts
 brew tap homebrew/cask-drivers
 
@@ -39,7 +38,7 @@ caskList="java
     slack \
     keepassxc \
     tunnelblick \
-    dash3 \
+    dash \
     steam \
     gog-galaxy \
     origin \
