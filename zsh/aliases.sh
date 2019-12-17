@@ -94,18 +94,11 @@ task() {
   taskId=$(get_task_id_from_branch)
   open "https://synergiapro.atlassian.net/browse/$taskId"
 }
-teamcity() {
-  branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
-  open "http://teamcity.synergy.codes/viewType.html?buildTypeId=SlRTDraw_ContinousBuild&branch_SlRTDraw=$branch"
-}
 wl() {
   taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
   jira work-log add $taskId
 }
-ugojs() {
-  wget -q "http://gojs.net/latest/release/go.js" -O go.js
-  wget -q "http://gojs.net/latest/release/go-debug.js" -O go-debug.js
-}
+alias bbr="$DOTFILES_DIR/scripts/bb_go_to_repo.sh"
 
 alias pls="sudo !!"
 alias tmux="tmux -2"
