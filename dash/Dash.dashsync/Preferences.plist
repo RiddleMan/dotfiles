@@ -137,7 +137,7 @@
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-26T09:14:42Z</date>
+				<date>2019-12-12T13:25:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -148,10 +148,24 @@
 					<string>FormidableLabs/spectacle</string>
 				</dict>
 			</dict>
+			<key>NorthwoodsSoftware/GoJS</key>
+			<dict>
+				<key>date</key>
+				<date>2019-12-15T16:28:09Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>NorthwoodsSoftware/GoJS</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>NorthwoodsSoftware/GoJS</string>
+				</dict>
+			</dict>
 			<key>acdlite/recompose</key>
 			<dict>
 				<key>date</key>
-				<date>2019-08-19T07:11:09Z</date>
+				<date>2019-12-08T12:40:05Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +179,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-28T12:53:13Z</date>
+				<date>2019-12-11T13:26:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +193,7 @@
 			<key>atom/node-keytar</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-17T13:57:01Z</date>
+				<date>2019-12-05T08:48:48Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -193,7 +207,7 @@
 			<key>erikras/redux-form</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-26T09:15:59Z</date>
+				<date>2019-12-03T06:40:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -204,10 +218,24 @@
 					<string>erikras/redux-form</string>
 				</dict>
 			</dict>
+			<key>home-assistant/home-assistant.io</key>
+			<dict>
+				<key>date</key>
+				<date>2019-12-08T14:26:28Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>home-assistant/home-assistant.io</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>home-assistant/home-assistant.io</string>
+				</dict>
+			</dict>
 			<key>react-bootstrap/react-bootstrap</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-28T12:54:24Z</date>
+				<date>2019-12-16T16:29:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -221,7 +249,7 @@
 			<key>reactjs/react-redux</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-16T13:55:39Z</date>
+				<date>2019-12-16T16:28:05Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -235,7 +263,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-28T12:53:21Z</date>
+				<date>2019-12-11T13:26:18Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -277,7 +305,7 @@
 			<key>request/request</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-30T09:08:42Z</date>
+				<date>2019-11-30T18:39:45Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -316,6 +344,20 @@
 					<string>socketio/socket.io</string>
 				</dict>
 			</dict>
+			<key>testing-library/testing-library-docs</key>
+			<dict>
+				<key>date</key>
+				<date>2019-12-16T16:28:34Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>testing-library/testing-library-docs</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>testing-library/testing-library-docs</string>
+				</dict>
+			</dict>
 			<key>thlorenz/proxyquire</key>
 			<dict>
 				<key>date</key>
@@ -333,7 +375,7 @@
 			<key>tj/commander.js</key>
 			<dict>
 				<key>date</key>
-				<date>2019-09-26T09:14:33Z</date>
+				<date>2019-12-06T08:59:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -347,20 +389,6 @@
 		</dict>
 		<key>uninstalled</key>
 		<dict>
-			<key>NorthwoodsSoftware/GoJS</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-21T13:26:33Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>NorthwoodsSoftware/GoJS</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>NorthwoodsSoftware/GoJS</string>
-				</dict>
-			</dict>
 			<key>alexmingoia/koa-router</key>
 			<dict>
 				<key>date</key>
@@ -429,6 +457,20 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>steves/node-jira</string>
+				</dict>
+			</dict>
+			<key>testing-library/react-testing-library</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-21T17:44:48Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>testing-library/react-testing-library</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>testing-library/react-testing-library</string>
 				</dict>
 			</dict>
 			<key>thejameskyle/spectacle-code-slide</key>
@@ -753,6 +795,8 @@
 			<string>node:</string>
 			<key>~/Library/Application Support/Dash/DocSets/Python_2/Python 2.docset</key>
 			<string>py</string>
+			<key>~/Library/Application Support/Dash/DocSets/TypeScript/TypeScript.docset</key>
+			<string>ts:</string>
 			<key>~/Library/Application Support/Dash/DocSets/jQuery/jQuery.docset</key>
 			<string>$:</string>
 			<key>~/Library/Application Support/Dash/GitHub/FormidableLabsspectacle/FormidableLabs-spectacle.docset</key>
@@ -769,6 +813,8 @@
 			<string>keytar:</string>
 			<key>~/Library/Application Support/Dash/GitHub/erikrasreduxform/erikras-redux-form.docset</key>
 			<string>rf:</string>
+			<key>~/Library/Application Support/Dash/GitHub/homeassistanthomeassistantio/home-assistant-home-assistant.io.docset</key>
+			<string>ha:</string>
 			<key>~/Library/Application Support/Dash/GitHub/koajskoa/koajs-koa.docset</key>
 			<string>koa:</string>
 			<key>~/Library/Application Support/Dash/GitHub/nineninescowboy/ninenines-cowboy.docset</key>
@@ -791,6 +837,8 @@
 			<string>io:</string>
 			<key>~/Library/Application Support/Dash/GitHub/stevesnodejira/steves-node-jira.docset</key>
 			<string>jira:</string>
+			<key>~/Library/Application Support/Dash/GitHub/testinglibrarytestinglibrarydocs/testing-library-testing-library-docs.docset</key>
+			<string>tl:</string>
 			<key>~/Library/Application Support/Dash/GitHub/thejameskylespectaclecodeslide/thejameskyle-spectacle-code-slide.docset</key>
 			<string>speccs:</string>
 			<key>~/Library/Application Support/Dash/GitHub/thlorenzproxyquire/thlorenz-proxyquire.docset</key>
@@ -807,125 +855,40 @@
 	<dict>
 		<key>installed</key>
 		<dict>
-			<key>http://kapeli.com/feeds/Android.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:23:43Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/AngularJS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:31Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/BackboneJS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:32Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/Bash.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:19:25Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Bootstrap_3.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:22:30Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:23:27Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/Chai.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:34Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/CoffeeScript.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:34Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Compass.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:34Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/D3JS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:21:37Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/Docker.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:22:47Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/ElasticSearch.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:20:27Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Erlang.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:20:48Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/Express.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:22:26Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Grunt.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:55Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Gulp.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:22:27Z</date>
+				<date>2019-11-26T06:35:43Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:20:19Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/Jasmine.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:22:49Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:21:26Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/LaTeX.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:32Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/Lo-Dash.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:22:28Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/MATLAB.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:37Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Mocha.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:21:28Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/MomentJS.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:20:50Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/MongoDB.xml</key>
 			<dict>
@@ -937,25 +900,10 @@
 				<key>date</key>
 				<date>2018-11-16T13:21:05Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/NET_Framework.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:22:18Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:22:21Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/OCaml.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:20:49Z</date>
-			</dict>
-			<key>http://kapeli.com/feeds/Python_2.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:21:42Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/React.xml</key>
 			<dict>
@@ -972,28 +920,133 @@
 				<key>date</key>
 				<date>2018-11-16T13:22:00Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/Sass.xml</key>
-			<dict>
-				<key>date</key>
-				<date>2018-11-16T13:19:53Z</date>
-			</dict>
 			<key>http://kapeli.com/feeds/Sinon.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2018-11-16T13:22:49Z</date>
 			</dict>
-			<key>http://kapeli.com/feeds/jQuery.xml</key>
+			<key>http://kapeli.com/feeds/TypeScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-16T13:19:52Z</date>
+				<date>2019-12-04T15:37:25Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
 		<dict>
+			<key>http://kapeli.com/feeds/Android.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:34:57Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/AngularJS.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:34:59Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/BackboneJS.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:06Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Bootstrap_3.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:08Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Chai.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:14Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/CoffeeScript.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:19Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Compass.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:21Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/D3JS.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:24Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/ElasticSearch.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:29Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Erlang.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:34Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Grunt.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:57Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Gulp.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:35:58Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Jasmine.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:02Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/LaTeX.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:09Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/MATLAB.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:14Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Mocha.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:17Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/MomentJS.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:19Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/NET_Framework.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:34:54Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/OCaml.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:25Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Polymer.dart.xml</key>
 			<dict>
 				<key>date</key>
 				<date>2015-05-11T17:11:17Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Python_2.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:28Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/Sass.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:35Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/jQuery.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2019-11-26T06:36:06Z</date>
 			</dict>
 		</dict>
 	</dict>

@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 DEFAULT_USER="$(whoami)"
 
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker z)
 # User configuration
 
 fPath=(/usr/local/share/zsh-completions $fpath)

@@ -9,24 +9,19 @@
 [push]
 	default = simple
 [merge]
-	tool = p4mergetool
+	tool = webstorm
 [mergetool]
 	keepBackup = false
 [diff]
-	tool = p4mergetool
+	tool = webstorm
 	compactionHeuristic = true
 [credential]
 	helper = osxkeychain
 [diff "pandoc"]
 	textconv=pandoc --to=markdown
 	propmpt = false
-[mergetool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
-	trustExitCode = false
-[difftool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [mergetool "webstorm"]
-	cmd = /usr/local/bin/webstorm merge $PWD/$LOCAL $PWD/$REMOTE $PWD/$BASE $PWD/$MERGED
+	cmd = /usr/local/bin/webstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED" 
 	trustExitCode = false
 [difftool "webstorm"]
-	cmd = /usr/local/bin/webstorm diff $LOCAL $REMOTE
+	cmd = /usr/local/bin/webstorm diff "$LOCAL" "$REMOTE" 
