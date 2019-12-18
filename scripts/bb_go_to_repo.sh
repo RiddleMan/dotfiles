@@ -17,9 +17,11 @@ next_page() {
 
 results=""
 currTime=$(date +%s)
-lastSync=$(cat -q "$lastSyncPath" 2>/dev/null || echo "$currTime")
+lastSync=$(cat "$lastSyncPath" 2>/dev/null || true)
 
-if [ "$lastSync" -gt $((currTime - 30 * 24 * 60 * 60)) ]; then
+echo $((currTime - lastSync))
+
+if [ -n "$lastSync" ] && [ $((currTime - lastSync)) -lt 2592000 ]; then
 	echo "Loading from cache"
 	results=$(cat "$resultsPath")
 else
@@ -35,7 +37,7 @@ else
 		fi
 
 		links=$(echo "$currentResponse" | jq '.values[].repository.links.html.href' | tr -d '\"')
-		results="$results$links"
+		results="$results\n$links"
 		page=$((page + 1))
 	done
 	echo "$results" > "$resultsPath"
