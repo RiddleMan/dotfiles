@@ -219,3 +219,17 @@ alias gpgreset="pkill gpg-agent ; pkill ssh-agent ; pkill pinentry ; eval \$(gpg
 
 ## Apple Mail
 alias fixmail="rm -Rf ~/Library/Containers/com.apple.mail/Data/Library/Saved\ Application\ State/com.apple.mail.savedState && mv ~/Library/Containers/com.apple.mail ~/Desktop && mv ~/Library/Containers/com.apple.MailServiceAgent ~/Desktop"
+
+# Home Assistant
+update_home_asistant_config() {
+    ssh -t "root@$HASSIO_IP" \
+        ". \$HOME/.bash_profile \
+        && echo 'Updating a config' \
+        && cd /config \
+        && git pull origin master \
+        && echo 'Checking a config' \
+        && hassio ha check --no-progress \
+        && echo 'Restart a server' \
+        && hassio ha restart --no-progress"
+}
+alias haconfig="update_home_asistant_config"

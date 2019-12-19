@@ -19,6 +19,7 @@ export PATH="$PATH:$HOME/.local/bin"
 
 source $ZSH/oh-my-zsh.sh
 export DOTFILES_DIR=~/Projects/dotfiles
+source $DOTFILES_DIR/zsh/servers.sh
 source $DOTFILES_DIR/zsh/paths.sh
 source $DOTFILES_DIR/zsh/aliases.sh
 source $DOTFILES_DIR/zsh/passwords.sh
