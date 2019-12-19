@@ -5,6 +5,7 @@ set -e
 scriptName=$(basename "$0")
 lastSyncPath="/tmp/$scriptName.last_sync"
 resultsPath="/tmp/$scriptName.results"
+historyPath="/tmp/$scriptName.history"
 
 get_repositories_info() {
 	curl -s -u "$BITBUCKET_USER:$BITBUCKET_PASSWORD" \
@@ -18,8 +19,6 @@ next_page() {
 results=""
 currTime=$(date +%s)
 lastSync=$(cat "$lastSyncPath" 2>/dev/null || true)
-
-echo $((currTime - lastSync))
 
 if [ -n "$lastSync" ] && [ $((currTime - lastSync)) -lt 2592000 ]; then
 	echo "Loading from cache"
@@ -45,5 +44,5 @@ else
 	echo "Finished downloading"
 fi
 
-pageAddress=$(echo "$results" | fzf)
+pageAddress=$(echo "$results" | fzf --history="$historyPath")
 open "$pageAddress"
