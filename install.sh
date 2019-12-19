@@ -51,3 +51,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 nvm install 11.2.0
 nvm use 11.2.0
 nvm alias default 11.2.0
+
+# FZF bindings
+$(brew --prefix)/opt/fzf/install \
+    --no-bash \
+    --key-bindings \
+    --completion \
+    --no-update-rc
