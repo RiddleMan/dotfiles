@@ -9,4 +9,4 @@ export PATH=$PATH:/usr/local/istio-1.0.2/bin
 export NVM_DIR=~/.nvm
 export DOTFILES_DIR=~/Projects/dotfiles
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
-export ANDROID_HOME=/usr/local/share/android-sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

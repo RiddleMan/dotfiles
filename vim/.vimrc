@@ -37,6 +37,10 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'editorconfig/editorconfig-vim'
 
+" Flux
+Plugin 'mattn/webapi-vim'
+Plugin 'gianarb/vim-flux'
+
 " Vundle END
 call vundle#end()
 filetype plugin indent on

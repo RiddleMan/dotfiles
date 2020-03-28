@@ -134,10 +134,83 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>MichalLytek/type-graphql</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-28T09:13:02Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>MichalLytek/type-graphql</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>MichalLytek/type-graphql</string>
+				</dict>
+			</dict>
+			<key>airbnb/enzyme</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-28T09:12:46Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>airbnb/enzyme</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>airbnb/enzyme</string>
+				</dict>
+			</dict>
+			<key>reactjs/react-router</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-17T06:25:40Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reactjs/react-router</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reactjs/react-router</string>
+				</dict>
+			</dict>
+			<key>reactjs/reselect</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-11T08:33:59Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reactjs/reselect</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reactjs/reselect</string>
+				</dict>
+			</dict>
+			<key>typeorm/typeorm</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-28T09:13:19Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>typeorm/typeorm</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>typeorm/typeorm</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>uninstalled</key>
+		<dict>
 			<key>FormidableLabs/spectacle</key>
 			<dict>
 				<key>date</key>
-				<date>2019-12-12T13:25:57Z</date>
+				<date>2020-03-04T18:33:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -151,7 +224,7 @@
 			<key>NorthwoodsSoftware/GoJS</key>
 			<dict>
 				<key>date</key>
-				<date>2019-12-17T18:23:42Z</date>
+				<date>2020-03-04T18:33:12Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +238,7 @@
 			<key>acdlite/recompose</key>
 			<dict>
 				<key>date</key>
-				<date>2019-12-08T12:40:05Z</date>
+				<date>2020-03-04T18:33:04Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -176,219 +249,6 @@
 					<string>acdlite/recompose</string>
 				</dict>
 			</dict>
-			<key>airbnb/enzyme</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-11T13:26:09Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>airbnb/enzyme</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>airbnb/enzyme</string>
-				</dict>
-			</dict>
-			<key>atom/node-keytar</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-05T08:48:48Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>atom/node-keytar</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>atom/node-keytar</string>
-				</dict>
-			</dict>
-			<key>erikras/redux-form</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-03T06:40:10Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>erikras/redux-form</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>erikras/redux-form</string>
-				</dict>
-			</dict>
-			<key>home-assistant/home-assistant.io</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-08T14:26:28Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>home-assistant/home-assistant.io</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>home-assistant/home-assistant.io</string>
-				</dict>
-			</dict>
-			<key>react-bootstrap/react-bootstrap</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-16T16:29:10Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>react-bootstrap/react-bootstrap</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>react-bootstrap/react-bootstrap</string>
-				</dict>
-			</dict>
-			<key>reactjs/react-redux</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-16T16:28:05Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>reactjs/react-redux</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>reactjs/react-redux</string>
-				</dict>
-			</dict>
-			<key>reactjs/react-router</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-11T13:26:18Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>reactjs/react-router</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>reactjs/react-router</string>
-				</dict>
-			</dict>
-			<key>reactjs/react-router-redux</key>
-			<dict>
-				<key>date</key>
-				<date>2019-06-23T10:05:49Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>reactjs/react-router-redux</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>reactjs/react-router-redux</string>
-				</dict>
-			</dict>
-			<key>reactjs/reselect</key>
-			<dict>
-				<key>date</key>
-				<date>2019-06-24T10:05:54Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>reactjs/reselect</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>reactjs/reselect</string>
-				</dict>
-			</dict>
-			<key>request/request</key>
-			<dict>
-				<key>date</key>
-				<date>2019-11-30T18:39:45Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>request/request</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>request/request</string>
-				</dict>
-			</dict>
-			<key>shouldjs/should.js</key>
-			<dict>
-				<key>date</key>
-				<date>2019-03-07T15:08:02Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>shouldjs/should.js</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>shouldjs/should.js</string>
-				</dict>
-			</dict>
-			<key>socketio/socket.io</key>
-			<dict>
-				<key>date</key>
-				<date>2019-09-20T19:41:40Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>socketio/socket.io</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>socketio/socket.io</string>
-				</dict>
-			</dict>
-			<key>testing-library/testing-library-docs</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-16T16:28:34Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>testing-library/testing-library-docs</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>testing-library/testing-library-docs</string>
-				</dict>
-			</dict>
-			<key>thlorenz/proxyquire</key>
-			<dict>
-				<key>date</key>
-				<date>2019-08-12T15:16:52Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>thlorenz/proxyquire</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>thlorenz/proxyquire</string>
-				</dict>
-			</dict>
-			<key>tj/commander.js</key>
-			<dict>
-				<key>date</key>
-				<date>2019-12-17T18:23:07Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>tj/commander.js</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>tj/commander.js</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>uninstalled</key>
-		<dict>
 			<key>alexmingoia/koa-router</key>
 			<dict>
 				<key>date</key>
@@ -403,6 +263,34 @@
 					<string>alexmingoia/koa-router</string>
 				</dict>
 			</dict>
+			<key>atom/node-keytar</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>atom/node-keytar</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>atom/node-keytar</string>
+				</dict>
+			</dict>
+			<key>erikras/redux-form</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:09Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>erikras/redux-form</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>erikras/redux-form</string>
+				</dict>
+			</dict>
 			<key>facebook/flow</key>
 			<dict>
 				<key>date</key>
@@ -415,6 +303,20 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>facebook/flow</string>
+				</dict>
+			</dict>
+			<key>home-assistant/home-assistant.io</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:13Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>home-assistant/home-assistant.io</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>home-assistant/home-assistant.io</string>
 				</dict>
 			</dict>
 			<key>koajs/koa</key>
@@ -445,6 +347,90 @@
 					<string>ninenines/cowboy</string>
 				</dict>
 			</dict>
+			<key>react-bootstrap/react-bootstrap</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:14Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>react-bootstrap/react-bootstrap</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>react-bootstrap/react-bootstrap</string>
+				</dict>
+			</dict>
+			<key>reactjs/react-redux</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:19Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reactjs/react-redux</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reactjs/react-redux</string>
+				</dict>
+			</dict>
+			<key>reactjs/react-router-redux</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:22Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reactjs/react-router-redux</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reactjs/react-router-redux</string>
+				</dict>
+			</dict>
+			<key>request/request</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:25Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>request/request</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>request/request</string>
+				</dict>
+			</dict>
+			<key>shouldjs/should.js</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:26Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>shouldjs/should.js</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>shouldjs/should.js</string>
+				</dict>
+			</dict>
+			<key>socketio/socket.io</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:27Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>socketio/socket.io</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>socketio/socket.io</string>
+				</dict>
+			</dict>
 			<key>steves/node-jira</key>
 			<dict>
 				<key>date</key>
@@ -473,6 +459,20 @@
 					<string>testing-library/react-testing-library</string>
 				</dict>
 			</dict>
+			<key>testing-library/testing-library-docs</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:29Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>testing-library/testing-library-docs</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>testing-library/testing-library-docs</string>
+				</dict>
+			</dict>
 			<key>thejameskyle/spectacle-code-slide</key>
 			<dict>
 				<key>date</key>
@@ -487,6 +487,20 @@
 					<string>thejameskyle/spectacle-code-slide</string>
 				</dict>
 			</dict>
+			<key>thlorenz/proxyquire</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:31Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>thlorenz/proxyquire</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>thlorenz/proxyquire</string>
+				</dict>
+			</dict>
 			<key>tj/commander</key>
 			<dict>
 				<key>date</key>
@@ -499,6 +513,34 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>tj/commander</string>
+				</dict>
+			</dict>
+			<key>tj/commander.js</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:31Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>tj/commander.js</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>tj/commander.js</string>
+				</dict>
+			</dict>
+			<key>winstonjs/winston</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:47:43Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>winstonjs/winston</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>winstonjs/winston</string>
 				</dict>
 			</dict>
 		</dict>
@@ -568,7 +610,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2019-04-13T18:30:43Z</date>
+				<date>2020-03-26T09:12:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -576,7 +618,7 @@
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Elm#readme</string>
 					<key>authorLinkText</key>
-					<string>Peter Damoc</string>
+					<string>Tomas Latal</string>
 					<key>name</key>
 					<string>Elm</string>
 					<key>platform</key>
@@ -647,7 +689,7 @@
 			<key>Kotlin</key>
 			<dict>
 				<key>date</key>
-				<date>2018-11-24T13:24:53Z</date>
+				<date>2020-03-18T06:25:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -655,7 +697,7 @@
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Kotlin#readme</string>
 					<key>authorLinkText</key>
-					<string>Marcel Jackwerth</string>
+					<string>Kevin Cianfarini</string>
 					<key>name</key>
 					<string>Kotlin</string>
 					<key>platform</key>
@@ -687,7 +729,7 @@
 			<key>React_Native</key>
 			<dict>
 				<key>date</key>
-				<date>2019-01-24T18:48:24Z</date>
+				<date>2020-02-19T06:29:24Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -740,6 +782,30 @@
 					<string>usercontribRedux</string>
 					<key>uniqueIdentifier</key>
 					<string>Redux</string>
+				</dict>
+			</dict>
+			<key>koa</key>
+			<dict>
+				<key>date</key>
+				<date>2020-03-04T18:33:43Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>koa2</string>
+						<string>Koa</string>
+						<string>Koa2</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/koa#readme</string>
+					<key>authorLinkText</key>
+					<string>Soros Liu</string>
+					<key>name</key>
+					<string>koa</string>
+					<key>platform</key>
+					<string>usercontribkoa</string>
+					<key>uniqueIdentifier</key>
+					<string>koa</string>
 				</dict>
 			</dict>
 			<key>npm</key>
@@ -801,6 +867,8 @@
 			<string>$:</string>
 			<key>~/Library/Application Support/Dash/GitHub/FormidableLabsspectacle/FormidableLabs-spectacle.docset</key>
 			<string>spec:</string>
+			<key>~/Library/Application Support/Dash/GitHub/MichalLytektypegraphql/MichalLytek-type-graphql.docset</key>
+			<string>tql:</string>
 			<key>~/Library/Application Support/Dash/GitHub/NorthwoodsSoftwareGoJS/NorthwoodsSoftware-GoJS.docset</key>
 			<string>gojs:</string>
 			<key>~/Library/Application Support/Dash/GitHub/acdliterecompose/acdlite-recompose.docset</key>
@@ -845,6 +913,10 @@
 			<string>proxyquire:</string>
 			<key>~/Library/Application Support/Dash/GitHub/tjcommanderjs/tj-commander.js.docset</key>
 			<string>cmder:</string>
+			<key>~/Library/Application Support/Dash/GitHub/typeormtypeorm/typeorm-typeorm.docset</key>
+			<string>torm:</string>
+			<key>~/Library/Application Support/Dash/GitHub/winstonjswinston/winstonjs-winston.docset</key>
+			<string>winston:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/Ramda/Ramda.docset</key>
 			<string>r:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/React Native/React_Native.docset</key>

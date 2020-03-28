@@ -69,7 +69,8 @@ appList="git \
     mono \
     fzf \
 	pam_yubico \
-    kotlin"
+    kotlin
+    samuelmeuli/tap/tmignore"
 
 brew install $appList
 brew install yarn --without-node
@@ -77,4 +78,8 @@ brew install yarn --without-node
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Tmignore schedule
+brew services start tmignore
+
 
