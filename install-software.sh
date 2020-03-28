@@ -70,6 +70,7 @@ appList="git \
     fzf \
 	pam_yubico \
     kotlin
+    htop \
     samuelmeuli/tap/tmignore"
 
 brew install $appList
