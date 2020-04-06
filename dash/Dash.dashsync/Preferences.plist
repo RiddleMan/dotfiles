@@ -137,7 +137,7 @@
 			<key>MichalLytek/type-graphql</key>
 			<dict>
 				<key>date</key>
-				<date>2020-03-28T09:13:02Z</date>
+				<date>2020-04-06T11:09:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -151,7 +151,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2020-03-28T09:12:46Z</date>
+				<date>2020-04-06T11:11:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +165,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2020-03-17T06:25:40Z</date>
+				<date>2020-04-04T11:08:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -179,7 +179,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2020-03-11T08:33:59Z</date>
+				<date>2020-04-05T11:08:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -709,7 +709,7 @@
 			<key>Ramda</key>
 			<dict>
 				<key>date</key>
-				<date>2019-05-17T08:03:16Z</date>
+				<date>2020-04-03T09:12:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
