@@ -212,3 +212,9 @@ habackup() {
 }
 alias haconfig="update_home_asistant_config"
 alias haconfigprod="update_home_asistant_config origin/master"
+
+unescapeString() {
+    node -e "const fs = require('fs'); \
+        const out = fs.readFileSync(process.stdin.fd, 'utf8');\
+        console.log(JSON.parse(\`\"\${out.trim()}\"\`))" $*
+}

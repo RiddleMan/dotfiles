@@ -77,6 +77,22 @@
 					<string>HTTP_Status_Codes</string>
 				</dict>
 			</dict>
+			<key>Kubernetes</key>
+			<dict>
+				<key>date</key>
+				<date>2020-04-17T08:36:12Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>Kubernetes</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Kubernetes</string>
+				</dict>
+			</dict>
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
@@ -137,7 +153,7 @@
 			<key>MichalLytek/type-graphql</key>
 			<dict>
 				<key>date</key>
-				<date>2020-04-06T11:09:09Z</date>
+				<date>2020-04-18T16:20:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -151,7 +167,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2020-04-06T11:11:55Z</date>
+				<date>2020-04-14T15:49:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -165,7 +181,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2020-04-04T11:08:59Z</date>
+				<date>2020-04-14T15:51:17Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -193,7 +209,7 @@
 			<key>typeorm/typeorm</key>
 			<dict>
 				<key>date</key>
-				<date>2020-03-28T09:13:19Z</date>
+				<date>2020-04-13T15:17:48Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -610,7 +626,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2020-03-26T09:12:29Z</date>
+				<date>2020-04-11T12:45:22Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -704,6 +720,29 @@
 					<string>usercontribKotlin</string>
 					<key>uniqueIdentifier</key>
 					<string>Kotlin</string>
+				</dict>
+			</dict>
+			<key>Kubernetes</key>
+			<dict>
+				<key>date</key>
+				<date>2020-04-17T08:36:15Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>kubernetes</string>
+						<string>kubectl</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Kubernetes#readme</string>
+					<key>authorLinkText</key>
+					<string>John Patterson</string>
+					<key>name</key>
+					<string>Kubernetes</string>
+					<key>platform</key>
+					<string>usercontribKubernetes</string>
+					<key>uniqueIdentifier</key>
+					<string>Kubernetes</string>
 				</dict>
 			</dict>
 			<key>Ramda</key>
@@ -917,6 +956,8 @@
 			<string>torm:</string>
 			<key>~/Library/Application Support/Dash/GitHub/winstonjswinston/winstonjs-winston.docset</key>
 			<string>winston:</string>
+			<key>~/Library/Application Support/Dash/User Contributed/Kubernetes/Kubernetes.docset</key>
+			<string>k8s:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/Ramda/Ramda.docset</key>
 			<string>r:</string>
 			<key>~/Library/Application Support/Dash/User Contributed/React Native/React_Native.docset</key>
