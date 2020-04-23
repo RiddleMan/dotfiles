@@ -23,8 +23,7 @@ source $DOTFILES_DIR/zsh/passwords.sh
 
 source /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+source $DOTFILES_DIR/zsh/nvm.sh
 
 # Helm completion
 source <(helm completion zsh)
