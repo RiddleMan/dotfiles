@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
 set -e
 
@@ -48,9 +48,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 ~/.tmux/plugins/tpm/bin/install_plugins
 
 #### NODE
-nvm install 11.2.0
-nvm use 11.2.0
-nvm alias default 11.2.0
+nvm install 14.0.0
+nvm use 14.0.0
+nvm alias default 14.0.0
 
 # FZF bindings
 $(brew --prefix)/opt/fzf/install \

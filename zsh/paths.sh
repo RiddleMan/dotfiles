@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export ANDROID_SDK_HOME=/Users/$USER/Library/Android/sdk
 

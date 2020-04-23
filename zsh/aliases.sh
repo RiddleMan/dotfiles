@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 get_task_id_from_branch() {
     git symbolic-ref HEAD | sed -E 's!^refs/heads/(feat|feature)/([a-zA-Z]*-?[0-9]*).*$!\2!'
 }
@@ -90,7 +92,7 @@ bitbucket_get_remote_url() {
 pr() {
   remoteName=$(bitbucket_get_remote_name)
   branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
-  if [[ -z "$1" ]] then
+  if [[ -z "$1" ]]; then
       local destinationBranch="$remoteName::develop"
   else
       local destinationBranch="$remoteName::$1"
