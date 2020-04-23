@@ -12,9 +12,6 @@ DEFAULT_USER="$(whoami)"
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker z)
 bindkey '^ ' autosuggest-accept
-# User configuration
-
-fPath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 source $DOTFILES_DIR/zsh/servers.sh
@@ -25,16 +22,8 @@ source /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.z
 
 source $DOTFILES_DIR/zsh/nvm.sh
 
-# Helm completion
-source <(helm completion zsh)
-
-#Github completion
-source <(gh completion --shell zsh)
-
 export GPG_TTY="$(tty)"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
