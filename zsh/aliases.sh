@@ -183,14 +183,6 @@ alias dka="docker kill \$(docker ps -q)"
 ## Apple Mail
 alias fixmail="rm -Rf ~/Library/Containers/com.apple.mail/Data/Library/Saved\ Application\ State/com.apple.mail.savedState && mv ~/Library/Containers/com.apple.mail ~/Desktop && mv ~/Library/Containers/com.apple.MailServiceAgent ~/Desktop"
 
-airpods_status() {
-    batteryLeft=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentLeft | tr -d \; | awk '{print $3}')
-    batteryRight=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentRight | tr -d \; | awk '{print $3}')
-    batteryCase=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentCase | tr -d \; | awk '{print $3}')
-
-    echo "L: $batteryLeft% P: $batteryRight% Case: $batteryCase%"
-}
-
 # Home Assistant
 update_home_asistant_config() {
     commitHash=$(git rev-parse HEAD)
@@ -219,4 +211,15 @@ unescapeString() {
     node -e "const fs = require('fs'); \
         const out = fs.readFileSync(process.stdin.fd, 'utf8');\
         console.log(JSON.parse(\`\"\${out.trim()}\"\`))" $*
+}
+
+# AirPods
+alias airpodsc="osascript $DOTFILES_DIR/automation/connectAirPods.scpt"
+
+airpods_status() {
+    batteryLeft=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentLeft | tr -d \; | awk '{print $3}')
+    batteryRight=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentRight | tr -d \; | awk '{print $3}')
+    batteryCase=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentCase | tr -d \; | awk '{print $3}')
+
+    echo "L: $batteryLeft% P: $batteryRight% Case: $batteryCase%"
 }

@@ -3,6 +3,7 @@ export KUBE_EDITOR='vim'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+export DOTFILES_DIR=~/Projects/dotfiles
 source $DOTFILES_DIR/zsh/paths.sh
 
 # Path to your oh-my-zsh installation.

@@ -22,7 +22,6 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:~/.cabal/bin
 export PATH=$PATH:~/.config/yarn/global/node_modules/.bin
 export NVM_DIR=~/.nvm
-export DOTFILES_DIR=~/Projects/dotfiles
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
