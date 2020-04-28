@@ -14,10 +14,8 @@ caskList="java
     evernote \
     bettertouchtool \
     adobe-creative-cloud \
-    microsoft-office \
     google-cloud-sdk \
     google-chrome \
-    google-chrome-canary \
     1password \
     1password-cli \
     spectacle \
@@ -26,10 +24,8 @@ caskList="java
     karabiner-elements \
     webstorm \
     rider \
-    dotnet-sdk \
     onedrive \
     cleanmymac \
-    smcfancontrol \
     atom \
     grammarly \
     postman \
