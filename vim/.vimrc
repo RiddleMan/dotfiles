@@ -46,6 +46,7 @@ call vundle#end()
 filetype plugin indent on
 
 " Vim colors
+syntax on
 set background=dark
 colorscheme solarized
 
@@ -62,9 +63,6 @@ set autochdir
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips/"
 let g:UltiSnipsEditSplit="vertical"
 
-set t_Co=256
-syntax on
-set background=dark
 set nu
 
 " Ctrlp settings

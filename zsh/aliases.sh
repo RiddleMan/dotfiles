@@ -183,6 +183,9 @@ alias dka="docker kill \$(docker ps -q)"
 ## Apple Mail
 alias fixmail="rm -Rf ~/Library/Containers/com.apple.mail/Data/Library/Saved\ Application\ State/com.apple.mail.savedState && mv ~/Library/Containers/com.apple.mail ~/Desktop && mv ~/Library/Containers/com.apple.MailServiceAgent ~/Desktop"
 
+## GPG
+alias gpgreset="pkill gpg-agent ; pkill ssh-agent ; pkill pinentry ; eval \$(gpg-agent --daemon --enable-ssh-support) ; gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"
+
 # Home Assistant
 update_home_asistant_config() {
     commitHash=$(git rev-parse HEAD)
