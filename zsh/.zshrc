@@ -4,6 +4,9 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 DEFAULT_USER="$(whoami)"
 
+# VIM mode in the terminal
+set -o vi
+
 export DOTFILES_DIR=~/Projects/dotfiles
 source $DOTFILES_DIR/zsh/paths.sh
 
