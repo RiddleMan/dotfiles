@@ -11,8 +11,9 @@ export DOTFILES_DIR=~/Projects/dotfiles
 source $DOTFILES_DIR/zsh/paths.sh
 
 # Oh my ZSH
+export ZSH=$HOME/.oh-my-zsh
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker z)
-source $ZSH/oh-my-zsh.sh
+source $HOME/.oh-my-zsh/oh-my-zsh.sh
 
 source $DOTFILES_DIR/zsh/servers.sh
 source $DOTFILES_DIR/zsh/aliases.sh
