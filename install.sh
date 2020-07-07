@@ -58,3 +58,6 @@ $(brew --prefix)/opt/fzf/install \
     --key-bindings \
     --completion \
     --no-update-rc
+
+# Terraform
+ln -sf $DOTFILES_DIR/terraform/.terraformrc ~/.terraformrc

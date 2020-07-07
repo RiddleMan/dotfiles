@@ -2,6 +2,7 @@ export EDITOR='vim'
 export KUBE_EDITOR='vim'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export HELM_EXPERIMENTAL_OCI=true
 DEFAULT_USER="$(whoami)"
 
 # VIM mode in the terminal
@@ -20,3 +21,6 @@ source $DOTFILES_DIR/zsh/aliases.sh
 source $DOTFILES_DIR/zsh/passwords.sh
 source $DOTFILES_DIR/zsh/misc.sh
 source $DOTFILES_DIR/zsh/binds.sh
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform

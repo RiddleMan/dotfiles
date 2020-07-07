@@ -41,6 +41,12 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mattn/webapi-vim'
 Plugin 'gianarb/vim-flux'
 
+" Ruby
+Plugin 'tpope/vim-rails'
+
+" Vagrant
+Plugin 'hashivim/vim-vagrant'
+
 " Vundle END
 call vundle#end()
 filetype plugin indent on

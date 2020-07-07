@@ -33,3 +33,6 @@ alias uriencode='node -e "console.log(encodeURI(process.argv[1]))"';
 alias pls="sudo !!"
 alias tmux="tmux -2"
 alias ls="ls -A"
+
+alias tf="terraform"
+alias ws="webstorm"
