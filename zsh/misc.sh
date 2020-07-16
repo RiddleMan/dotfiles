@@ -6,7 +6,7 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 
 # Powerline install
-source /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source /usr/local/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # NVM
 source $DOTFILES_DIR/zsh/nvm.sh
