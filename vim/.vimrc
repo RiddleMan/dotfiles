@@ -31,6 +31,7 @@ Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'machakann/vim-highlightedyank'
 
 " JS
 Plugin 'pangloss/vim-javascript'

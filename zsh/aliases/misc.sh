@@ -35,4 +35,5 @@ alias tmux="tmux -2"
 alias ls="ls -A"
 
 alias tf="terraform"
+alias tg="terragrunt"
 alias ws="webstorm"

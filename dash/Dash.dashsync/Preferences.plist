@@ -153,7 +153,7 @@
 			<key>MichalLytek/type-graphql</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T05:57:49Z</date>
+				<date>2020-08-23T15:49:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -167,7 +167,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2020-06-30T12:14:56Z</date>
+				<date>2020-08-12T09:48:41Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -181,7 +181,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-15T07:01:55Z</date>
+				<date>2020-08-21T07:12:46Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -195,7 +195,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2020-05-30T08:00:16Z</date>
+				<date>2020-08-05T06:59:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -206,10 +206,24 @@
 					<string>reactjs/reselect</string>
 				</dict>
 			</dict>
+			<key>reduxjs/redux-toolkit</key>
+			<dict>
+				<key>date</key>
+				<date>2020-08-22T07:26:52Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reduxjs/redux-toolkit</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reduxjs/redux-toolkit</string>
+				</dict>
+			</dict>
 			<key>typeorm/typeorm</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T05:57:59Z</date>
+				<date>2020-08-25T06:01:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -725,7 +739,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2020-06-30T12:14:43Z</date>
+				<date>2020-08-03T06:59:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -826,7 +840,7 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2020-06-30T12:14:50Z</date>
+				<date>2020-08-21T07:18:05Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -958,6 +972,8 @@
 			<string>rrr:</string>
 			<key>~/Library/Application Support/Dash/GitHub/reactjsreselect/reactjs-reselect.docset</key>
 			<string>rrs:</string>
+			<key>~/Library/Application Support/Dash/GitHub/reduxjsreduxtoolkit/reduxjs-redux-toolkit.docset</key>
+			<string>rxt:</string>
 			<key>~/Library/Application Support/Dash/GitHub/requestrequest/request-request.docset</key>
 			<string>request:</string>
 			<key>~/Library/Application Support/Dash/GitHub/shouldjsshouldjs/shouldjs-should.js.docset</key>
