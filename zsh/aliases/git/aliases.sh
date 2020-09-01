@@ -72,3 +72,7 @@ alias gmc="merge_and_close_branch"
 alias gitk="/usr/bin/wish $(which gitk)"
 alias gl="git log --oneline --all --graph --decorate  $*"
 alias gco="git checkout"
+
+function gi() { 
+	curl -sL "https://www.toptal.com/developers/gitignore/api/$@"
+}
