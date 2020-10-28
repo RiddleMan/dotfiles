@@ -77,22 +77,6 @@
 					<string>HTTP_Status_Codes</string>
 				</dict>
 			</dict>
-			<key>Kubernetes</key>
-			<dict>
-				<key>date</key>
-				<date>2020-04-17T08:36:12Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array/>
-					<key>name</key>
-					<string>Kubernetes</string>
-					<key>platform</key>
-					<string>cheatsheet</string>
-					<key>uniqueIdentifier</key>
-					<string>Kubernetes</string>
-				</dict>
-			</dict>
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
@@ -130,7 +114,24 @@
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>Kubernetes</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-05T16:22:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>name</key>
+					<string>Kubernetes</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Kubernetes</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>DHCocoaRepo</key>
 	<dict>
@@ -150,24 +151,10 @@
 	<dict>
 		<key>installed</key>
 		<dict>
-			<key>MichalLytek/type-graphql</key>
-			<dict>
-				<key>date</key>
-				<date>2020-08-30T11:56:50Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>MichalLytek/type-graphql</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>MichalLytek/type-graphql</string>
-				</dict>
-			</dict>
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2020-08-31T11:54:28Z</date>
+				<date>2020-10-27T06:51:49Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -176,12 +163,40 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>airbnb/enzyme</string>
+				</dict>
+			</dict>
+			<key>apollographql/apollo-client</key>
+			<dict>
+				<key>date</key>
+				<date>2020-10-10T11:54:19Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>apollographql/apollo-client</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>apollographql/apollo-client</string>
+				</dict>
+			</dict>
+			<key>react-hook-form/react-hook-form</key>
+			<dict>
+				<key>date</key>
+				<date>2020-10-27T06:51:51Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>react-hook-form/react-hook-form</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>react-hook-form/react-hook-form</string>
 				</dict>
 			</dict>
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2020-08-21T07:12:46Z</date>
+				<date>2020-10-20T12:15:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -195,7 +210,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2020-08-05T06:59:09Z</date>
+				<date>2020-10-26T03:43:14Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -209,7 +224,7 @@
 			<key>reduxjs/redux-toolkit</key>
 			<dict>
 				<key>date</key>
-				<date>2020-09-01T11:52:44Z</date>
+				<date>2020-10-26T03:43:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -218,20 +233,6 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>reduxjs/redux-toolkit</string>
-				</dict>
-			</dict>
-			<key>typeorm/typeorm</key>
-			<dict>
-				<key>date</key>
-				<date>2020-08-29T08:54:38Z</date>
-				<key>entry</key>
-				<dict>
-					<key>name</key>
-					<string>typeorm/typeorm</string>
-					<key>platform</key>
-					<string>github</string>
-					<key>uniqueIdentifier</key>
-					<string>typeorm/typeorm</string>
 				</dict>
 			</dict>
 		</dict>
@@ -249,6 +250,20 @@
 					<string>github</string>
 					<key>uniqueIdentifier</key>
 					<string>FormidableLabs/spectacle</string>
+				</dict>
+			</dict>
+			<key>MichalLytek/type-graphql</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-05T16:21:28Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>MichalLytek/type-graphql</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>MichalLytek/type-graphql</string>
 				</dict>
 			</dict>
 			<key>NorthwoodsSoftware/GoJS</key>
@@ -559,6 +574,20 @@
 					<string>tj/commander.js</string>
 				</dict>
 			</dict>
+			<key>typeorm/typeorm</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-05T16:22:01Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>typeorm/typeorm</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>typeorm/typeorm</string>
+				</dict>
+			</dict>
 			<key>winstonjs/winston</key>
 			<dict>
 				<key>date</key>
@@ -640,7 +669,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-02T12:14:43Z</date>
+				<date>2020-09-30T05:20:10Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -739,7 +768,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2020-08-28T05:22:06Z</date>
+				<date>2020-10-12T11:53:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -837,10 +866,30 @@
 					<string>Redux</string>
 				</dict>
 			</dict>
+			<key>RxJS</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-02T10:52:35Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/RxJS#readme</string>
+					<key>authorLinkText</key>
+					<string>Steve Yin</string>
+					<key>name</key>
+					<string>RxJS</string>
+					<key>platform</key>
+					<string>usercontribRxJS</string>
+					<key>uniqueIdentifier</key>
+					<string>RxJS</string>
+				</dict>
+			</dict>
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2020-08-28T05:22:37Z</date>
+				<date>2020-10-12T11:53:55Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -855,30 +904,6 @@
 					<string>usercontribTerraform</string>
 					<key>uniqueIdentifier</key>
 					<string>Terraform</string>
-				</dict>
-			</dict>
-			<key>koa</key>
-			<dict>
-				<key>date</key>
-				<date>2020-03-04T18:33:43Z</date>
-				<key>entry</key>
-				<dict>
-					<key>aliases</key>
-					<array>
-						<string>koa2</string>
-						<string>Koa</string>
-						<string>Koa2</string>
-					</array>
-					<key>authorLinkHref</key>
-					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/koa#readme</string>
-					<key>authorLinkText</key>
-					<string>Soros Liu</string>
-					<key>name</key>
-					<string>koa</string>
-					<key>platform</key>
-					<string>usercontribkoa</string>
-					<key>uniqueIdentifier</key>
-					<string>koa</string>
 				</dict>
 			</dict>
 			<key>npm</key>
@@ -906,7 +931,32 @@
 			</dict>
 		</dict>
 		<key>uninstalled</key>
-		<dict/>
+		<dict>
+			<key>koa</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-05T16:21:21Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>koa2</string>
+						<string>Koa</string>
+						<string>Koa2</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/koa#readme</string>
+					<key>authorLinkText</key>
+					<string>Soros Liu</string>
+					<key>name</key>
+					<string>koa</string>
+					<key>platform</key>
+					<string>usercontribkoa</string>
+					<key>uniqueIdentifier</key>
+					<string>koa</string>
+				</dict>
+			</dict>
+		</dict>
 	</dict>
 	<key>DHWebViewIsDark</key>
 	<false/>
@@ -952,6 +1002,8 @@
 			<string>enzyme:</string>
 			<key>~/Library/Application Support/Dash/GitHub/alexmingoiakoarouter/alexmingoia-koa-router.docset</key>
 			<string>koar:</string>
+			<key>~/Library/Application Support/Dash/GitHub/apollographqlapolloclient/apollographql-apollo-client.docset</key>
+			<string>apollo:</string>
 			<key>~/Library/Application Support/Dash/GitHub/atomnodekeytar/atom-node-keytar.docset</key>
 			<string>keytar:</string>
 			<key>~/Library/Application Support/Dash/GitHub/erikrasreduxform/erikras-redux-form.docset</key>
@@ -964,6 +1016,8 @@
 			<string>cowboy:</string>
 			<key>~/Library/Application Support/Dash/GitHub/reactbootstrapreactbootstrap/react-bootstrap-react-bootstrap.docset</key>
 			<string>rbs:</string>
+			<key>~/Library/Application Support/Dash/GitHub/reacthookformreacthookform/react-hook-form-react-hook-form.docset</key>
+			<string>rhf:</string>
 			<key>~/Library/Application Support/Dash/GitHub/reactjsreactredux/reactjs-react-redux.docset</key>
 			<string>rrx:</string>
 			<key>~/Library/Application Support/Dash/GitHub/reactjsreactrouter/reactjs-react-router.docset</key>

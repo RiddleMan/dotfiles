@@ -12,7 +12,7 @@ pr() {
   remoteName=$(bitbucket_get_remote_name)
   branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
   if [[ -z "$1" ]]; then
-      local destinationBranch="$remoteName::develop"
+      local destinationBranch="$remoteName::master"
   else
       local destinationBranch="$remoteName::$1"
   fi

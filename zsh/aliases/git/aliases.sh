@@ -45,6 +45,11 @@ gprd() {
     git diff $(git merge-base $branch origin/develop) HEAD
 }
 
+gprm() {
+    branch=$(current_branch)
+    git diff $(git merge-base $branch origin/master) HEAD
+}
+
 gact() {
     for branch in `git branch -a`; 
     do; 

@@ -21,8 +21,10 @@ export PATH=/usr/local/bin:~/npm/bin:/usr/local/sbin:$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export PATH=$PATH:~/.cabal/bin
 export PATH=$PATH:~/.config/yarn/global/node_modules/.bin
+export PATH=$PATH:$(go env GOPATH)/bin
 export NVM_DIR=~/.nvm
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export GOPATH=$(go env GOPATH)
 
