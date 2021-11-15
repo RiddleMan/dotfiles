@@ -1,26 +1,26 @@
 {
-	"segments": {
-		"right": [
-			{
-				"function": "powerline.segments.common.sys.uptime",
-                "display": false
-			},
-			{
-				"function": "powerline.segments.common.sys.system_load",
-                "display": false
-			},
-			{
-				"function": "powerline.segments.common.time.date",
-                "display": false
-			},
-			{
-				"function": "powerline.segments.common.time.date",
-                "display": false
-			},
-			{
-				"function": "powerline.segments.common.net.hostname",
-                "display": false
-			}
-		]
-	}
+  "segments": {
+    "right": [
+      {
+        "display": false,
+        "function": "powerline.segments.common.sys.uptime"
+      },
+      {
+        "display": false,
+        "function": "powerline.segments.common.sys.system_load"
+      },
+      {
+        "display": false,
+        "function": "powerline.segments.common.time.date"
+      },
+      {
+        "display": false,
+        "function": "powerline.segments.common.time.date"
+      },
+      {
+        "display": false,
+        "function": "powerline.segments.common.net.hostname"
+      }
+    ]
+  }
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
 
 update_home_asistant_config() {
-    commitHash=$(git rev-parse HEAD)
-    ssh -t "root@$HASSIO_IP" \
-        ". /etc/profile.d/homeassistant.sh \
+  commitHash=$(git rev-parse HEAD)
+  ssh -t "root@$HASSIO_IP" \
+    ". /etc/profile.d/homeassistant.sh \
         && echo 'Updating a config' \
         && cd /config \
         && git fetch \
@@ -15,9 +15,9 @@ update_home_asistant_config() {
 }
 
 habackup() {
-    commitHash=$(git rev-parse HEAD)
-    ssh -t "root@$HASSIO_IP" \
-        ". /etc/profile.d/homeassistant.sh \
+  commitHash=$(git rev-parse HEAD)
+  ssh -t "root@$HASSIO_IP" \
+    ". /etc/profile.d/homeassistant.sh \
         && . \$HOME/.bash_profile \
         && /config/scripts/backup_to_nas.sh"
 }

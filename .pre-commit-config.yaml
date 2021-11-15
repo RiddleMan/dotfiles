@@ -1,15 +1,11 @@
 ---
 repos:
-    - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-      rev: 2.3.54
-      hooks:
-          - id: editorconfig-checker
-            alias: ec
-
     - repo: https://github.com/pre-commit/pre-commit-hooks
       rev: v4.0.1
       hooks:
           - id: check-added-large-files
+          - id: pretty-format-json
+            args: [--autofix]
 
     - repo: https://github.com/jumanjihouse/pre-commit-hooks
       rev: 2.1.5
@@ -32,3 +28,20 @@ repos:
       rev: v7.6.1
       hooks:
           - id: gitleaks
+
+    - repo: https://github.com/commitizen-tools/commitizen
+      rev: v2.20.0
+      hooks:
+          - id: commitizen
+            stages: [commit-msg]
+
+    - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+      rev: 2.3.54
+      hooks:
+          - id: editorconfig-checker
+            alias: ec
+
+ci:
+    # They don't run int pre-commit.ci, but once I move to GitHub Actions
+    # https://github.com/RiddleMan/dotfiles/issues/12
+    skip: [shellcheck, shfmt]

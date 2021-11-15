@@ -1,4 +1,4 @@
 Host *
- ForwardAgent yes
+  ForwardAgent yes
 
 Include ~/.ssh/hosts.secret

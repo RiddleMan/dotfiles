@@ -6,7 +6,8 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Turns off desktop icons
-defaults write com.apple.finder CreateDesktop false; killall Finder
+defaults write com.apple.finder CreateDesktop false
+killall Finder
 
 # Iterm2
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$DOTFILES_DIR/iterm2"

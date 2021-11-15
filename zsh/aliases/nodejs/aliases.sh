@@ -1,13 +1,13 @@
 #!/usr/bin/env zsh
 
-#NPM ALIASES
+# NPM ALIASES
 alias n="npm"
-alias nis="npm install --save $*"
-alias nisd="npm install --save-dev $*"
+alias nis="npm install --save"
+alias nisd="npm install --save-dev"
 alias ni="npm install"
 alias nmd="rm -Rf node_modules/"
 
-#Yarn
+# Yarn
 alias y="yarn"
 alias ya="y add"
 alias yui="y upgrade-interactive"
