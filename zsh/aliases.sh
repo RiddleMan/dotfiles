@@ -2,11 +2,13 @@
 
 # Load sub files
 for filename in $DOTFILES_DIR/zsh/aliases/{*.sh,*/aliases.sh}; do
-  source $filename
+  # Non-constant script couldn't be followed
+  # shellcheck disable=SC1090
+  source "$filename"
 done
 
 # Dotfiles
-alias ra="source ${DOTFILES_DIR}/zsh/aliases.sh"
-alias ea="$EDITOR $DOTFILES_DIR/zsh/aliases.sh"
+alias ra='source ${DOTFILES_DIR}/zsh/aliases.sh'
+alias ea='$EDITOR $DOTFILES_DIR/zsh/aliases.sh'
 alias preview="qlmanage -p "
-alias cddot="cd $DOTFILES_DIR"
+alias cddot='cd $DOTFILES_DIR'
