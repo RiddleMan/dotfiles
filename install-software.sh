@@ -71,14 +71,16 @@ appList="git \
     rustup-init \
     htop"
 
+# Globbing and word splitting is expected in here
+# shellcheck disable=SC2086
 brew install $caskList $appList
 brew install yarn --ignore-dependencies
 rustup-init -y
-$(brew --prefix)/opt/fzf/install
+"$(brew --prefix)/opt/fzf/install"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || true
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" || true
 
 # Tmignore schedule
 # brew services start tmignore
