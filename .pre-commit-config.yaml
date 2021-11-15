@@ -1,15 +1,11 @@
 ---
 repos:
-    - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-      rev: 2.3.54
-      hooks:
-          - id: editorconfig-checker
-            alias: ec
-
     - repo: https://github.com/pre-commit/pre-commit-hooks
       rev: v4.0.1
       hooks:
           - id: check-added-large-files
+          - id: pretty-format-json
+            args: [--autofix]
 
     - repo: https://github.com/jumanjihouse/pre-commit-hooks
       rev: 2.1.5
@@ -38,3 +34,9 @@ repos:
       hooks:
           - id: commitizen
             stages: [commit-msg]
+
+    - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
+      rev: 2.3.54
+      hooks:
+          - id: editorconfig-checker
+            alias: ec
