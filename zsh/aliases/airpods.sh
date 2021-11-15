@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-alias airpodsc="osascript $DOTFILES_DIR/automation/connectAirPods.scpt"
+alias airpodsc='osascript $DOTFILES_DIR/automation/connectAirPods.scpt'
 
 airpods_status() {
   batteryLeft=$(defaults read /Library/Preferences/com.apple.Bluetooth | grep BatteryPercentLeft | tr -d \; | awk '{print $3}')
