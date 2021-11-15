@@ -36,4 +36,5 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 GOPATH=$(go env GOPATH)
 export GOPATH
 
+# shellcheck disable=SC1091
 source "$HOME/.cargo/env"
