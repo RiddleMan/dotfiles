@@ -51,12 +51,8 @@ ln -sf $DOTFILES_DIR/tmux/.tmux.conf ~
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 ~/.tmux/plugins/tpm/bin/install_plugins
 
-#### NODE
-# TODO: check the latest version
-NODE_VERSION=16.6.1
-nvm install "$NODE_VERSION"
-nvm use "$NODE_VERSION"
-nvm alias default "$NODE_VERSION"
+# Install the latest LTS version of node
+nvm install --lts --default
 
 # FZF bindings
 $(brew --prefix)/opt/fzf/install \
