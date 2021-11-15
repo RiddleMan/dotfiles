@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -xe 
+set -xe
 
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-drivers
@@ -82,5 +82,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # Tmignore schedule
 # brew services start tmignore
-
-

@@ -12,18 +12,18 @@ pr() {
   remoteName=$(bitbucket_get_remote_name)
   branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
   if [[ -z "$1" ]]; then
-      local destinationBranch="$remoteName::master"
+    local destinationBranch="$remoteName::master"
   else
-      local destinationBranch="$remoteName::$1"
+    local destinationBranch="$remoteName::$1"
   fi
 
   open "$(bitbucket_get_remote_url)/pull-requests/new?source=$branch&dest=$destinationBranch&t=1"
 }
 
 bpipe() {
-	branch=$(current_branch | tr -d \\n | urlencode)
+  branch=$(current_branch | tr -d \\n | urlencode)
 
-	open "$(bitbucket_get_remote_url)/addon/pipelines/home#!/results/branch/${branch}/page/1"
+  open "$(bitbucket_get_remote_url)/addon/pipelines/home#!/results/branch/${branch}/page/1"
 }
 
 task() {

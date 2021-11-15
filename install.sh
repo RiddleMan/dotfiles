@@ -23,8 +23,8 @@ ln -sf $DOTFILES_DIR/git/.gitk ~/.gitk
 ln -sf $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
 
 pushd ${ZSH_CUSTOM:-$ZSH/custom}/plugins
-    git clone https://github.com/iam4x/zsh-iterm-touchbar.git || true
-    git clone https://github.com/zsh-users/zsh-autosuggestions || true
+git clone https://github.com/iam4x/zsh-iterm-touchbar.git || true
+git clone https://github.com/zsh-users/zsh-autosuggestions || true
 popd
 
 # Karabiner link
@@ -56,10 +56,10 @@ nvm install --lts --default
 
 # FZF bindings
 $(brew --prefix)/opt/fzf/install \
-    --no-bash \
-    --key-bindings \
-    --completion \
-    --no-update-rc
+  --no-bash \
+  --key-bindings \
+  --completion \
+  --no-update-rc
 
 # Terraform
 ln -sf $DOTFILES_DIR/terraform/.terraformrc ~/.terraformrc

@@ -2,7 +2,7 @@
 
 # Load sub files
 for filename in $DOTFILES_DIR/zsh/aliases/{*.sh,*/aliases.sh}; do
-    source $filename
+  source $filename
 done
 
 # Dotfiles
