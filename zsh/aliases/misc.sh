@@ -17,14 +17,14 @@ urlencode() {
 unescapeString() {
   node -e "const fs = require('fs'); \
         const out = fs.readFileSync(process.stdin.fd, 'utf8');\
-        console.log(JSON.parse(\`\"\${out.trim()}\"\`))" $*
+        console.log(JSON.parse(\`\"\${out.trim()}\"\`))" "$@"
 }
 
 # Online docs
 alias dgojs="open http://gojs.net/latest/api/index.html"
 
 # Spotify
-alias spotify-current="$DOTFILES_DIR/automation/spotify/getCurrentTrack.js 1>/dev/null 2>&1 | pbcopy"
+alias spotify-current='$DOTFILES_DIR/automation/spotify/getCurrentTrack.js 1>/dev/null 2>&1 | pbcopy'
 
 # GPG
 alias gpgreset="pkill gpg-agent ; pkill ssh-agent ; pkill pinentry ; eval \$(gpg-agent --daemon --enable-ssh-support) ; gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"
