@@ -33,8 +33,8 @@ task() {
 
 wl() {
   taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
-  jira work-log add $taskId
+  jira work-log add "$taskId"
 }
 
-alias bbr="$DOTFILES_DIR/scripts/bb_go_to_repo.sh"
+alias bbr='$DOTFILES_DIR/scripts/bb_go_to_repo.sh'
 alias bb="open https://bitbucket.org/"
