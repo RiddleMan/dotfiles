@@ -172,7 +172,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-17T06:36:47Z</date>
+				<date>2021-06-16T08:48:50Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -186,7 +186,7 @@
 			<key>apollographql/apollo-client</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:11:38Z</date>
+				<date>2020-10-10T11:54:19Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -200,7 +200,7 @@
 			<key>react-hook-form/react-hook-form</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-29T06:07:59Z</date>
+				<date>2021-11-15T18:06:47Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -214,7 +214,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-15T08:44:13Z</date>
+				<date>2021-08-01T13:52:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -228,7 +228,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-18T18:07:34Z</date>
+				<date>2021-11-04T18:14:01Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -242,7 +242,7 @@
 			<key>reduxjs/redux-toolkit</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-23T07:24:32Z</date>
+				<date>2021-11-15T18:10:16Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -687,7 +687,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2021-09-23T07:23:18Z</date>
+				<date>2021-11-15T18:05:49Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -707,7 +707,7 @@
 			<key>JSDoc</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:24Z</date>
+				<date>2018-11-16T13:19:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -735,7 +735,7 @@
 			<key>Jest</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:24Z</date>
+				<date>2019-03-02T11:31:18Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -766,7 +766,7 @@
 			<key>Kotlin</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:36Z</date>
+				<date>2021-05-12T10:06:09Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -786,7 +786,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-18T08:43:10Z</date>
+				<date>2021-11-15T18:05:43Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -809,7 +809,7 @@
 			<key>Ramda</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:24Z</date>
+				<date>2020-04-03T09:12:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -829,7 +829,7 @@
 			<key>React_Native</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:27Z</date>
+				<date>2020-02-19T06:29:24Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -858,7 +858,7 @@
 			<key>Redux</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:24Z</date>
+				<date>2018-11-16T13:19:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -887,7 +887,7 @@
 			<key>RxJS</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:27Z</date>
+				<date>2020-09-02T10:52:35Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -907,7 +907,7 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-18T08:43:59Z</date>
+				<date>2021-11-15T18:05:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -927,7 +927,7 @@
 			<key>npm</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:24Z</date>
+				<date>2018-11-16T13:19:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
