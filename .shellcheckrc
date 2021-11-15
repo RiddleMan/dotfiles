@@ -1,0 +1,7 @@
+# Enforce Bash shell since shellcheck does not
+# support ZSH
+shell=bash
+
+# Don't follow scripts out of this repository
+disable=SC1091
+
