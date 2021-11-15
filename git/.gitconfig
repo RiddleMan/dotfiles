@@ -21,10 +21,10 @@
 	textconv=pandoc --to=markdown
 	propmpt = false
 [mergetool "webstorm"]
-	cmd = /usr/local/bin/webstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED" 
+	cmd = /usr/local/bin/webstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
 	trustExitCode = false
 [difftool "webstorm"]
-	cmd = /usr/local/bin/webstorm diff "$LOCAL" "$REMOTE" 
+	cmd = /usr/local/bin/webstorm diff "$LOCAL" "$REMOTE"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
