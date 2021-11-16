@@ -9,16 +9,18 @@ commit_with_issue_tag() {
   templatePath="$(git rev-parse --show-toplevel)/.git/.gitmessagetemplate"
   remote=$(git remote get-url origin)
 
+  # For github ids `#` character is required at the beginning
+  task_id_prefix=""
+  if [[ "$taskId" =~ ^[0-9] ]]; then
+    task_id_prefix="#"
+  fi
+
   if [[ -z "$taskId" ]]; then
     git commit "$@"
+  elif [[ $remote == *"github"* || $remote == *"azure"* ]]; then
+    printf "feat:\n\nCloses %s" "$task_id_prefix$taskId" >"$templatePath" && git commit -t "$templatePath" "$@"
   else
-    if [[ $remote == *"bitbucket"* ]]; then
-      echo -n "[$taskId] " >"$templatePath" && git commit -t "$templatePath" "$@"
-    elif [[ $remote == *"github"* || $remote == *"azure"* ]]; then
-      echo -n "(#$taskId) " >"$templatePath" && git commit -t "$templatePath" "$@"
-    else
-      git commit "$@"
-    fi
+    git commit "$@"
   fi
 }
 
