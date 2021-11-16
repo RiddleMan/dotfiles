@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 
 export NVM_DIR="$HOME/.nvm"
 
 # Should not follow nvm script
 # shellcheck disable=1091
-. "/usr/local/opt/nvm/nvm.sh" # This loads nvm
+source "/usr/local/opt/nvm/nvm.sh" # This loads nvm

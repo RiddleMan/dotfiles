@@ -29,5 +29,3 @@ source "$DOTFILES_DIR/zsh/sandbox.sh"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
-
-[ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"

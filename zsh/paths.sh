@@ -30,7 +30,6 @@ PATH="$HOME/.cargo/bin:$PATH"
 PATH="$JAVA_HOME/bin:$PATH"
 export PATH
 
-export NVM_DIR=~/.nvm
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 GOPATH=$(go env GOPATH)
