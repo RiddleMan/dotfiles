@@ -20,6 +20,11 @@ export ZSH=$HOME/.oh-my-zsh
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker z)
 source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
+# Fix for https://github.com/RiddleMan/dotfiles/issues/14
+# This line fixes the problem of slow one-by-one pasting
+# Found here: https://github.com/zsh-users/zsh-syntax-highlighting/issues/295#issuecomment-214581607
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
 source "$DOTFILES_DIR/zsh/servers.sh"
 source "$DOTFILES_DIR/zsh/aliases.sh"
 source "$DOTFILES_DIR/zsh/passwords.sh"
