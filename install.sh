@@ -9,8 +9,6 @@ chmod +x ./install-software.sh
 # SSH Link
 ln -sf $DOTFILES_DIR/ssh/config ~/.ssh
 
-pip3 install powerline-status || true
-
 #VIM links
 ln -sf $DOTFILES_DIR/vim/.vimrc ~/.vimrc
 
@@ -29,9 +27,6 @@ popd
 
 # Karabiner link
 ln -sf $DOTFILES_DIR/karabiner ~/.config
-
-# Powerline config
-ln -sf $DOTFILES_DIR/powerline ~/.config
 
 # OS X defaults
 source ./defaults.sh

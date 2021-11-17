@@ -13,6 +13,7 @@ export DOTFILES_DIR="$HOME/Projects/dotfiles"
 source "$DOTFILES_DIR/zsh/paths.sh"
 
 # Oh my ZSH
+export ZSH_THEME="frontcube"
 export ZSH=$HOME/.oh-my-zsh
 
 # Used by oh-my-zsh suppressing a warning

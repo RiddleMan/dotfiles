@@ -7,10 +7,9 @@ SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export SSH_AUTH_SOCK
 gpgconf --launch gpg-agent
 
-# Powerline install
-source /usr/local/lib/python3.9/site-packages/powerline/bindings/zsh/powerline.zsh
-
-# NVM
+# NOTE: NVM is the longest job during shell startup
+# Either contribute to NVM or find better alternative
+# like asdf. https://github.com/RiddleMan/dotfiles/issues/31
 source "$DOTFILES_DIR/zsh/nvm.sh"
 
 # Fuzzy search support for ZSH
