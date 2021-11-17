@@ -26,7 +26,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins list
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'wincent/terminus'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -51,8 +51,10 @@ filetype plugin indent on
 
 " Vim colors
 syntax on
+set termguicolors
 set background=dark
-colorscheme solarized
+colorscheme solarized8
+autocmd vimenter * ++nested colorscheme solarized8
 
 " SETTINGS
 set encoding=utf-8
