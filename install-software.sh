@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -xe
+set -e
 
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-drivers
@@ -69,7 +69,8 @@ appList="git \
     pam_yubico \
     kotlin \
     rustup-init \
-    htop"
+    htop \
+    hyperfine"
 
 # Globbing and word splitting is expected in here
 # shellcheck disable=SC2086

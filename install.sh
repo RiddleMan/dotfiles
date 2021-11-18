@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -xe
+set -e
 
 DOTFILES_DIR=~/Projects/dotfiles
 chmod +x ./install-software.sh
