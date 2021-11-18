@@ -20,9 +20,10 @@ ln -sf $DOTFILES_DIR/git/.gitk ~/.gitk
 # ZSH links
 ln -sf $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
 
+# TODO: Replace with plugin manager. Including oh-my-zsh
 pushd "${ZSH_CUSTOM:-$ZSH/custom}/plugins"
-git clone https://github.com/iam4x/zsh-iterm-touchbar.git || true
 git clone https://github.com/zsh-users/zsh-autosuggestions || true
+git clone https://github.com/zsh-users/zsh-syntax-highlighting || true
 popd
 
 # Karabiner link
