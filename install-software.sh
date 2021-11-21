@@ -58,7 +58,7 @@ appList="git \
     vim \
     elasticsearch \
     kafka \
-    nvm \
+    volta \
     azure-cli \
     kubernetes-helm \
     mono \
