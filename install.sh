@@ -47,8 +47,8 @@ ln -sf $DOTFILES_DIR/tmux/.tmux.conf ~
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 ~/.tmux/plugins/tpm/bin/install_plugins
 
-# Install the latest LTS version of node
-nvm install --lts --default
+# Install node
+volta install node@17.1.0
 
 # FZF bindings
 "$(brew --prefix)/opt/fzf/install" \
