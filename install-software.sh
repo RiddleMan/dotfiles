@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -xe
+set -e
 
 brew tap homebrew/cask-fonts
 brew tap homebrew/cask-drivers
@@ -58,7 +58,7 @@ appList="git \
     vim \
     elasticsearch \
     kafka \
-    nvm \
+    volta \
     azure-cli \
     kubernetes-helm \
     mono \
@@ -69,7 +69,8 @@ appList="git \
     pam_yubico \
     kotlin \
     rustup-init \
-    htop"
+    htop \
+    hyperfine"
 
 # Globbing and word splitting is expected in here
 # shellcheck disable=SC2086
@@ -79,8 +80,6 @@ rustup-init -y
 "$(brew --prefix)/opt/fzf/install"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || true
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" || true
 
 # Tmignore schedule
 # brew services start tmignore

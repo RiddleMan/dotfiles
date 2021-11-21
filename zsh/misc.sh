@@ -7,10 +7,9 @@ SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 export SSH_AUTH_SOCK
 gpgconf --launch gpg-agent
 
-# NOTE: NVM is the longest job during shell startup
-# Either contribute to NVM or find better alternative
-# like asdf. https://github.com/RiddleMan/dotfiles/issues/31
-source "$DOTFILES_DIR/zsh/nvm.sh"
+# Volta for Node version management
+VOLTA_HOME="$HOME/.volta"
+PATH="$VOLTA_HOME/bin:$PATH"
 
 # Fuzzy search support for ZSH
 [ -f "$HOME/.fzf.zsh" ] && source "$HOME/.fzf.zsh"
