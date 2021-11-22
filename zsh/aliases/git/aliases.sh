@@ -7,7 +7,6 @@ get_task_id_from_branch() {
 commit_with_issue_tag() {
   taskId="$(get_task_id_from_branch)"
   templatePath="$(git rev-parse --show-toplevel)/.git/.gitmessagetemplate"
-  remote=$(git remote get-url origin)
 
   # For github ids `#` character is required at the beginning
   task_id_prefix=""
@@ -15,13 +14,12 @@ commit_with_issue_tag() {
     task_id_prefix="#"
   fi
 
-  if [[ -z "$taskId" ]]; then
-    git commit "$@"
-  elif [[ $remote == *"github"* || $remote == *"azure"* ]]; then
-    printf "feat:\n\nCloses %s" "$task_id_prefix$taskId" >"$templatePath" && git commit -t "$templatePath" "$@"
-  else
-    git commit "$@"
+  task_id_phrase=""
+  if [[ -n "$taskId" ]]; then
+    task_id_phrase="\n\nCloses: $task_id_prefix$taskId"
   fi
+
+  echo "feat:$task_id_phrase" >"$templatePath" && git commit -t "$templatePath" "$@"
 }
 
 merge_and_close_branch() {
