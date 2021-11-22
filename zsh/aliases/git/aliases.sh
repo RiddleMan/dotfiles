@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 get_task_id_from_branch() {
-  git symbolic-ref HEAD | sed -E 's!^refs/heads/(feat|feature)/([a-zA-Z]*-?[0-9]*).*$!\2!'
+  git symbolic-ref HEAD | sed -E 's!^refs/heads/(feat|feature)/([a-zA-Z]*-?[0-9]*).*$!\2!;s!^refs/heads/.*!!'
 }
 
 commit_with_issue_tag() {
