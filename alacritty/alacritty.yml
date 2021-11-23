@@ -53,4 +53,11 @@ font:
 
     size: 18.0
 
+shell:
+    program: /bin/zsh
+    args:
+        - -l
+        - -c
+        - tmux attach-session &>/dev/null || tmux
+
 colors: *solarized_dark
