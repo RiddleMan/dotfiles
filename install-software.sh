@@ -48,6 +48,7 @@ caskList="openjdk
     homebrew/cask-drivers/yubico-authenticator"
 
 appList="git \
+    bash \
     zsh \
     zsh-completions \
     zsh-syntax-highlighting \
