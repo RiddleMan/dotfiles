@@ -12,7 +12,7 @@ mas install 418073146
 
 #    homebrew/cask/google-chrome \
 #    homebrew/cask/slack \
-caskList="openjdk
+cask_list="openjdk
     homebrew/cask/docker \
     homebrew/cask/android-sdk \
     homebrew/cask/android-studio \
@@ -47,7 +47,7 @@ caskList="openjdk
     ykman \
     homebrew/cask-drivers/yubico-authenticator"
 
-appList="git \
+app_list="git \
     bash \
     zsh \
     zsh-completions \
@@ -75,7 +75,7 @@ appList="git \
 
 # Globbing and word splitting is expected in here
 # shellcheck disable=SC2086
-brew install $caskList $appList
+brew install $cask_list $app_list
 brew install yarn --ignore-dependencies
 rustup-init -y
 "$(brew --prefix)/opt/fzf/install"

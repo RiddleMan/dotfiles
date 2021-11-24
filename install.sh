@@ -36,8 +36,8 @@ source ./defaults.sh
 ln -sf $DOTFILES_DIR/alacritty ~/.config
 
 #automation
-chmod +x ./automation/spotify/getCurrentTrack.js
-chmod +x ./automation/spotify/toggleShuffle.js
+chmod +x ./automation/spotify/get_current_track.js
+chmod +x ./automation/spotify/toggle_shuffle.js
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || true
 vim +PluginInstall +qall

@@ -1,13 +1,13 @@
 #!/usr/bin/env zsh
 
 update_home_asistant_config() {
-  commitHash=$(git rev-parse HEAD)
+  commit_hash=$(git rev-parse HEAD)
   ssh -t "root@$HASSIO_IP" \
     ". /etc/profile.d/homeassistant.sh \
         && echo 'Updating a config' \
         && cd /config \
         && git fetch \
-        && git checkout ${1:-$commitHash} \
+        && git checkout ${1:-$commit_hash} \
         && echo 'Checking a config' \
         && ha core check --no-progress \
         && echo 'Restart a server' \
@@ -15,7 +15,6 @@ update_home_asistant_config() {
 }
 
 habackup() {
-  commitHash=$(git rev-parse HEAD)
   ssh -t "root@$HASSIO_IP" \
     ". /etc/profile.d/homeassistant.sh \
         && . \$HOME/.bash_profile \
