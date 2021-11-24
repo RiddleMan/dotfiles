@@ -1,7 +1,7 @@
 bitbucket_get_remote_name() {
-  remoteName=$(git remote get-url origin | sed 's/git@.*:\(.*\)\.git/\1/')
+  remote_name=$(git remote get-url origin | sed 's/git@.*:\(.*\)\.git/\1/')
 
-  echo "${remoteName}"
+  echo "${remote_name}"
 }
 
 bitbucket_get_remote_url() {
@@ -9,15 +9,15 @@ bitbucket_get_remote_url() {
 }
 
 pr() {
-  remoteName=$(bitbucket_get_remote_name)
+  remote_name=$(bitbucket_get_remote_name)
   branch=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
   if [[ -z "$1" ]]; then
-    local destinationBranch="$remoteName::master"
+    local destination_branch="$remote_name::master"
   else
-    local destinationBranch="$remoteName::$1"
+    local destination_branch="$remote_name::$1"
   fi
 
-  open "$(bitbucket_get_remote_url)/pull-requests/new?source=$branch&dest=$destinationBranch&t=1"
+  open "$(bitbucket_get_remote_url)/pull-requests/new?source=$branch&dest=$destination_branch&t=1"
 }
 
 bpipe() {
@@ -27,13 +27,13 @@ bpipe() {
 }
 
 task() {
-  taskId=$(get_task_id_from_branch)
-  open "https://synergiapro.atlassian.net/browse/$taskId"
+  task_id=$(get_task_id_from_branch)
+  open "https://synergiapro.atlassian.net/browse/$task_id"
 }
 
 wl() {
-  taskId=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
-  jira work-log add "$taskId"
+  task_id=$(git symbolic-ref HEAD | sed 's!refs\/heads\/feature\/!!')
+  jira work-log add "$task_id"
 }
 
 alias bbr='$DOTFILES_DIR/scripts/bb_go_to_repo.sh'
