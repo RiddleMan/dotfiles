@@ -24,7 +24,7 @@ unescapeString() {
 alias dgojs="open http://gojs.net/latest/api/index.html"
 
 # Spotify
-alias spotify-current='$DOTFILES_DIR/automation/spotify/getCurrentTrack.js 1>/dev/null 2>&1 | pbcopy'
+alias spotify-current='$DOTFILES_DIR/automation/spotify/get_current_track.js 1>/dev/null 2>&1 | pbcopy'
 
 # GPG
 alias gpgreset="pkill gpg-agent ; pkill ssh-agent ; pkill pinentry ; eval \$(gpg-agent --daemon --enable-ssh-support) ; gpg-connect-agent \"scd serialno\" \"learn --force\" /bye"
