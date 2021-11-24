@@ -26,6 +26,7 @@ source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 # Found here: https://github.com/zsh-users/zsh-syntax-highlighting/issues/295#issuecomment-214581607
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
+source "$DOTFILES_DIR/zsh/autocompletion.sh"
 source "$DOTFILES_DIR/zsh/servers.sh"
 source "$DOTFILES_DIR/zsh/aliases.sh"
 source "$DOTFILES_DIR/zsh/passwords.sh"
