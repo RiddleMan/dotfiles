@@ -5,21 +5,21 @@ get_task_id_from_branch() {
 }
 
 commit_with_issue_tag() {
-  taskId="$(get_task_id_from_branch)"
-  templatePath="$(git rev-parse --show-toplevel)/.git/.gitmessagetemplate"
+  task_id="$(get_task_id_from_branch)"
+  template_path="$(git rev-parse --show-toplevel)/.git/.gitmessagetemplate"
 
   # For github ids `#` character is required at the beginning
   task_id_prefix=""
-  if [[ "$taskId" =~ ^[0-9] ]]; then
+  if [[ "$task_id" =~ ^[0-9] ]]; then
     task_id_prefix="#"
   fi
 
   task_id_phrase=""
-  if [[ -n "$taskId" ]]; then
-    task_id_phrase="\n\nCloses: $task_id_prefix$taskId"
+  if [[ -n "$task_id" ]]; then
+    task_id_phrase="\n\nCloses: $task_id_prefix$task_id"
   fi
 
-  echo "feat:$task_id_phrase" >"$templatePath" && git commit -t "$templatePath" "$@"
+  echo "feat:$task_id_phrase" >"$template_path" && git commit -t "$template_path" "$@"
 }
 
 merge_and_close_branch() {
@@ -53,9 +53,9 @@ gprm() {
 gact() {
   for branch in $(git branch -a); do
     if [ "$branch" != "*" ]; then
-      hasAct=$(git log --abbrev-commit --date=relative -1 "$branch")
-      lastActivity=$(echo "$hasAct" | grep Date: | sed 's/Date: //')
-      echo "$branch last activity was\033[1;31m$lastActivity\033[0m"
+      has_act=$(git log --abbrev-commit --date=relative -1 "$branch")
+      last_activity=$(echo "$has_act" | grep Date: | sed 's/Date: //')
+      echo "$branch last activity was\033[1;31m$last_activity\033[0m"
       echo ""
     fi
   done
