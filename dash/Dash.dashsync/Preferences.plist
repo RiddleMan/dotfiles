@@ -9,7 +9,7 @@
 			<key>Cargo</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-01-31T16:58:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -27,7 +27,7 @@
 			<key>Chrome_Dev_Tools</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-02-03T16:58:17Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -45,7 +45,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-01-31T16:58:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -66,7 +66,7 @@
 			<key>HTTP_Header_Fields</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-01-31T16:58:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -82,7 +82,7 @@
 			<key>HTTP_Status_Codes</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-01-31T16:58:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -98,7 +98,7 @@
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-01-31T16:58:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -117,7 +117,7 @@
 			<key>Vim</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-09T06:10:23Z</date>
+				<date>2022-01-31T16:58:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -172,7 +172,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2021-06-16T08:48:50Z</date>
+				<date>2022-10-12T17:43:59Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -186,7 +186,7 @@
 			<key>apollographql/apollo-client</key>
 			<dict>
 				<key>date</key>
-				<date>2020-10-10T11:54:19Z</date>
+				<date>2022-07-24T11:35:28Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -197,10 +197,24 @@
 					<string>apollographql/apollo-client</string>
 				</dict>
 			</dict>
+			<key>date-fns/date-fns</key>
+			<dict>
+				<key>date</key>
+				<date>2022-08-04T19:38:11Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>date-fns/date-fns</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>date-fns/date-fns</string>
+				</dict>
+			</dict>
 			<key>react-hook-form/react-hook-form</key>
 			<dict>
 				<key>date</key>
-				<date>2021-11-21T06:46:48Z</date>
+				<date>2022-10-13T17:43:48Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -214,7 +228,7 @@
 			<key>reactjs/react-router</key>
 			<dict>
 				<key>date</key>
-				<date>2021-08-01T13:52:53Z</date>
+				<date>2022-01-25T18:05:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -228,7 +242,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2021-11-17T18:05:43Z</date>
+				<date>2022-06-29T16:44:52Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -242,7 +256,7 @@
 			<key>reduxjs/redux-toolkit</key>
 			<dict>
 				<key>date</key>
-				<date>2021-11-18T18:07:20Z</date>
+				<date>2022-10-12T17:44:51Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -687,7 +701,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2021-11-15T18:05:49Z</date>
+				<date>2022-10-12T17:43:53Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -786,7 +800,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2021-11-15T18:05:43Z</date>
+				<date>2022-09-09T14:12:24Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -907,15 +921,19 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2021-11-15T18:05:57Z</date>
+				<date>2022-09-28T14:07:54Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
-					<array/>
+					<array>
+						<string>terraform</string>
+						<string>tf</string>
+						<string>terra</string>
+					</array>
 					<key>authorLinkHref</key>
 					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Terraform#readme</string>
 					<key>authorLinkText</key>
-					<string>rolandjohann</string>
+					<string>Roberth Kulbin</string>
 					<key>name</key>
 					<string>Terraform</string>
 					<key>platform</key>
@@ -1024,6 +1042,8 @@
 			<string>apollo:</string>
 			<key>~/Library/Application Support/Dash/GitHub/atomnodekeytar/atom-node-keytar.docset</key>
 			<string>keytar:</string>
+			<key>~/Library/Application Support/Dash/GitHub/datefnsdatefns/date-fns-date-fns.docset</key>
+			<string>dfns:</string>
 			<key>~/Library/Application Support/Dash/GitHub/erikrasreduxform/erikras-redux-form.docset</key>
 			<string>rf:</string>
 			<key>~/Library/Application Support/Dash/GitHub/homeassistanthomeassistantio/home-assistant-home-assistant.io.docset</key>

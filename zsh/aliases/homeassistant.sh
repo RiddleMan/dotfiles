@@ -2,7 +2,7 @@
 
 update_home_asistant_config() {
   commit_hash=$(git rev-parse HEAD)
-  ssh -t "root@$HASSIO_IP" \
+  ssh -t "hassio@$HASSIO_IP" \
     ". /etc/profile.d/homeassistant.sh \
         && echo 'Updating a config' \
         && cd /config \
@@ -15,7 +15,7 @@ update_home_asistant_config() {
 }
 
 habackup() {
-  ssh -t "root@$HASSIO_IP" \
+  ssh -t "hassio@$HASSIO_IP" \
     ". /etc/profile.d/homeassistant.sh \
         && . \$HOME/.bash_profile \
         && /config/scripts/backup_to_nas.sh"
