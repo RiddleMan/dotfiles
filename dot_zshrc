@@ -10,7 +10,7 @@ export DEFAULT_USER
 set -o vi
 
 export DOTFILES_DIR="$HOME/Projects/dotfiles"
-source "$DOTFILES_DIR/zsh/paths.sh"
+source "$HOME/zsh/paths.sh"
 
 # Oh my ZSH
 export ZSH_THEME="frontcube"
@@ -26,13 +26,13 @@ source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 # Found here: https://github.com/zsh-users/zsh-syntax-highlighting/issues/295#issuecomment-214581607
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
-source "$DOTFILES_DIR/zsh/autocompletion.sh"
-source "$DOTFILES_DIR/zsh/servers.sh"
-source "$DOTFILES_DIR/zsh/aliases.sh"
-source "$DOTFILES_DIR/zsh/passwords.sh"
-source "$DOTFILES_DIR/zsh/misc.sh"
-source "$DOTFILES_DIR/zsh/binds.sh"
-source "$DOTFILES_DIR/zsh/sandbox.sh"
+source "$HOME/zsh/autocompletion.sh"
+source "$HOME/zsh/servers.sh"
+source "$HOME/zsh/aliases.sh"
+source "$HOME/zsh/passwords.sh"
+source "$HOME/zsh/misc.sh"
+source "$HOME/zsh/binds.sh"
+source "$HOME/zsh/sandbox.sh"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
