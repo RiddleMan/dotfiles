@@ -1,0 +1,32 @@
+[user]
+	name = Artur Ptaszek
+	email = artur.ptaszek@gmail.com
+	signingkey = 0x99528328380ED3EE
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = vim
+[push]
+	default = simple
+[merge]
+	tool = webstorm
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = webstorm
+	compactionHeuristic = true
+[credential]
+	helper = osxkeychain
+[diff "pandoc"]
+	textconv=pandoc --to=markdown
+	propmpt = false
+[mergetool "webstorm"]
+	cmd = /usr/local/bin/webstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	trustExitCode = false
+[difftool "webstorm"]
+	cmd = /usr/local/bin/webstorm diff "$LOCAL" "$REMOTE"
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
