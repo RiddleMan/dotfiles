@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+{{- if eq .hosttype "private" }}
+export HASSIO_IP={{ onepasswordRead "op://Personal/hassio - root/ip" | quote }}
+export NAS_IP={{ onepasswordRead "op://Personal/Arturs-NAS/ip" | quote }}
+{{- end }}
