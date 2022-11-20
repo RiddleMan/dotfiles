@@ -8,6 +8,8 @@
   editor = vim
 [push]
   default = simple
+[commit]
+  gpgsign = true
 [merge]
   tool = webstorm
 [mergetool]
