@@ -33,21 +33,21 @@ merge_and_close_branch() {
 }
 
 gbf() {
-  git fetch && git checkout -b "feature/$1" origin/master && git push --set-upstream origin "feature/$1"
+  git fetch && git checkout -b "feature/$1" origin/main && git push --set-upstream origin "feature/$1"
 }
 
 gph() {
   git push origin "$(current_branch)" "$@"
 }
 
-gprd() {
+gprm() {
   branch="$(current_branch)"
-  git diff "$(git merge-base "$branch" origin/develop)" HEAD
+  git diff "$(git merge-base "$branch" origin/main)" HEAD
 }
 
 gprm() {
   branch="$(current_branch)"
-  git diff "$(git merge-base "$branch" origin/master)" HEAD
+  git diff "$(git merge-base "$branch" origin/main)" HEAD
 }
 
 gact() {
@@ -64,7 +64,7 @@ gact() {
 alias gacp="ga && gc && gph"
 alias gpl="git pull"
 alias gm="git merge"
-alias gdpr="git diff \`git merge-base HEAD origin/develop\`"
+alias gdpr="git diff \`git merge-base HEAD origin/main\`"
 alias gc="commit_with_issue_tag"
 alias gs="git status"
 alias ga="git add -A"
