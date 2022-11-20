@@ -1,15 +1,19 @@
 [user]
   name = Artur Ptaszek
-  email = artur.ptaszek@gmail.com
+  email = {{ .email | quote }}
+{{- if eq .hosttype "private" }}
   signingkey = 0x99528328380ED3EE
+{{- end }}
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
   editor = vim
 [push]
   default = simple
+{{- if eq .hosttype "private" }}
 [commit]
   gpgsign = true
+{{- end }}
 [merge]
   tool = webstorm
 [mergetool]
