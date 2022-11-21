@@ -1,3 +1,6 @@
+#!/usr/bin/env zsh
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
 tap "ekvedaras/cask"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
@@ -34,6 +37,8 @@ brew "nghttp2"
 brew "nmap"
 brew "pre-commit"
 brew "rustup-init"
+brew "shellcheck"
+brew "shfmt"
 brew "tilt"
 brew "tmux"
 brew "tree"
@@ -74,4 +79,4 @@ cask "xbox360-controller-driver-unofficial"
 mas "Lungo", id: 1263070803
 mas "Snap", id: 418073146
 mas "Xcode", id: 497799835
-
+EOF

@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 # Load sub files
-for filename in $DOTFILES_DIR/zsh/aliases/{*.sh,*/aliases.sh}; do
+for filename in $HOME/zsh/aliases/{*.sh,*/aliases.sh}; do
   # Non-constant script couldn't be followed
   # shellcheck disable=SC1090
   source "$filename"
