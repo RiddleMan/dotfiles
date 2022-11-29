@@ -40,6 +40,7 @@ repos:
       rev: 2.6.1
       hooks:
           - id: editorconfig-checker
+            exclude: ^\.obsidian/
             alias: ec
 
 ci:
