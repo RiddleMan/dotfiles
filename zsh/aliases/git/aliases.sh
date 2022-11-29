@@ -75,7 +75,15 @@ alias gd="git diff --patience --color"
 alias gmc="merge_and_close_branch"
 alias gl="git log --oneline --all --graph --decorate"
 alias gco="git checkout"
+alias gf="git fetch --prune"
 
 function gi() {
   curl -sL "https://www.toptal.com/developers/gitignore/api/$*"
+}
+
+function git_cleanup() {
+  git gc --auto
+
+  # Delete all local branches
+  git for-each-ref --format '%(refname:short)' refs/heads | grep -v "master\|main" | xargs git branch -D
 }
