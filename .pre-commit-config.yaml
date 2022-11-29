@@ -5,6 +5,7 @@ repos:
       hooks:
           - id: check-added-large-files
           - id: pretty-format-json
+            exclude: ^\.obsidian/
             args: [--autofix]
 
     - repo: https://github.com/jumanjihouse/pre-commit-hooks
