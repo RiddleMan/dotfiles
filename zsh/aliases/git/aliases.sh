@@ -82,8 +82,9 @@ function gi() {
 }
 
 function git_cleanup() {
+  # Delete all local branches
+  git for-each-ref --format '%(refname:short)' refs/heads | grep -v "master\|main" | tr '\n' '\0' | xargs -0 git branch -D "{}"
+
   git gc --auto
 
-  # Delete all local branches
-  git for-each-ref --format '%(refname:short)' refs/heads | grep -v "master\|main" | xargs git branch -D
 }
