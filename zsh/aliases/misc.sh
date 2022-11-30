@@ -37,3 +37,17 @@ alias ls="ls -A"
 alias tf="terraform"
 alias tg="terragrunt"
 alias ws="webstorm"
+
+# Based on: https://gist.github.com/SheldonWangRJT/8d3f44a35c8d1386a396b9b49b43c385
+convert_to_gif() {
+  local in_file
+  local file_name
+  local file_name_without_ext
+  local out_path
+  in_file=$1
+  file_name=$(basename "$in_file")
+  file_name_without_ext="${file_name%.*}"
+  out_path="$(dirname "$in_file")/$file_name_without_ext.gif"
+
+  ffmpeg -i "$in_file" -pix_fmt rgb8 -r 10 "$out_path" && gifsicle -O3 "$out_path" -o "$out_path"
+}
