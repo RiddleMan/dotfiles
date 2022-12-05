@@ -26,7 +26,7 @@ repos:
           - id: yamlfmt
 
     - repo: https://github.com/zricethezav/gitleaks
-      rev: v8.15.1
+      rev: v8.15.2
       hooks:
           - id: gitleaks
 
@@ -37,7 +37,7 @@ repos:
             stages: [commit-msg]
 
     - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
-      rev: 2.6.1
+      rev: 2.6.2
       hooks:
           - id: editorconfig-checker
             exclude: ^\.obsidian/
