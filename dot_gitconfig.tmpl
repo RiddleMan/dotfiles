@@ -4,6 +4,8 @@
 {{- if eq .hosttype "private" }}
   signingkey = 0x99528328380ED3EE
 {{- end }}
+[init]
+  defaultBranch = main
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
