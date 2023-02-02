@@ -33,6 +33,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'machakann/vim-highlightedyank'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " JS
 Plugin 'pangloss/vim-javascript'
