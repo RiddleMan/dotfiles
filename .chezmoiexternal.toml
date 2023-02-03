@@ -27,3 +27,9 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
+[".local/share/nvim/site/pack/packer/start/packer.nvim"]
+  type = "git-repo"
+  url = "https://github.com/wbthomason/packer.nvim"
+  clone.args = ["--depth", "1"]
+  pull.args = ["--depth", "1"]
+  refreshPeriod = "168h"
