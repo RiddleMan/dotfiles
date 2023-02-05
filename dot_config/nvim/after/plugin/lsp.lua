@@ -14,6 +14,7 @@ lsp.ensure_installed({
   'jsonls',
   'marksman',
   'rust_analyzer',
+  'yamlls',
   'vimls'
 })
 
