@@ -7,19 +7,19 @@ return require('packer').startup(function(use)
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
     requires = {
-      {'neovim/nvim-lspconfig'},
-      {'williamboman/mason.nvim'},
-      {'williamboman/mason-lspconfig.nvim'},
+      'neovim/nvim-lspconfig',
+      'williamboman/mason.nvim',
+      'williamboman/mason-lspconfig.nvim',
 
-      {'hrsh7th/nvim-cmp'},
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'hrsh7th/cmp-buffer'},
-      {'hrsh7th/cmp-path'},
-      {'saadparwaiz1/cmp_luasnip'},
-      {'hrsh7th/cmp-nvim-lua'},
+      'hrsh7th/nvim-cmp',
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'hrsh7th/cmp-path',
+      'saadparwaiz1/cmp_luasnip',
+      'hrsh7th/cmp-nvim-lua',
 
-      {'L3MON4D3/LuaSnip'},
-      {'rafamadriz/friendly-snippets'},
+      'L3MON4D3/LuaSnip',
+      'rafamadriz/friendly-snippets',
     }
   }
 
@@ -36,17 +36,25 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     branch = '0.1.x',
     requires = {
-      {'nvim-lua/plenary.nvim'},
-      {'nvim-tree/nvim-web-devicons'},
+      'nvim-lua/plenary.nvim',
+      'nvim-tree/nvim-web-devicons',
     }
   }
 
-  use({
+  use {
     'rose-pine/neovim',
     as = 'rose-pine',
     config = function()
       require("rose-pine").setup()
       vim.cmd('colorscheme rose-pine')
     end
-  })
+  }
+
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons',
+    },
+    tag = 'nightly'
+  }
 end)
