@@ -7,7 +7,6 @@ return require('packer').startup(function(use)
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
     requires = {
-
       {'neovim/nvim-lspconfig'},
       {'williamboman/mason.nvim'},
       {'williamboman/mason-lspconfig.nvim'},
@@ -22,5 +21,10 @@ return require('packer').startup(function(use)
       {'L3MON4D3/LuaSnip'},
       {'rafamadriz/friendly-snippets'},
     }
+  }
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
   }
 end)
