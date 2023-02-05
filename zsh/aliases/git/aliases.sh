@@ -41,12 +41,16 @@ gph() {
 }
 
 gprm() {
+  # shellcheck disable=SC2317
   branch="$(current_branch)"
+  # shellcheck disable=SC2317
   git diff "$(git merge-base "$branch" origin/main)" HEAD
 }
 
 gprm() {
+  # shellcheck disable=SC2317
   branch="$(current_branch)"
+  # shellcheck disable=SC2317
   git diff "$(git merge-base "$branch" origin/main)" HEAD
 }
 
@@ -55,7 +59,7 @@ gact() {
     if [ "$branch" != "*" ]; then
       has_act=$(git log --abbrev-commit --date=relative -1 "$branch")
       last_activity=$(echo "$has_act" | grep Date: | sed 's/Date: //')
-      echo "$branch last activity was\033[1;31m$last_activity\033[0m"
+      printf "%s last activity was\033[1;31m%s\033[0m" "$branch" "$last_activity"
       echo ""
     fi
   done

@@ -42,7 +42,6 @@ repos:
           - id: editorconfig-checker
             exclude: ^\.obsidian/
             alias: ec
-
 ci:
     # They don't run int pre-commit.ci, but once I move to GitHub Actions
     # https://github.com/RiddleMan/dotfiles/issues/12

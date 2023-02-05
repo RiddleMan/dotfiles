@@ -1,5 +1,6 @@
+---
 import:
-  - ~/.local/share/alacritty/themes/rose-pine/dist/rose-pine.yml
+    - ~/.local/share/alacritty/themes/rose-pine/dist/rose-pine.yml
 window:
     startup_mode: SimpleFullscreen
 
