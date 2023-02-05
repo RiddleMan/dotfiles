@@ -33,3 +33,9 @@
   clone.args = ["--depth", "1"]
   pull.args = ["--depth", "1"]
   refreshPeriod = "168h"
+[".local/share/alacritty/themes/rose-pine"]
+  type = "archive"
+  url = "https://github.com/rose-pine/alacritty/archive/refs/heads/main.zip"
+  exact = true
+  stripComponents = 1
+  refreshPeriod = "168h"
