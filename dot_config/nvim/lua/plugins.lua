@@ -27,4 +27,6 @@ return require('packer').startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+
+  use 'christoomey/vim-tmux-navigator'
 end)
