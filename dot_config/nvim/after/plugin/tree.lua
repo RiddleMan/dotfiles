@@ -19,13 +19,23 @@ vim.api.nvim_create_autocmd(
   }
 )
 
+local function open_current_file_in_tree()
+  local curr_buff = vim.api.nvim_buf_get_name(0)
+
+  api.tree.focus()
+  api.tree.find_file(curr_buff)
+end
+
 vim.keymap.set(
   'n',
   '<leader>tc',
-  function()
-    local curr_buff = vim.api.nvim_buf_get_name(0)
+  open_current_file_in_tree,
+  {}
+)
 
-    api.tree.find_file(curr_buff)
-  end,
+vim.keymap.set(
+  'n',
+  '<c-\\>',
+  api.tree.toggle,
   {}
 )
