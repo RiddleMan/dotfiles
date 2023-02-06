@@ -57,4 +57,6 @@ return require('packer').startup(function(use)
     },
     tag = 'nightly'
   }
+
+  use 'tpope/vim-fugitive'
 end)
