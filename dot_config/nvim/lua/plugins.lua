@@ -61,4 +61,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
 
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
+  use {'jose-elias-alvarez/null-ls.nvim'}
 end)
