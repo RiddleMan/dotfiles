@@ -47,11 +47,7 @@ return require('packer')
 
       use {
           'rose-pine/neovim',
-          as = 'rose-pine',
-          config = function()
-            require("rose-pine").setup()
-            vim.cmd('colorscheme rose-pine')
-          end
+          as = 'rose-pine'
       }
 
       use {
@@ -76,4 +72,6 @@ return require('packer')
           'nvim-lualine/lualine.nvim',
           requires = { 'kyazdani42/nvim-web-devicons', opt = true }
       }
+
+      use { 'numToStr/Comment.nvim' }
     end)
