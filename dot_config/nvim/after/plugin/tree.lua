@@ -1,22 +1,29 @@
-require"nvim-tree".setup()
-local api = require"nvim-tree.api"
+require "nvim-tree".setup()
+local api = require "nvim-tree.api"
 
 local function open_nvim_tree(data)
-  local directory = vim.fn.isdirectory(data.file) == 1
+  local is_real_file = vim.fn.filereadable(data.file) == 1
+  local is_no_name = data.file == "" and vim.bo[data.buf].buftype == ""
+  local is_gitcommit = vim.bo[data.buf].filetype == "gitcommit"
+  local is_directory = vim.fn.isdirectory(data.file) == 1
 
-  if not directory then
+  if (not is_real_file and not is_no_name and not is_directory) or is_gitcommit then
     return
   end
 
-  vim.cmd.cd(data.file)
-  api.tree.open()
+  if is_directory then
+    vim.cmd.cd(data.file)
+    api.tree.open()
+  else
+    api.tree.toggle({ focus = false, find_file = true, })
+  end
 end
 
 vim.api.nvim_create_autocmd(
-  { "VimEnter" },
-  {
-    callback = open_nvim_tree
-  }
+    { "VimEnter" },
+    {
+        callback = open_nvim_tree
+    }
 )
 
 local function open_current_file_in_tree()
@@ -27,15 +34,15 @@ local function open_current_file_in_tree()
 end
 
 vim.keymap.set(
-  'n',
-  '<leader>tc',
-  open_current_file_in_tree,
-  {}
+    'n',
+    '<leader>tc',
+    open_current_file_in_tree,
+    {}
 )
 
 vim.keymap.set(
-  'n',
-  '<c-\\>',
-  api.tree.toggle,
-  {}
+    'n',
+    '<c-\\>',
+    api.tree.toggle,
+    {}
 )
