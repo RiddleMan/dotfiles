@@ -1,4 +1,4 @@
-require'nvim-treesitter.configs'.setup {
+require("nvim-treesitter.configs").setup({
   ensure_installed = {
     "bash",
     "cmake",
@@ -30,7 +30,7 @@ require'nvim-treesitter.configs'.setup {
     "toml",
     "typescript",
     "vim",
-    "yaml"
+    "yaml",
   },
 
   sync_install = false,
@@ -42,4 +42,4 @@ require'nvim-treesitter.configs'.setup {
 
     additional_vim_regex_highlighting = false,
   },
-}
+})
