@@ -74,4 +74,6 @@ return require('packer')
       }
 
       use { 'numToStr/Comment.nvim' }
+
+      use { 'tpope/vim-speeddating' }
     end)
