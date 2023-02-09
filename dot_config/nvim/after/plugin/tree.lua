@@ -1,4 +1,10 @@
-require "nvim-tree".setup()
+require "nvim-tree".setup {
+    disable_netrw = true,
+
+    filesystem_watchers = {
+        ignore_dirs = { "node_modules" }
+    }
+}
 local api = require "nvim-tree.api"
 
 local function open_nvim_tree(data)
