@@ -20,11 +20,6 @@ repos:
           - id: yamllint
             args: [--format, parsable, --strict]
 
-    - repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-      rev: 0.2.2
-      hooks:
-          - id: yamlfmt
-
     - repo: https://github.com/zricethezav/gitleaks
       rev: v8.15.3
       hooks:
@@ -47,7 +42,6 @@ repos:
       rev: v0.16.0
       hooks:
           - id: stylua
-
 ci:
     # They don't run int pre-commit.ci, but once I move to GitHub Actions
     # https://github.com/RiddleMan/dotfiles/issues/12

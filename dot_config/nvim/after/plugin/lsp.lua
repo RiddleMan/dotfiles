@@ -46,6 +46,7 @@ lsp.ensure_installed({
 null_ls.setup({
   on_attach = null_opts.on_attach,
   sources = {
+    null_ls.builtins.diagnostics.yamllint,
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.prettier,
     null_ls.builtins.formatting.rustfmt.with({
