@@ -63,7 +63,8 @@ local null_opts = lsp.build_options("null-ls", {
   end,
 })
 
-require("null-ls").setup({
+local null_ls = require("null-ls")
+null_ls.setup({
   on_attach = null_opts.on_attach,
   sources = {
     null_ls.builtins.formatting.stylua,

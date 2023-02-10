@@ -3,3 +3,4 @@ zsh/passwords.sh
 zsh/servers.sh
 dot_config/nvim/plugin/packer_compiled.lua
 karabiner/automatic_backups
+.luarc.json
