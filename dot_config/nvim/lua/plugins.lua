@@ -75,4 +75,9 @@ return require("packer").startup(function(use)
   use({ "numToStr/Comment.nvim" })
 
   use({ "tpope/vim-speeddating" })
+
+  use({
+    "kylechui/nvim-surround",
+    tag = "*",
+  })
 end)
