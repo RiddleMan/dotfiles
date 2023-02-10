@@ -1,26 +1,4 @@
 local lsp = require("lsp-zero")
-local null_ls = require("null-ls")
-
-local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-local null_opts = lsp.build_options("null-ls", {
-  on_attach = function(client, bufnr)
-    if client.supports_method("textDocument/formatting") then
-      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        group = augroup,
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format({
-            bufnr = bufnr,
-            filter = function(c)
-              return c.name == "null-ls"
-            end,
-          })
-        end,
-      })
-    end
-  end,
-})
 
 lsp.preset("recommended")
 
@@ -43,18 +21,6 @@ lsp.ensure_installed({
   "vimls",
 })
 
-null_ls.setup({
-  on_attach = null_opts.on_attach,
-  sources = {
-    null_ls.builtins.diagnostics.yamllint,
-    null_ls.builtins.formatting.stylua,
-    null_ls.builtins.formatting.prettier,
-    null_ls.builtins.formatting.rustfmt.with({
-      extra_args = { "--edition=2021" },
-    }),
-  },
-})
-
 lsp.configure("sumneko_lua", {
   settings = {
     Lua = {
@@ -75,3 +41,35 @@ lsp.configure("sumneko_lua", {
 })
 
 lsp.setup()
+
+local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
+local null_opts = lsp.build_options("null-ls", {
+  on_attach = function(client, bufnr)
+    if client.supports_method("textDocument/formatting") then
+      vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        group = augroup,
+        buffer = bufnr,
+        callback = function()
+          vim.lsp.buf.format({
+            bufnr = bufnr,
+            filter = function(c)
+              return c.name == "null-ls"
+            end,
+          })
+        end,
+      })
+    end
+  end,
+})
+
+require("null-ls").setup({
+  on_attach = null_opts.on_attach,
+  sources = {
+    null_ls.builtins.formatting.stylua,
+    null_ls.builtins.formatting.prettier,
+    null_ls.builtins.formatting.rustfmt.with({
+      extra_args = { "--edition=2021" },
+    }),
+  },
+})
