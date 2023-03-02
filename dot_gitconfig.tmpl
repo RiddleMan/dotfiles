@@ -19,11 +19,11 @@
   gpgsign = true
 {{- end }}
 [merge]
-  tool = webstorm
+  tool = nvimdiff
 [mergetool]
   keepBackup = false
 [diff]
-  tool = webstorm
+  tool = nvimdiff
   compactionHeuristic = true
 [credential]
   helper = osxkeychain
@@ -35,6 +35,10 @@
   trustExitCode = false
 [difftool "webstorm"]
   cmd = /usr/local/bin/webstorm diff "$LOCAL" "$REMOTE"
+[mergetool "nvimdiff"]
+  cmd = "nvim  -d $MERGED $LOCAL $BASE $REMOTE -c 'wincmd J | wincmd ='"
+[difftool "nvimdiff"]
+  cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -c \"wincmd w\" -c \"wincmd L\"
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
