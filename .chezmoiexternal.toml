@@ -34,3 +34,7 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
+[".cargo/bin/cargo-binstall-raw"]
+  type = "archive"
+  url = "https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-universal-apple-darwin.zip"
+  refreshPeriod = 0
