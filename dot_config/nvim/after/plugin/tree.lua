@@ -11,10 +11,13 @@ local function open_nvim_tree(data)
   local is_real_file = vim.fn.filereadable(data.file) == 1
   local is_no_name = data.file == "" and vim.bo[data.buf].buftype == ""
   local is_gitcommit = vim.bo[data.buf].filetype == "gitcommit"
+  local is_gitrebase = vim.bo[data.buf].filetype == "gitrebase"
   local is_directory = vim.fn.isdirectory(data.file) == 1
 
   if
-    (not is_real_file and not is_no_name and not is_directory) or is_gitcommit
+    (not is_real_file and not is_no_name and not is_directory)
+    or is_gitcommit
+    or is_gitrebase
   then
     return
   end
