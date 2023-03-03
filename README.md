@@ -20,3 +20,7 @@ Install chezmoi first by doing:
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply RiddleMan
 ```
 
+## Documentation
+
+* [Neovim](./docs/neovim.md)
+
