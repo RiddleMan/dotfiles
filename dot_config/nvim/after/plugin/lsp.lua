@@ -40,6 +40,14 @@ lsp.configure("sumneko_lua", {
   },
 })
 
+lsp.on_attach(function(_, bufnr)
+  local opts = { buffer = bufnr }
+  local bind = vim.keymap.set
+
+  bind("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
+  bind("n", "<leader>K", "<cmd>lua vim.lsp.buf.signature_help()<cr>", opts)
+end)
+
 lsp.setup()
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
