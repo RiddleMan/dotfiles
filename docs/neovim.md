@@ -28,4 +28,34 @@
 
 Source: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/doc/md/lsp.md#default-keybindings
 
+## Neotest
 
+[Defintions](../dot_config/nvim/after/plugin/neotest.lua)
+
+* `<leader>t\`: show test summary window
+
+* `<leader>tr`: runs the closest test
+
+* `<leader>tra`: runs all tests of the current file
+
+* `<leader>to`: get output of current test run
+
+### Summary
+
+* `r`: run test under the cursor
+
+* `d`: debug
+
+* `i`: jump to test under the cursor
+
+* `K`: next failed
+
+* `J`: prev failed
+
+* `m`: mark
+
+* `R`: run marked
+
+* `D`: debug marked
+
+More: `:help neovim.setup()` - summary.mappings
