@@ -89,4 +89,16 @@ return require("packer").startup(function(use)
       vim.fn["fzf#install"]()
     end,
   })
+
+  use({
+    "nvim-neotest/neotest",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+      "antoinemadec/FixCursorHold.nvim",
+      "marilari88/neotest-vitest",
+      "haydenmeade/neotest-jest",
+      "rouge8/neotest-rust",
+    },
+  })
 end)
