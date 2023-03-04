@@ -3,6 +3,8 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.nvim_workspace()
+
+-- List of language servers: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 lsp.ensure_installed({
   "html",
   "cssls",
@@ -16,7 +18,7 @@ lsp.ensure_installed({
   "jsonls",
   "marksman",
   "rust_analyzer",
-  "sumneko_lua",
+  "lua_ls",
   "yamlls",
   "vimls",
 })
