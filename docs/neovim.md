@@ -1,5 +1,21 @@
 # Neovim
 
+## Spellcheck
+
+* `]s`: next error
+
+* `[s`: previous error
+
+* `z=`: fix error
+
+* `1z=`: fix error by choosing first option
+
+* `zg`: add to dictionary
+
+* `zw`: mark as bad word
+
+See more: `:help spell`
+
 ## LSP
 
 * `K`: Displays hover information about the symbol under the cursor in a floating window. See [:help vim.lsp.buf.hover()](https://neovim.io/doc/user/lsp.html#vim.lsp.buf.hover()).
@@ -30,7 +46,7 @@ Source: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/doc/md/lsp.md#def
 
 ## Neotest
 
-[Defintions](../dot_config/nvim/after/plugin/neotest.lua)
+[Definitions](../dot_config/nvim/after/plugin/neotest.lua)
 
 * `<leader>t\`: show test summary window
 
