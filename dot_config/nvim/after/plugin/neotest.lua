@@ -1,7 +1,8 @@
-require("neotest").setup({
+local neotest = require("neotest")
+neotest.setup({
   adapters = {
-    require("neotest-jest"),
     require("neotest-vitest"),
+    require("neotest-jest"),
     require("neotest-rust"),
   },
 })
