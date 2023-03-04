@@ -46,8 +46,8 @@ lsp.on_attach(function(_, bufnr)
   local opts = { buffer = bufnr }
   local bind = vim.keymap.set
 
-  bind("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
-  bind("n", "<leader>K", "<cmd>lua vim.lsp.buf.signature_help()<cr>", opts)
+  bind("n", "<leader>r", vim.lsp.buf.rename, opts)
+  bind("n", "<leader>K", vim.lsp.buf.signature_help, opts)
 end)
 
 lsp.setup()
