@@ -2,4 +2,4 @@
 
 set -e
 
-nvim +PackerSync +qall
+nvim +PackerSync
