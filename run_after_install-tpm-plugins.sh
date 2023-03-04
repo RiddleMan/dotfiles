@@ -2,4 +2,4 @@
 
 set -e
 
-~/.tmux/plugins/tpm/bin/install_plugins
+~/.tmux/plugins/tpm/bin/update_plugings all
