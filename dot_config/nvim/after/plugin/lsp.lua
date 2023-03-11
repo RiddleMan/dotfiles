@@ -50,6 +50,15 @@ lsp.on_attach(function(_, bufnr)
   bind("n", "<leader>K", vim.lsp.buf.signature_help, opts)
 end)
 
+local cmp = require("cmp")
+
+lsp.setup_nvim_cmp({
+  mapping = lsp.defaults.cmp_mappings({
+    ["<C-Space>"] = cmp.mapping.complete(),
+    ["<C-e>"] = cmp.mapping.abort(),
+  }),
+})
+
 lsp.setup()
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
