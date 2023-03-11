@@ -56,6 +56,18 @@ Source: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/doc/md/lsp.md#def
 
 * `<leader>to`: get output of current test run
 
+## Telescope
+
+[Definitions](../dot_config/nvim/after/plugin/telescope.lua)
+
+* `<leader>pf` - pick project files `:h telescope.builtin.find_files()`
+
+* `<leader>paf` - pick all project files (including hidden) `:h telescope.builtin.find_files({ hidden = true })`
+
+* `<leader>fg` - grep project files `:h telescope.builtin.live_grep()`
+
+* `<leader>fag` - grep all project files (including hidden) `:h telescope.builtin.live_grep({ additional_args = function() { '--hidden' } end ))`
+
 ### Summary
 
 * `r`: run test under the cursor
