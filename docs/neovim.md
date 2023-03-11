@@ -1,5 +1,9 @@
 # Neovim
 
+## Search and replace
+
+1. [Search across multiple lines](https://vim.fandom.com/wiki/Search_across_multiple_lines)
+
 ## Spellcheck
 
 * `]s`: next error
