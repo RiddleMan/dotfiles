@@ -23,4 +23,5 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply RiddleMan
 ## Documentation
 
 * [Neovim](./docs/neovim.md)
+* [Music](./docs/music.md)
 

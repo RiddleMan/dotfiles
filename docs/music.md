@@ -18,5 +18,5 @@ pip3 install cython streamrip --upgrade
 
 1. Pick a playlist you want to rip
 2. Get an URL
-3. `rip url https://url.to.playlist/`
-4. Go to `~/StreamripDownloads/Playlist\ Name/
+3. Run in console `rip url https://url.to.playlist/`
+4. Go to `~/StreamripDownloads/Playlist\ Name/`
