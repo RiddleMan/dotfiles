@@ -56,7 +56,11 @@ Source: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/doc/md/lsp.md#def
 
 * `<leader>tr`: runs the closest test
 
-* `<leader>tra`: runs all tests of the current file
+* `<leader>trr`: re-run last test
+
+* `<leader>ts`: stop current test run
+
+* `<leader>tar`: runs all tests of the current file
 
 * `<leader>to`: get output of current test run
 
