@@ -51,11 +51,15 @@ lsp.on_attach(function(_, bufnr)
 end)
 
 local cmp = require("cmp")
+local cmp_action = require("lsp-zero").cmp_action()
 
 lsp.setup_nvim_cmp({
   mapping = lsp.defaults.cmp_mappings({
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<C-e>"] = cmp.mapping.abort(),
+
+    ["<Tab>"] = cmp_action.luasnip_jump_forward(),
+    ["<S-Tab>"] = cmp_action.luasnip_jump_backward(),
   }),
 })
 
