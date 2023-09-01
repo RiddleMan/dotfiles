@@ -102,4 +102,6 @@ return require("packer").startup(function(use)
       "rouge8/neotest-rust",
     },
   })
+
+  use({ "github/copilot.vim" })
 end)
