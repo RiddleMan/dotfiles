@@ -58,7 +58,6 @@ require("lazy").setup({
 
   {
     "akinsho/bufferline.nvim",
-    tag = "v3.*",
     dependencies = "nvim-tree/nvim-web-devicons",
   },
 
@@ -75,7 +74,8 @@ require("lazy").setup({
 
   {
     "kylechui/nvim-surround",
-    tag = "*",
+    version = "*",
+    event = "VeryLazy",
   },
 
   { "kevinhwang91/nvim-bqf", ft = "qf" },
