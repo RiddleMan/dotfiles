@@ -83,9 +83,9 @@
     "branch": "main",
     "commit": "e29002cbee4854a9c8c4b148d8a52fae3176070f"
   },
-  "null-ls.nvim": {
+  "none-ls.nvim": {
     "branch": "main",
-    "commit": "0010ea927ab7c09ef0ce9bf28c2b573fc302f5a7"
+    "commit": "dc9b7e28f5573a1a2225ffb33893d23d3e052ed6"
   },
   "nvim-bqf": {
     "branch": "main",

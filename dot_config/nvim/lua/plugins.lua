@@ -61,7 +61,7 @@ require("lazy").setup({
     dependencies = "nvim-tree/nvim-web-devicons",
   },
 
-  { "jose-elias-alvarez/null-ls.nvim" },
+  { "nvimtools/none-ls.nvim" },
 
   {
     "nvim-lualine/lualine.nvim",
