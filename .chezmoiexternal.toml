@@ -22,11 +22,12 @@
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
-[".local/share/nvim/site/pack/packer/start/packer.nvim"]
+[".local/share/nvim/site/pack/lazy/start/lazy.nvim"]
   type = "git-repo"
-  url = "https://github.com/wbthomason/packer.nvim"
-  clone.args = ["--depth", "1"]
-  pull.args = ["--depth", "1"]
+  url = "https://github.com/folke/lazy.nvim.git"
+  ref = "stable"
+  clone.args = ["--depth", "1", "--branch", "stable"]
+  pull.args = ["--depth", "1", "origin", "stable"]
   refreshPeriod = "168h"
 [".local/share/alacritty/themes/rose-pine"]
   type = "archive"
