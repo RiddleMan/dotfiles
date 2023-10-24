@@ -1,12 +1,8 @@
-vim.cmd([[packadd packer.nvim]])
-
-return require("packer").startup(function(use)
-  use("wbthomason/packer.nvim")
-
-  use({
+require("lazy").setup({
+  {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v1.x",
-    requires = {
+    dependencies = {
       "neovim/nvim-lspconfig",
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
@@ -21,79 +17,79 @@ return require("packer").startup(function(use)
       "L3MON4D3/LuaSnip",
       "rafamadriz/friendly-snippets",
     },
-  })
+  },
 
-  use({
+  {
     "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  })
+    build = ":TSUpdate",
+  },
 
-  use("christoomey/vim-tmux-navigator")
+  "christoomey/vim-tmux-navigator",
 
-  use({
+  {
     "nvim-telescope/telescope-fzf-native.nvim",
-    run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
-  })
+    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+  },
 
-  use({
+  {
     "nvim-telescope/telescope.nvim",
     branch = "0.1.x",
-    requires = {
+    dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
     },
-  })
+  },
 
-  use({
+  {
     "rose-pine/neovim",
     as = "rose-pine",
-  })
+  },
 
-  use({
+  {
     "nvim-tree/nvim-tree.lua",
-    requires = {
+    dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
     tag = "nightly",
-  })
+  },
 
-  use("tpope/vim-fugitive")
-  use("tpope/vim-unimpaired")
+  "tpope/vim-fugitive",
+  "tpope/vim-unimpaired",
 
-  use({
+  {
     "akinsho/bufferline.nvim",
     tag = "v3.*",
-    requires = "nvim-tree/nvim-web-devicons",
-  })
+    dependencies = "nvim-tree/nvim-web-devicons",
+  },
 
-  use({ "jose-elias-alvarez/null-ls.nvim" })
+  { "jose-elias-alvarez/null-ls.nvim" },
 
-  use({
+  {
     "nvim-lualine/lualine.nvim",
-    requires = { "kyazdani42/nvim-web-devicons", opt = true },
-  })
+    dependencies = { "kyazdani42/nvim-web-devicons", opt = true },
+  },
 
-  use({ "numToStr/Comment.nvim" })
+  { "numToStr/Comment.nvim" },
 
-  use({ "tpope/vim-speeddating" })
+  { "tpope/vim-speeddating" },
 
-  use({
+  {
     "kylechui/nvim-surround",
     tag = "*",
-  })
+  },
 
-  use({ "kevinhwang91/nvim-bqf", ft = "qf" })
+  { "kevinhwang91/nvim-bqf", ft = "qf" },
 
-  use({
+  {
     "junegunn/fzf",
-    run = function()
+    build = function()
       vim.fn["fzf#install"]()
     end,
-  })
+  },
 
-  use({
+  {
     "nvim-neotest/neotest",
-    requires = {
+    dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
@@ -101,7 +97,7 @@ return require("packer").startup(function(use)
       "haydenmeade/neotest-jest",
       "rouge8/neotest-rust",
     },
-  })
+  },
 
-  use({ "github/copilot.vim" })
-end)
+  { "github/copilot.vim" },
+})
