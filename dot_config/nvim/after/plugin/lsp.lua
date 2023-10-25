@@ -91,7 +91,7 @@ cmp.setup({
   mapping = cmp.mapping.preset.insert({
     ["<C-Space>"] = cmp.mapping.complete(),
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
-    ["<Esc>"] = cmp.mapping.abort(),
+    ["<C-e>"] = cmp.mapping.abort(),
 
     ["<Tab>"] = cmp_action.luasnip_jump_forward(),
     ["<S-Tab>"] = cmp_action.luasnip_jump_backward(),
