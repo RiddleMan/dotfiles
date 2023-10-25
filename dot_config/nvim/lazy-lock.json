@@ -35,9 +35,13 @@
     "branch": "master",
     "commit": "05a9ab28b53f71d1aece421ef32fee2cb857a843"
   },
-  "copilot.vim": {
-    "branch": "release",
-    "commit": "c1d9ea495caa608c6652c952ff07ff2fa1afbe0d"
+  "copilot-cmp": {
+    "branch": "master",
+    "commit": "72fbaa03695779f8349be3ac54fa8bd77eed3ee3"
+  },
+  "copilot.lua": {
+    "branch": "master",
+    "commit": "688762a3999eeee54b78f447719854f52672ec02"
   },
   "friendly-snippets": {
     "branch": "main",
@@ -109,7 +113,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "4199be485cd85662d8ff1dc8c4cc78d819fad6cd"
+    "commit": "44762abc90725e279f3b9cfbe4cafb41ea72f09b"
   },
   "nvim-web-devicons": {
     "branch": "master",

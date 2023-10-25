@@ -73,7 +73,13 @@ vim.diagnostic.config({
 local cmp = require("cmp")
 require("luasnip.loaders.from_vscode").lazy_load()
 local cmp_action = require("lsp-zero").cmp_action()
-local cmp_format = require("lsp-zero").cmp_format()
+local cmp_format = require("lsp-zero").cmp_format({
+  format = {
+    mode = "symbol",
+    max_width = 50,
+    symbol_map = { Copilot = "" },
+  },
+})
 
 cmp.setup({
   preselect = "item",
@@ -81,6 +87,7 @@ cmp.setup({
     { name = "path" },
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
+    { name = "copilot", group_index = 2 },
     { name = "buffer", keyword_length = 3 },
     { name = "luasnip", keyword_length = 2 },
   },
