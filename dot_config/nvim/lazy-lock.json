@@ -48,8 +48,8 @@
     "commit": "b1a0ab8086f061640948299b9ed90a6b0c61c143"
   },
   "lsp-zero.nvim": {
-    "branch": "v1.x",
-    "commit": "c51a9104de7fddff2351361d2dbcbd8d08600ef4"
+    "branch": "v3.x",
+    "commit": "c36c34c289e42f924760a6ea092329582d5f81b2"
   },
   "lualine.nvim": {
     "branch": "master",

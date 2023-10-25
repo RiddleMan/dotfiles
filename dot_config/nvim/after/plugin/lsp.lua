@@ -1,72 +1,105 @@
-local lsp = require("lsp-zero")
+local lsp_zero = require("lsp-zero")
 
-lsp.preset("recommended")
-
-lsp.nvim_workspace()
-
--- List of language servers: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-lsp.ensure_installed({
-  "html",
-  "cssls",
-  "tsserver",
-  "ansiblels",
-  "bashls",
-  "dockerls",
-  "eslint",
-  "graphql",
-  "ltex",
-  "jsonls",
-  "marksman",
-  "rust_analyzer",
-  "lua_ls",
-  "yamlls",
-  "vimls",
-})
-
-lsp.configure("sumneko_lua", {
-  settings = {
-    Lua = {
-      runtime = {
-        version = "LuaJIT",
-      },
-      diagnostics = {
-        globals = { "vim" },
-      },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
-})
-
-lsp.on_attach(function(_, bufnr)
+lsp_zero.on_attach(function(_, bufnr)
   local opts = { buffer = bufnr }
   local bind = vim.keymap.set
 
+  lsp_zero.default_keymaps({ buffer = bufnr })
   bind("n", "<leader>r", vim.lsp.buf.rename, opts)
   bind("n", "<leader>K", vim.lsp.buf.signature_help, opts)
 end)
 
-local cmp = require("cmp")
-local cmp_action = require("lsp-zero").cmp_action()
+require("mason").setup({})
+require("mason-lspconfig").setup({
+  -- List of language servers: https://github.com/neovim/nvim-lsp_zero.onfig/blob/master/doc/server_configurations.md
+  ensure_installed = {
+    "html",
+    "cssls",
+    "tsserver",
+    "ansiblels",
+    "bashls",
+    "dockerls",
+    "eslint",
+    "graphql",
+    "ltex",
+    "jsonls",
+    "marksman",
+    "rust_analyzer",
+    "lua_ls",
+    "yamlls",
+    "vimls",
+  },
+  handlers = {
+    lsp_zero.default_setup,
+    lua_ls = function()
+      local lua_opts = lsp_zero.nvim_lua_ls({
+        runtime = {
+          version = "LuaJIT",
+        },
+        diagnostics = {
+          globals = { "vim" },
+        },
+        workspace = {
+          library = vim.api.nvim_get_runtime_file("", true),
+        },
+        telemetry = {
+          enable = false,
+        },
+      })
+      require("lspconfig").lua_ls.setup(lua_opts)
+    end,
+  },
+})
 
-lsp.setup_nvim_cmp({
-  mapping = lsp.defaults.cmp_mappings({
+lsp_zero.set_sign_icons({
+  error = "✘",
+  warn = "▲",
+  hint = "⚑",
+  info = "",
+})
+
+vim.diagnostic.config({
+  virtual_text = false,
+  severity_sort = true,
+  float = {
+    style = "minimal",
+    border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
+  },
+})
+
+local cmp = require("cmp")
+require("luasnip.loaders.from_vscode").lazy_load()
+local cmp_action = require("lsp-zero").cmp_action()
+local cmp_format = require("lsp-zero").cmp_format()
+
+cmp.setup({
+  preselect = "item",
+  sources = {
+    { name = "path" },
+    { name = "nvim_lsp" },
+    { name = "nvim_lua" },
+    { name = "buffer", keyword_length = 3 },
+    { name = "luasnip", keyword_length = 2 },
+  },
+  window = {
+    documentation = cmp.config.window.bordered(),
+  },
+  formatting = cmp_format,
+  mapping = cmp.mapping.preset.insert({
     ["<C-Space>"] = cmp.mapping.complete(),
-    ["<C-e>"] = cmp.mapping.abort(),
+    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+    ["<Esc>"] = cmp.mapping.abort(),
 
     ["<Tab>"] = cmp_action.luasnip_jump_forward(),
     ["<S-Tab>"] = cmp_action.luasnip_jump_backward(),
   }),
 })
 
-lsp.setup()
-
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-local null_opts = lsp.build_options("null-ls", {
+local null_opts = lsp_zero.build_options("null-ls", {
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
