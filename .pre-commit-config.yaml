@@ -15,7 +15,7 @@ repos:
           - id: shfmt
 
     - repo: https://github.com/adrienverge/yamllint.git
-      rev: v1.32.0
+      rev: v1.33.0
       hooks:
           - id: yamllint
             args: [--format, parsable, --strict]
@@ -39,7 +39,7 @@ repos:
             alias: ec
 
     - repo: https://github.com/JohnnyMorganz/StyLua
-      rev: v0.18.2
+      rev: v0.19.0
       hooks:
           - id: stylua
 ci:
