@@ -39,7 +39,7 @@ repos:
             alias: ec
 
     - repo: https://github.com/JohnnyMorganz/StyLua
-      rev: v0.19.1
+      rev: v0.20.0
       hooks:
           - id: stylua
 ci:
