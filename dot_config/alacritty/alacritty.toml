@@ -1,0 +1,26 @@
+import = ["~/.local/share/alacritty/themes/rose-pine/dist/rose-pine.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 15.0
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[shell]
+args = ["-l", "-c", "tmux attach-session &>/dev/null || tmux"]
+program = "/bin/zsh"
+
+[window]
+startup_mode = "SimpleFullscreen"

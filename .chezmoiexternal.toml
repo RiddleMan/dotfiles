@@ -31,7 +31,7 @@
   refreshPeriod = "168h"
 [".local/share/alacritty/themes/rose-pine"]
   type = "archive"
-  url = "https://github.com/rose-pine/alacritty/archive/7c3625f3d0f34359ba114e09b1ba3f3c1bed399a.zip"
+  url = "https://github.com/rose-pine/alacritty/archive/main.tar.gz"
   exact = true
   stripComponents = 1
   refreshPeriod = "168h"
