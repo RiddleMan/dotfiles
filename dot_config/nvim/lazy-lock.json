@@ -13,7 +13,7 @@
   },
   "bufferline.nvim": {
     "branch": "main",
-    "commit": "167c0b8c5340972a249068c1a5b3edf57806d6d3"
+    "commit": "d6cb9b7cac52887bcac65f8698e67479553c0748"
   },
   "cmp-buffer": {
     "branch": "main",
@@ -45,11 +45,11 @@
   },
   "friendly-snippets": {
     "branch": "main",
-    "commit": "69a2c1675b66e002799f5eef803b87a12f593049"
+    "commit": "aced40b66b7bae9bc2c37fd7b11841d54727a7b0"
   },
   "fzf": {
     "branch": "master",
-    "commit": "beb2de2dd995ae261084ead9903d7fa7c08da7af"
+    "commit": "da752fc9a4b3cb9dd08cc80614a491f980436b46"
   },
   "lsp-zero.nvim": {
     "branch": "v3.x",
@@ -57,11 +57,11 @@
   },
   "lualine.nvim": {
     "branch": "master",
-    "commit": "566b7036f717f3d676362742630518a47f132fff"
+    "commit": "7d131a8d3ba5016229e8a1d08bf8782acea98852"
   },
   "mason-lspconfig.nvim": {
     "branch": "main",
-    "commit": "3ba1b92b771f33256b4969d696b82c8ae7075364"
+    "commit": "b9084b1f42f790d6230dc66dbcb6bcc35b148552"
   },
   "mason.nvim": {
     "branch": "main",
@@ -69,7 +69,7 @@
   },
   "neotest": {
     "branch": "master",
-    "commit": "dcdb40ea48f9c7b67a5576f6bb2e5f63ec15f2c0"
+    "commit": "73043d666780e35185a77589e01bec96a52db910"
   },
   "neotest-jest": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "neotest-rust": {
     "branch": "main",
-    "commit": "3a3ebe60c2b655dcf8b2da64fe80fcd923feea0a"
+    "commit": "392b54e18174b8c69eba779f94a9fd0b318d383e"
   },
   "neotest-vitest": {
     "branch": "main",
@@ -89,7 +89,7 @@
   },
   "none-ls.nvim": {
     "branch": "main",
-    "commit": "0258d435e4e3354f81bd3d124676b9991c0012fd"
+    "commit": "a311c7cc8f17543143a7482cdbe3a384c371d56a"
   },
   "nvim-bqf": {
     "branch": "main",
@@ -113,11 +113,11 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "177a775fd8b2a9de97011a43f13c74ad8d3739c8"
+    "commit": "cc908cfcd7258b2e5c1a9c583e2f3feda0caf23b"
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "140edfcf25093e8b321d13e154cbce89ee868ca0"
+    "commit": "b427ac5f9dff494f839e81441fb3f04a58cbcfbc"
   },
   "plenary.nvim": {
     "branch": "master",
