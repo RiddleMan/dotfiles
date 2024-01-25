@@ -18,7 +18,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Used by oh-my-zsh suppressing a warning
 # shellcheck disable=2034
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker z)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker z dotenv)
 source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
 # Fix for https://github.com/RiddleMan/dotfiles/issues/14
