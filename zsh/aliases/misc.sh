@@ -20,6 +20,16 @@ unescapeString() {
         console.log(JSON.parse(\`\"\${out.trim()}\"\`))" "$@"
 }
 
+tmux_clear() {
+  clear
+
+  if [[ -n "$TMUX" ]]; then
+    tmux clear-history
+  fi
+}
+
+alias clr="tmux_clear"
+
 # Online docs
 alias dgojs="open http://gojs.net/latest/api/index.html"
 
