@@ -2,8 +2,9 @@
 
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export ANDROID_SDK_HOME=/Users/$USER/Library/Android/sdk
+export NDK_HOME="$ANDROID_HOME/ndk/26.1.10909125"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 
 PATH="/usr/local/opt/python@2/libexec/bin"
 PATH="$PATH:/usr/local/bin"
