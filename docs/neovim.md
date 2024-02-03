@@ -56,7 +56,7 @@ Source: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v1.x/doc/md/lsp.md#def
 
 * `<leader>tr`: runs the closest test
 
-* `<leader>trr`: re-run last test
+* `<leader>tlr`: re-run last test
 
 * `<leader>ts`: stop current test run
 
