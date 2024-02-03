@@ -21,6 +21,10 @@ require("neodev").setup({
 })
 
 require("mason").setup({})
+require("mason-nvim-dap").setup({
+  ensure_installed = { "codelldb", "js", "bash" },
+  handlers = {},
+})
 require("mason-lspconfig").setup({
   -- List of language servers: https://github.com/neovim/nvim-lsp_zero.onfig/blob/master/doc/server_configurations.md
   ensure_installed = {

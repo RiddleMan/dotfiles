@@ -116,4 +116,10 @@ require("lazy").setup({
   },
 
   { "folke/neodev.nvim", opts = {} },
+
+  { "mfussenegger/nvim-dap", config = function() end },
+
+  { "jay-babu/mason-nvim-dap.nvim", opts = {} },
+
+  { "mxsdev/nvim-dap-vscode-js" },
 })
