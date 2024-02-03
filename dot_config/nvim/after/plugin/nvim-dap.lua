@@ -49,7 +49,6 @@ dap.adapters["pwa-node"] = {
   port = "${port}",
   executable = {
     command = "node",
-    -- 💀 Make sure to update this path to point to your installation
     args = {
       vim.fn.expand(
         "~/.local/share/nvim/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js"
@@ -58,3 +57,49 @@ dap.adapters["pwa-node"] = {
     },
   },
 }
+
+local dapui = require("dapui")
+local treeapi = require("nvim-tree.api")
+dapui.setup()
+
+local tmux_full_screen_on = function()
+  vim.cmd(
+    "silent ! [ -n \"$TMUX\" ] && \\! tmux list-panes -F '\\#F' | grep -q Z && tmux resize-pane -Z"
+  )
+end
+
+local tmux_full_screen_off = function()
+  vim.cmd(
+    "silent ![ -n \"$TMUX\" ] && tmux list-panes -F '\\#F' | grep -q Z && tmux resize-pane -Z"
+  )
+end
+
+local tmux_full_screen_toggle = function()
+  vim.cmd("silent ! [ -n \"$TMUX\" ] && tmux resize-pane -Z")
+end
+
+dap.listeners.before.attach.dapui_config = function()
+  tmux_full_screen_on()
+  treeapi.tree.close()
+  dapui.open()
+end
+dap.listeners.before.launch.dapui_config = function()
+  tmux_full_screen_on()
+  treeapi.tree.close()
+  dapui.open()
+end
+dap.listeners.before.event_terminated.dapui_config = function()
+  tmux_full_screen_off()
+  treeapi.tree.open()
+  dapui.close()
+end
+dap.listeners.before.event_exited.dapui_config = function()
+  tmux_full_screen_off()
+  treeapi.tree.open()
+  dapui.close()
+end
+
+vim.keymap.set("n", "<Leader>du", function()
+  dapui.toggle()
+  tmux_full_screen_toggle()
+end)

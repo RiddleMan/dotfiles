@@ -122,4 +122,6 @@ require("lazy").setup({
   { "jay-babu/mason-nvim-dap.nvim", opts = {} },
 
   { "mxsdev/nvim-dap-vscode-js" },
+
+  { "rcarriga/nvim-dap-ui" },
 })
