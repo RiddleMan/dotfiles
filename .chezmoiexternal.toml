@@ -27,8 +27,7 @@
   url = "https://github.com/folke/lazy.nvim.git"
   ref = "stable"
   clone.args = ["--depth", "1", "--branch", "stable"]
-  pull.args = ["--depth", "1", "origin", "stable"]
-  refreshPeriod = "168h"
+  refreshPeriod = 0
 [".local/share/alacritty/themes/rose-pine"]
   type = "archive"
   url = "https://github.com/rose-pine/alacritty/archive/main.tar.gz"
