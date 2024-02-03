@@ -114,4 +114,6 @@ require("lazy").setup({
       require("copilot_cmp").setup()
     end,
   },
+
+  { "folke/neodev.nvim", opts = {} },
 })

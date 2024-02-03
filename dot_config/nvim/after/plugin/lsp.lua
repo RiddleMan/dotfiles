@@ -9,6 +9,17 @@ lsp_zero.on_attach(function(_, bufnr)
   bind("n", "<leader>K", vim.lsp.buf.signature_help, opts)
 end)
 
+require("neodev").setup({
+  override = function(root_dir, library)
+    if
+      root_dir:find("~/.local/share/chezmoi/dot_config/nvim", 1, true) == 1
+    then
+      library.enabled = true
+      library.plugins = true
+    end
+  end,
+})
+
 require("mason").setup({})
 require("mason-lspconfig").setup({
   -- List of language servers: https://github.com/neovim/nvim-lsp_zero.onfig/blob/master/doc/server_configurations.md
@@ -44,6 +55,9 @@ require("mason-lspconfig").setup({
         },
         telemetry = {
           enable = false,
+        },
+        completion = {
+          callSnippet = "Replace",
         },
       })
       require("lspconfig").lua_ls.setup(lua_opts)
