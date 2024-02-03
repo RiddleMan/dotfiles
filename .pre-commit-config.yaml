@@ -5,7 +5,11 @@ repos:
       hooks:
           - id: check-added-large-files
           - id: pretty-format-json
-            exclude: ^\.obsidian/
+            exclude: |
+              (?x)^(
+                \.obsidian|
+                dot_config/nvim/lazy-lock.json
+              )$
             args: [--autofix]
 
     - repo: https://github.com/jumanjihouse/pre-commit-hooks
@@ -35,7 +39,11 @@ repos:
       rev: 2.7.3
       hooks:
           - id: editorconfig-checker
-            exclude: ^\.obsidian/
+            exclude: |
+              (?x)^(
+                \.obsidian|
+                dot_config/nvim/lazy-lock.json
+              )$
             alias: ec
 
     - repo: https://github.com/JohnnyMorganz/StyLua
