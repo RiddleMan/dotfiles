@@ -29,3 +29,5 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 
 vim.opt.signcolumn = "yes"
+
+vim.opt.clipboard:append({ "unnamed", "unnamedplus" })
