@@ -12,6 +12,10 @@ encryption = "gpg"
 [data]
   hosttype = "private" # private | work
   email = "user@email.com"
+
+[merge]
+  command = "nvim"
+  args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
 ```
 
 Install chezmoi first by doing:
