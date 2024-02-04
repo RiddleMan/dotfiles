@@ -1,9 +1,38 @@
+local function my_on_attach(bufnr)
+  local treeutils = require("treeutils")
+
+  local function opts(desc)
+    return {
+      desc = "nvim-tree: " .. desc,
+      buffer = bufnr,
+      noremap = true,
+      silent = true,
+      nowait = true,
+    }
+  end
+
+  vim.keymap.set(
+    "n",
+    "<Leader>pf",
+    treeutils.launch_find_files,
+    opts("Launch Find Files")
+  )
+  vim.keymap.set(
+    "n",
+    "<Leader>fg",
+    treeutils.launch_live_grep,
+    opts("Launch Live Grep")
+  )
+end
+
 require("nvim-tree").setup({
   disable_netrw = true,
 
   filesystem_watchers = {
     ignore_dirs = { "node_modules" },
   },
+
+  on_attach = my_on_attach,
 })
 local api = require("nvim-tree.api")
 
