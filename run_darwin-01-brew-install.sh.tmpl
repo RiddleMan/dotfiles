@@ -1,0 +1,18 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/usr/bin/env zsh
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+{{ range .packages.darwin.tap -}}
+tap {{ . | quote }}
+{{ end -}}
+{{ range .packages.darwin.brew -}}
+brew {{ . | quote }}
+{{ end -}}
+{{ range .packages.darwin.cask -}}
+cask {{ . | quote }}
+{{ end -}}
+{{ range .packages.darwin.mas -}}
+mas {{ .name | quote }}, id: {{ .id }}
+{{ end -}}
+EOF
+{{ end -}}

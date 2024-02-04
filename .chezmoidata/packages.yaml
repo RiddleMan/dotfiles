@@ -1,0 +1,107 @@
+---
+# Platform specific packages list
+packages:
+  darwin:
+    tap:
+      - ekvedaras/cask
+      - hashicorp/tap
+      - homebrew/bundle
+      - homebrew/cask-drivers
+      - homebrew/cask-fonts
+      - homebrew/services
+      - riddleman/tap
+      - samuelmeuli/tap
+      - teamookla/speedtest
+    brew:
+      - bash
+      - bat
+      - chezmoi
+      - cmake
+      - node
+      - cargo-nextest
+      - cocoapods
+      - corepack
+      - ctop
+      - dive
+      - dockerize
+      - dust
+      - exa
+      - fd
+      - ffmpeg
+      - fzf
+      - gh
+      - gifsicle
+      - git
+      - gitleaks
+      - gnupg
+      - go
+      - hadolint
+      - helm
+      - htop
+      - hyperfine
+      - jq
+      - k9s
+      - mas
+      - ncdu
+      - nghttp2
+      - nmap
+      - neovim
+      - pinentry-mac
+      - pre-commit
+      - ripgrep
+      - rustup-init
+      - shellcheck
+      - shfmt
+      - speedtest
+      - stylua
+      - tilt
+      - tmux
+      - trunk
+      - tree
+      - volta
+      - wget
+      - ykman
+      - yq
+      - yamllint
+      - zsh
+      - zsh-completions
+      - zsh-syntax-highlighting
+      - riddleman/tap/doken
+      - riddleman/tap/git-branch-history
+    cask:
+      - 1password
+      - 1password-cli
+      - adobe-creative-cloud
+      - alacritty
+      - dash
+      - docker
+      - elgato-stream-deck
+      - figma
+      - firefox
+      - font-fira-code
+      - font-hack
+      - font-hack-nerd-font
+      - grammarly
+      - karabiner-elements
+      - keybase
+      - maccy
+      - microsoft-remote-desktop
+      - obinskit
+      - opera
+      - origin
+      - obsidian
+      - rectangle
+      - spotify
+      - steam
+      - steelseries-gg
+      - tunnelblick
+      - vagrant
+      - webstorm
+      - xbox360-controller-driver-unofficial
+    mas:
+      - name: 'Lungo'
+        id: 1263070803
+      - name: 'Snap'
+        id: 418073146
+      - name: 'Xcode'
+        id: 497799835
