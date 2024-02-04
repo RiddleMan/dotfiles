@@ -124,4 +124,6 @@ require("lazy").setup({
   { "mxsdev/nvim-dap-vscode-js" },
 
   { "rcarriga/nvim-dap-ui" },
+
+  { "onsails/lspkind.nvim" },
 })
