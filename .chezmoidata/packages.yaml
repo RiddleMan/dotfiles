@@ -12,6 +12,7 @@ packages:
       - riddleman/tap
       - samuelmeuli/tap
       - teamookla/speedtest
+      - OJFord/formulae
     brew:
       - bash
       - bat
@@ -41,6 +42,7 @@ packages:
       - hyperfine
       - jq
       - k9s
+      - loginitems
       - mas
       - ncdu
       - nghttp2
