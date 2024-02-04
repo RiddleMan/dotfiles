@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+set -e
+
+rustup update
+rustup toolchain install {{ range .rustup.toolchain -}}
+{{ printf "%s " . }}
+{{- end }}
+rustup target add {{ range .rustup.target -}}
+{{ printf "%s " . }}
+{{- end }}
+rustup component add {{ range .rustup.component -}}
+{{ printf "%s " . }}
+{{- end }}
+
+ln -sf ~/.cargo/bin/cargo-binstall-raw/cargo-binstall ~/.cargo/bin/cargo-binstall
