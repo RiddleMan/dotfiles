@@ -89,7 +89,6 @@ vim.diagnostic.config({
 })
 
 local cmp = require("cmp")
-local luasnip = require("luasnip")
 require("luasnip.loaders.from_vscode").lazy_load()
 local cmp_action = require("lsp-zero").cmp_action()
 local cmp_format = require("lspkind").cmp_format({
@@ -98,18 +97,6 @@ local cmp_format = require("lspkind").cmp_format({
   symbol_map = { Copilot = "" },
   ellipsis_char = "...",
 })
-
-local has_words_before = function()
-  if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then
-    return false
-  end
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0
-    and vim.api
-        .nvim_buf_get_text(0, line - 1, 0, line - 1, col, {})[1]
-        :match("^%s*$")
-      == nil
-end
 
 cmp.setup({
   preselect = "item",
@@ -133,19 +120,7 @@ cmp.setup({
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
     ["<C-e>"] = cmp.mapping.abort(),
 
-    ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() and has_words_before() then
-        cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
-      elseif cmp.visible() then
-        cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then
-        luasnip.expand_or_jump()
-      elseif has_words_before() then
-        cmp.complete()
-      else
-        fallback()
-      end
-    end),
+    ["<Tab>"] = cmp_action.luasnip_supertab(),
     ["<S-Tab>"] = cmp_action.luasnip_shift_supertab(),
 
     ["<C-u>"] = cmp.mapping.scroll_docs(-4),
