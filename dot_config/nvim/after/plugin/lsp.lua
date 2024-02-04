@@ -100,6 +100,9 @@ local cmp_format = require("lspkind").cmp_format({
 
 cmp.setup({
   preselect = "item",
+  completion = {
+    completeopt = "menu,menuone,noinsert",
+  },
   sources = {
     { name = "copilot", group_index = 2 },
     { name = "path" },
@@ -117,8 +120,11 @@ cmp.setup({
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
     ["<C-e>"] = cmp.mapping.abort(),
 
-    ["<Tab>"] = cmp_action.luasnip_jump_forward(),
-    ["<S-Tab>"] = cmp_action.luasnip_jump_backward(),
+    ["<Tab>"] = cmp_action.luasnip_supertab(),
+    ["<S-Tab>"] = cmp_action.luasnip_shift_supertab(),
+
+    ["<C-u>"] = cmp.mapping.scroll_docs(-4),
+    ["<C-d>"] = cmp.mapping.scroll_docs(4),
   }),
 })
 
