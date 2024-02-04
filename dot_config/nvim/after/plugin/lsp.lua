@@ -89,6 +89,7 @@ vim.diagnostic.config({
 })
 
 local cmp = require("cmp")
+local luasnip = require("luasnip")
 require("luasnip.loaders.from_vscode").lazy_load()
 local cmp_action = require("lsp-zero").cmp_action()
 local cmp_format = require("lspkind").cmp_format({
@@ -97,6 +98,18 @@ local cmp_format = require("lspkind").cmp_format({
   symbol_map = { Copilot = "" },
   ellipsis_char = "...",
 })
+
+local has_words_before = function()
+  if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then
+    return false
+  end
+  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+  return col ~= 0
+    and vim.api
+        .nvim_buf_get_text(0, line - 1, 0, line - 1, col, {})[1]
+        :match("^%s*$")
+      == nil
+end
 
 cmp.setup({
   preselect = "item",
@@ -120,12 +133,42 @@ cmp.setup({
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
     ["<C-e>"] = cmp.mapping.abort(),
 
-    ["<Tab>"] = cmp_action.luasnip_supertab(),
+    ["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() and has_words_before() then
+        cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
+      elseif cmp.visible() then
+        cmp.select_next_item()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      elseif has_words_before() then
+        cmp.complete()
+      else
+        fallback()
+      end
+    end),
     ["<S-Tab>"] = cmp_action.luasnip_shift_supertab(),
 
     ["<C-u>"] = cmp.mapping.scroll_docs(-4),
     ["<C-d>"] = cmp.mapping.scroll_docs(4),
   }),
+  sorting = {
+    priority_weight = 2,
+    comparators = {
+      require("copilot_cmp.comparators").prioritize,
+
+      -- Below is the default comparator list and order for nvim-cmp
+      cmp.config.compare.offset,
+      -- cmp.config.compare.scopes, --this is commented in nvim-cmp too
+      cmp.config.compare.exact,
+      cmp.config.compare.score,
+      cmp.config.compare.recently_used,
+      cmp.config.compare.locality,
+      cmp.config.compare.kind,
+      cmp.config.compare.sort_text,
+      cmp.config.compare.length,
+      cmp.config.compare.order,
+    },
+  },
 })
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
