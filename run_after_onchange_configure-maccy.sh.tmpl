@@ -11,7 +11,7 @@ defaults write "$plist_name" popupScreen -int 0
 defaults write "$plist_name" searchMode -string "mixed"
 
 # Add run on startup
-if ! loginitems -l Maccy | grep -q 'Maccy'; then
+if ! loginitems -l | grep -q 'Maccy'; then
   loginitems -a Maccy
 fi
 {{ end -}}
