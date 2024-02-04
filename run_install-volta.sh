@@ -3,4 +3,4 @@
 set -e
 
 volta setup
-volta install node@18
+volta install node
