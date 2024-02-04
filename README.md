@@ -16,6 +16,9 @@ encryption = "gpg"
 [merge]
   command = "nvim"
   args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
+
+[hooks.read-source-state.pre]
+  command = ".local/share/chezmoi/.install-required-tools.sh"
 ```
 
 Install chezmoi first by doing:
