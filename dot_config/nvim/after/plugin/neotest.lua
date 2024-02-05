@@ -13,7 +13,6 @@ neotest.setup({
 local bind = vim.keymap.set
 
 bind("n", "<leader>t\\", function()
-  vim.cmd.write()
   neotest.summary.toggle()
 end, {})
 bind("n", "<leader>tr", function()

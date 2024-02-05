@@ -22,6 +22,7 @@ require("lazy").setup({
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
+    tag = "v0.9.1",
   },
 
   "christoomey/vim-tmux-navigator",
@@ -94,7 +95,7 @@ require("lazy").setup({
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
       "marilari88/neotest-vitest",
-      "haydenmeade/neotest-jest",
+      "nvim-neotest/neotest-jest",
       "rouge8/neotest-rust",
     },
   },
