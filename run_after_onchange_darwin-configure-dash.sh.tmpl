@@ -6,7 +6,7 @@ plist_name="com.kapeli.dashdoc"
 
 killall "$app_name"
 
-defaults write "$plist_name" syncFolderPath -string "~/.local/share/chezmoi/.dash/"
+defaults write "$plist_name" syncFolderPath -string "$HOME/.local/share/chezmoi/.dash/"
 defaults write "$plist_name" tabRestoFirstRun -int 1
 defaults write "$plist_name" windowStyle -string "Standard"
 defaults write "$plist_name" windowStyleHUDOverlay -int 1
