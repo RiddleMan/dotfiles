@@ -1,0 +1,20 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/usr/bin/env zsh
+
+app_name="Rectangle"
+plist_name="com.knollsoft.Rectangle"
+
+killall "$app_name"
+
+defaults write "$plist_name" hideMenubarIcon -int 1
+defaults write "$plist_name" launchOnLogin -int 1
+defaults write "$plist_name" SUAutomaticallyUpdate -int 1
+defaults write "$plist_name" SUEnableAutomaticChecks -int 1
+
+# Add run on startup
+if ! loginitems -l | grep -q "$app_name"; then
+  loginitems -a "$app_name"
+fi
+
+open -a "$app_name"
+{{ end -}}
