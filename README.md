@@ -2,7 +2,7 @@
 
 ## Installation
 
-Create an optional config file in `~/.config/chezmoi/chezmoi.toml
+Create an optional config file in `~/.config/chezmoi/chezmoi.toml`
 
 ```toml
 encryption = "gpg"
