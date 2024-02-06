@@ -6,7 +6,6 @@ plist_name="com.sindresorhus.Lungo"
 defaults write "$plist_name" activateAtLaunch -int 1
 defaults write "$plist_name" activateOnLeftClick -int 1
 
-echo "asdf"
 # Add run on startup
 if ! loginitems -l | grep -q 'Lungo'; then
   loginitems -a Lungo
