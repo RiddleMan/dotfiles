@@ -14,6 +14,9 @@ defaults write "$plist_name" shouldSyncDocsets -int 1
 defaults write "$plist_name" shouldSyncGeneral -int 1
 defaults write "$plist_name" shouldSyncView -int 1
 
+# Add Hotkey triggers
+plutil -replace profiles -json '[{ "isActive": true, "isDefault": true, "name": "Default", "searchSnippets": true, "triggers": [{ "description": "pressed", "image": "keyboardIcon", "isHotKeyTrigger": true, "keyCombo": { "keyCode": 50, "modifiers": 768 } } ] }]' ~"/Library/Preferences/$plist_name.plist"
+
 # Add run on startup
 if ! loginitems -l | grep -q 'Dash'; then
   loginitems -a Dash
