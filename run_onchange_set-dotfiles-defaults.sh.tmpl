@@ -1,0 +1,10 @@
+#!/usr/bin/env zsh
+
+set -e
+
+cd ~/.local/share/chezmoi/
+
+git config user.email "artur.ptaszek@gmail.com"
+git config core.sshCommand "ssh -i ~/.ssh/yubikey.pub"
+git config commit.gpgsign true
+git config user.signingkey "{{ .chezmoi.config.gpg.recipient }}"
