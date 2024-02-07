@@ -6,7 +6,6 @@ packages:
       - ekvedaras/cask
       - hashicorp/tap
       - homebrew/bundle
-      - homebrew/cask-drivers
       - homebrew/cask-fonts
       - homebrew/services
       - riddleman/tap
@@ -26,7 +25,7 @@ packages:
       - dive
       - dockerize
       - dust
-      - exa
+      - eza
       - fd
       - ffmpeg
       - fzf
@@ -99,7 +98,6 @@ packages:
       - tunnelblick
       - vagrant
       - webstorm
-      - xbox360-controller-driver-unofficial
     mas:
       - name: 'Lungo'
         id: 1263070803
