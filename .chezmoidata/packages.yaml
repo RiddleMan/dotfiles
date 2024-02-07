@@ -87,7 +87,8 @@ packages:
       - keybase
       - maccy
       - microsoft-remote-desktop
-      - obinskit
+      # TODO: find how to install it automatically
+      # - obinskit
       - opera
       - origin
       - obsidian
