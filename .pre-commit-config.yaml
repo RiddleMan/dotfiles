@@ -42,6 +42,7 @@ repos:
             exclude: |
               (?x)^(
                 \.obsidian|
+                \.dash\/.*|
                 dot_config/nvim/lazy-lock.json
               )$
             alias: ec
