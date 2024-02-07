@@ -1,3 +1,4 @@
+{{ if eq .chezmoi.os "darwin" -}}
 #!/usr/bin/env zsh
 
 set -e
@@ -11,3 +12,8 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Turns off desktop icons
 defaults write com.apple.finder CreateDesktop false
 killall Finder
+
+echo "Need restart to take effect"
+defaults write -g InitialKeyRepeat -int 13
+defaults write -g KeyRepeat -int 1
+{{ end -}}
