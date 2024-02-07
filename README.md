@@ -24,7 +24,7 @@ encryption = "gpg"
 Install chezmoi first by doing:
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply RiddleMan
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply RiddleMan --ssh
 ```
 
 ## Documentation
