@@ -2,6 +2,14 @@
 
 set -e
 
+has_rustup() {
+  type rustup >/dev/null 2>&1
+}
+
+if ! has_rustup; then
+  rustup-init -y
+fi
+
 rustup update
 rustup toolchain install {{ range .rustup.toolchain -}}
 {{ printf "%s " . }}
