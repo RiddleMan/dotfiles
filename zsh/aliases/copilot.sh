@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-set -e
-
 alias coe="gh copilot explain"
 alias cos="gh copilot suggest"
 alias coss="gh copilot suggest -t shell"
