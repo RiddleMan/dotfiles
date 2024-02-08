@@ -9,7 +9,7 @@
 			<key>Bash_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:08:02Z</date>
+				<date>2024-02-08T19:13:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -27,7 +27,7 @@
 			<key>Bash_Test_Operators</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:08:03Z</date>
+				<date>2024-02-08T19:13:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -45,7 +45,7 @@
 			<key>CSS_Device_Media_Queries</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:16Z</date>
+				<date>2024-02-08T19:13:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -61,7 +61,7 @@
 			<key>CSS_Named_Colors</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:17Z</date>
+				<date>2024-02-08T19:13:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -113,7 +113,7 @@
 			<key>Chromium_Command_Line_Switches</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:04Z</date>
+				<date>2024-02-08T19:13:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -129,7 +129,7 @@
 			<key>Conventional_Commits</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:08Z</date>
+				<date>2024-02-08T19:13:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -145,7 +145,7 @@
 			<key>Crontab</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:10Z</date>
+				<date>2024-02-08T19:13:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -161,7 +161,7 @@
 			<key>Docker</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:19Z</date>
+				<date>2024-02-08T19:13:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -177,7 +177,7 @@
 			<key>Dockerfile</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:21Z</date>
+				<date>2024-02-08T19:13:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -214,7 +214,7 @@
 			<key>Gitmoji</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:36Z</date>
+				<date>2024-02-08T19:13:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -265,7 +265,7 @@
 			<key>Jira_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:53Z</date>
+				<date>2024-02-08T19:13:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -281,7 +281,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:57Z</date>
+				<date>2024-02-08T19:13:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -297,7 +297,7 @@
 			<key>Licenses</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:10:00Z</date>
+				<date>2024-02-08T19:13:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -313,7 +313,7 @@
 			<key>MIME_Types</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:10:06Z</date>
+				<date>2024-02-08T19:13:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -364,7 +364,7 @@
 			<key>Vimdiff</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:10:52Z</date>
+				<date>2024-02-08T19:13:57Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -380,7 +380,7 @@
 			<key>tmux</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:08:11Z</date>
+				<date>2024-02-08T19:13:56Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -622,7 +622,7 @@
 			<key>http://kapeli.com/feeds/AppleScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:04:33Z</date>
+				<date>2024-02-08T19:15:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Bash.xml</key>
 			<dict>
@@ -647,7 +647,7 @@
 			<key>http://kapeli.com/feeds/HTTP.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:05:52Z</date>
+				<date>2024-02-08T19:15:00Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
@@ -662,17 +662,17 @@
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:19Z</date>
+				<date>2024-02-08T19:13:58Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Markdown.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:27Z</date>
+				<date>2024-02-08T19:13:58Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Nginx.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:39Z</date>
+				<date>2024-02-08T19:14:02Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
@@ -682,7 +682,7 @@
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:59Z</date>
+				<date>2024-02-08T19:14:10Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/React.xml</key>
 			<dict>
@@ -697,7 +697,7 @@
 			<key>http://kapeli.com/feeds/SQLite.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:07:30Z</date>
+				<date>2024-02-08T19:14:27Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/TypeScript.xml</key>
 			<dict>
