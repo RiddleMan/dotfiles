@@ -26,6 +26,7 @@ require("nvim-treesitter.configs").setup({
     "regex",
     "rust",
     "sql",
+    "starlark",
     "terraform",
     "toml",
     "typescript",
@@ -42,4 +43,12 @@ require("nvim-treesitter.configs").setup({
 
     additional_vim_regex_highlighting = false,
   },
+})
+
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = "Tiltfile",
+  callback = function()
+    local buf = vim.api.nvim_get_current_buf()
+    vim.api.nvim_buf_set_option(buf, "filetype", "starlark")
+  end,
 })
