@@ -6,8 +6,8 @@ update_home_asistant_config() {
     ". /etc/profile.d/homeassistant.sh \
         && echo 'Updating a config' \
         && cd /config \
-        && git fetch \
-        && git checkout ${1:-$commit_hash} \
+        && sudo git fetch \
+        && sudo git checkout ${1:-$commit_hash} \
         && echo 'Checking a config' \
         && ha core check --no-progress \
         && echo 'Restart a server' \
