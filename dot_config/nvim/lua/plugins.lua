@@ -22,7 +22,6 @@ require("lazy").setup({
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    tag = "v0.9.1",
   },
 
   "christoomey/vim-tmux-navigator",
