@@ -19,7 +19,7 @@ repos:
           - id: shfmt
 
     - repo: https://github.com/adrienverge/yamllint.git
-      rev: v1.34.0
+      rev: v1.35.1
       hooks:
           - id: yamllint
             args: [--format, parsable, --strict]
@@ -30,7 +30,7 @@ repos:
           - id: gitleaks
 
     - repo: https://github.com/commitizen-tools/commitizen
-      rev: v3.14.1
+      rev: v3.15.0
       hooks:
           - id: commitizen
             stages: [commit-msg]
