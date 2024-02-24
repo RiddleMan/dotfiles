@@ -2,4 +2,4 @@
 
 set -e
 
-nvim --headless "+Lazy! sync" "+MasonUpdate" "+DapInstall" "+mkspell! ~/.config/nvim/spell/en.utf-8.add" +qa
+nvim --headless "+Lazy! restore" "+MasonUpdate" "+DapInstall" "+mkspell! ~/.config/nvim/spell/en.utf-8.add" +qa
