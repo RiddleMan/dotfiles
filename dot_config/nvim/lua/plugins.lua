@@ -76,18 +76,6 @@ return {
   },
 
   {
-    "nvim-neotest/neotest",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-      "antoinemadec/FixCursorHold.nvim",
-      "marilari88/neotest-vitest",
-      "nvim-neotest/neotest-jest",
-      "rouge8/neotest-rust",
-    },
-  },
-
-  {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",
