@@ -17,6 +17,7 @@ end
 return {
   {
     "mfussenegger/nvim-dap",
+    lazy = true,
     dependencies = {
       { "jay-babu/mason-nvim-dap.nvim" },
       { "mxsdev/nvim-dap-vscode-js" },
