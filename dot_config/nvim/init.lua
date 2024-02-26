@@ -1,4 +1,4 @@
 require("keymaps")
 require("options")
 require("chezmoi")
-require("plugins")
+require("lazy").setup("plugins")

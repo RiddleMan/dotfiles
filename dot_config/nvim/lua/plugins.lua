@@ -1,4 +1,4 @@
-require("lazy").setup({
+return {
   {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v3.x",
@@ -126,4 +126,4 @@ require("lazy").setup({
   { "rcarriga/nvim-dap-ui" },
 
   { "onsails/lspkind.nvim" },
-})
+}
