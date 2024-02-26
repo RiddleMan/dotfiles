@@ -12,7 +12,7 @@ local view_selection = function(prompt_bufnr, map)
     if filename == nil then
       filename = selection[1]
     end
-    openfile.fn("preview", filename)
+    openfile.fn("", filename)
   end)
   return true
 end
