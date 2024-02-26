@@ -19,7 +19,13 @@ return {
     "mfussenegger/nvim-dap",
     lazy = true,
     dependencies = {
-      { "jay-babu/mason-nvim-dap.nvim" },
+      {
+        "jay-babu/mason-nvim-dap.nvim",
+        opts = {
+          ensure_installed = { "codelldb", "js", "bash" },
+          handlers = {},
+        },
+      },
       { "mxsdev/nvim-dap-vscode-js" },
       { "rcarriga/nvim-dap-ui" },
     },

@@ -5,13 +5,7 @@ return {
     dependencies = {
       "neovim/nvim-lspconfig",
       { "williamboman/mason.nvim", opts = {} },
-      {
-        "williamboman/mason-lspconfig.nvim",
-        opts = {
-          ensure_installed = { "codelldb", "js", "bash" },
-          handlers = {},
-        },
-      },
+      { "williamboman/mason-lspconfig.nvim" },
 
       "hrsh7th/nvim-cmp",
       "hrsh7th/cmp-nvim-lsp",
