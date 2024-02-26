@@ -9,8 +9,6 @@ return {
     end,
   },
 
-  "christoomey/vim-tmux-navigator",
-
   "tpope/vim-unimpaired",
 
   {

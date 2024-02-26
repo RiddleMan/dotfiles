@@ -32,9 +32,10 @@ return {
         sources = {
           null_ls.builtins.formatting.stylua,
           null_ls.builtins.formatting.prettier,
-          null_ls.builtins.formatting.rustfmt.with({
-            extra_args = { "--edition=2021" },
-          }),
+          -- TODO: Deprecated to replace
+          -- null_ls.builtins.formatting.rustfmt.with({
+          --   extra_args = { "--edition=2021" },
+          -- }),
         },
       })
     end,
