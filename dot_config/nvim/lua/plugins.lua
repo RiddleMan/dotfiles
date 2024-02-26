@@ -5,7 +5,7 @@ return {
     priority = 1000,
     as = "rose-pine",
     config = function()
-      vim.cmd([[colorscheme rose-pine]])
+      vim.cmd("colorscheme rose-pine")
     end,
   },
 
@@ -97,14 +97,6 @@ return {
   },
 
   { "folke/neodev.nvim", opts = {} },
-
-  { "mfussenegger/nvim-dap", config = function() end },
-
-  { "jay-babu/mason-nvim-dap.nvim", opts = {} },
-
-  { "mxsdev/nvim-dap-vscode-js" },
-
-  { "rcarriga/nvim-dap-ui" },
 
   { "onsails/lspkind.nvim" },
 }
