@@ -12,28 +12,31 @@ return {
       },
     },
 
-    config = function()
-      local telescope = require("telescope")
-
-      telescope.setup({})
-      telescope.load_extension("fzf")
-
-      local builtin = require("telescope.builtin")
-
-      vim.keymap.set("n", "<leader>pf", builtin.find_files, {})
+    init = function()
+      vim.keymap.set("n", "<leader>pf", function()
+        require("telescope.builtin").find_files()
+      end, {})
       vim.keymap.set("n", "<leader>paf", function()
-        builtin.find_files({
+        require("telescope.builtin").find_files({
           hidden = true,
         })
       end, {})
-      vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+      vim.keymap.set("n", "<leader>fg", function()
+        require("telescope.builtin").live_grep()
+      end, {})
       vim.keymap.set("n", "<leader>fag", function()
-        builtin.live_grep({
+        require("telescope.builtin").live_grep({
           additional_args = function()
             return { "--hidden" }
           end,
         })
       end, {})
+    end,
+
+    config = function()
+      local telescope = require("telescope")
+      telescope.setup({})
+      telescope.load_extension("fzf")
     end,
   },
 }
