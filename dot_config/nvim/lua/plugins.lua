@@ -1,5 +1,15 @@
 return {
   {
+    "rose-pine/neovim",
+    lazy = false,
+    priority = 1000,
+    as = "rose-pine",
+    config = function()
+      vim.cmd([[colorscheme rose-pine]])
+    end,
+  },
+
+  {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v3.x",
     dependencies = {
@@ -25,11 +35,6 @@ return {
   },
 
   "christoomey/vim-tmux-navigator",
-
-  {
-    "rose-pine/neovim",
-    as = "rose-pine",
-  },
 
   "tpope/vim-fugitive",
   "tpope/vim-unimpaired",
