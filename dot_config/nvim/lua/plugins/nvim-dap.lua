@@ -17,64 +17,12 @@ end
 return {
   {
     "mfussenegger/nvim-dap",
+    dependencies = {
+      { "jay-babu/mason-nvim-dap.nvim" },
+      { "mxsdev/nvim-dap-vscode-js" },
+      { "rcarriga/nvim-dap-ui" },
+    },
     init = function()
-      vim.keymap.set("n", "<Leader>b", function()
-        require("dap").toggle_breakpoint()
-      end)
-      vim.keymap.set("n", "<Leader>B", function()
-        require("dap").set_breakpoint()
-      end)
-      vim.keymap.set("n", "<Leader>lp", function()
-        require("dap").set_breakpoint(
-          nil,
-          nil,
-          vim.fn.input("Log point message: ")
-        )
-      end)
-    end,
-    config = function()
-      local dap = require("dap")
-
-      dap.adapters["pwa-node"] = {
-        type = "server",
-        host = "localhost",
-        port = "${port}",
-        executable = {
-          command = "node",
-          args = {
-            vim.fn.expand(
-              "~/.local/share/nvim/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js"
-            ),
-            "${port}",
-          },
-        },
-      }
-
-      dap.listeners.before.attach.dapui_config = function()
-        tmux_full_screen_on()
-        require("nvim-tree.api").tree.close()
-        require("dapui").open()
-      end
-      dap.listeners.before.launch.dapui_config = function()
-        tmux_full_screen_on()
-        require("nvim-tree.api").tree.close()
-        require("dapui").open()
-      end
-      dap.listeners.before.event_terminated.dapui_config = function()
-        tmux_full_screen_off()
-        require("nvim-tree.api").tree.open()
-        require("dapui").close()
-      end
-      dap.listeners.before.event_exited.dapui_config = function()
-        tmux_full_screen_off()
-        require("nvim-tree.api").tree.open()
-        require("dapui").close()
-      end
-
-      vim.keymap.set("n", "<Leader>du", function()
-        require("dapui").toggle()
-        tmux_full_screen_toggle()
-      end)
       -- Set of default mappings
       vim.keymap.set("n", "<F5>", function()
         require("dap").continue()
@@ -94,16 +42,24 @@ return {
       vim.keymap.set("n", "<Leader>dl", function()
         require("dap").run_last()
       end)
-    end,
-  },
+      vim.keymap.set("n", "<Leader>b", function()
+        require("dap").toggle_breakpoint()
+      end)
+      vim.keymap.set("n", "<Leader>B", function()
+        require("dap").set_breakpoint()
+      end)
+      vim.keymap.set("n", "<Leader>lp", function()
+        require("dap").set_breakpoint(
+          nil,
+          nil,
+          vim.fn.input("Log point message: ")
+        )
+      end)
 
-  { "jay-babu/mason-nvim-dap.nvim" },
-
-  { "mxsdev/nvim-dap-vscode-js" },
-
-  {
-    "rcarriga/nvim-dap-ui",
-    config = function()
+      vim.keymap.set("n", "<Leader>du", function()
+        require("dapui").toggle()
+        tmux_full_screen_toggle()
+      end)
       vim.keymap.set({ "n", "v" }, "<Leader>dh", function()
         require("dap.ui.widgets").hover()
       end)
@@ -118,6 +74,45 @@ return {
         local widgets = require("dap.ui.widgets")
         widgets.centered_float(widgets.scopes)
       end)
+    end,
+    config = function()
+      local dap = require("dap")
+      local dapui = require("dapui")
+      dapui.setup()
+      dap.adapters["pwa-node"] = {
+        type = "server",
+        host = "localhost",
+        port = "${port}",
+        executable = {
+          command = "node",
+          args = {
+            vim.fn.expand(
+              "~/.local/share/nvim/mason/packages/js-debug-adapter/js-debug/src/dapDebugServer.js"
+            ),
+            "${port}",
+          },
+        },
+      }
+      dap.listeners.before.attach.dapui_config = function()
+        tmux_full_screen_on()
+        require("nvim-tree.api").tree.close()
+        dapui.open()
+      end
+      dap.listeners.before.launch.dapui_config = function()
+        tmux_full_screen_on()
+        require("nvim-tree.api").tree.close()
+        dapui.open()
+      end
+      dap.listeners.before.event_terminated.dapui_config = function()
+        tmux_full_screen_off()
+        require("nvim-tree.api").tree.open()
+        dapui.close()
+      end
+      dap.listeners.before.event_exited.dapui_config = function()
+        tmux_full_screen_off()
+        require("nvim-tree.api").tree.open()
+        dapui.close()
+      end
     end,
   },
 }

@@ -5,6 +5,7 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
+      "mfussenegger/nvim-dap",
 
       -- Adapters
       "marilari88/neotest-vitest",
