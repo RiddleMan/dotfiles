@@ -46,7 +46,7 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
 
-  { "numToStr/Comment.nvim" },
+  { "numToStr/Comment.nvim", opts = {} },
 
   { "tpope/vim-speeddating" },
 
