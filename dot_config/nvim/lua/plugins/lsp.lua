@@ -71,7 +71,6 @@ return {
           "ltex",
           "jsonls",
           "marksman",
-          "rust_analyzer",
           "lua_ls",
           "yamlls",
           "vimls",

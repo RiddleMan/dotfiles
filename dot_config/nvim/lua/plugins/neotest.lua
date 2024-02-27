@@ -10,7 +10,6 @@ return {
       -- Adapters
       "marilari88/neotest-vitest",
       "nvim-neotest/neotest-jest",
-      "rouge8/neotest-rust",
     },
     cmd = "Neotest",
     init = function()
@@ -95,7 +94,6 @@ return {
         adapters = {
           require("neotest-vitest"),
           require("neotest-jest"),
-          require("neotest-rust"),
         },
         quickfix = {
           enabled = false,
