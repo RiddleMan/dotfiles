@@ -41,7 +41,7 @@ return {
         local opts = { buffer = bufnr }
         local bind = vim.keymap.set
 
-        lsp_zero.default_keymaps({ buffer = bufnr })
+        lsp_zero.default_keymaps({ buffer = bufnr, preserve_mappings = false })
 
         wk.register({
           ["<leader>"] = {
