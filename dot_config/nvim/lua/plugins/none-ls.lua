@@ -1,7 +1,7 @@
 return {
   {
     "nvimtools/none-ls.nvim",
-    event = "InsertEnter",
+    event = { "BufReadPre", "BufNewFile" },
     cmd = { "NullLsInfo", "NullLsLog" },
     config = function()
       local lsp_zero = require("lsp-zero")
@@ -29,16 +29,22 @@ return {
       local null_ls = require("null-ls")
       null_ls.setup({
         on_attach = null_opts.on_attach,
-        sources = {
-          null_ls.builtins.formatting.stylua,
-          null_ls.builtins.formatting.prettier,
-          -- TODO: Deprecated to replace
-          -- null_ls.builtins.formatting.rustfmt.with({
-          --   extra_args = { "--edition=2021" },
-          -- }),
-        },
       })
     end,
-    dependencies = { "VonHeikemen/lsp-zero.nvim" },
+    dependencies = {
+      "VonHeikemen/lsp-zero.nvim",
+      {
+        "jay-babu/mason-null-ls.nvim",
+        opts = {
+          ensure_installed = {
+            "sylua",
+            "prettier",
+            "shfmt",
+          },
+          automatic_installation = false,
+          handlers = {},
+        },
+      },
+    },
   },
 }
