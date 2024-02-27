@@ -33,20 +33,6 @@ return {
       },
     },
 
-    init = function()
-      vim.diagnostic.config({
-        virtual_text = false,
-        severity_sort = true,
-        float = {
-          style = "minimal",
-          border = "rounded",
-          source = "always",
-          header = "",
-          prefix = "",
-        },
-      })
-    end,
-
     config = function()
       local lsp_zero = require("lsp-zero")
 
@@ -165,6 +151,18 @@ return {
             cmp.config.compare.length,
             cmp.config.compare.order,
           },
+        },
+      })
+
+      vim.diagnostic.config({
+        virtual_text = false,
+        severity_sort = true,
+        float = {
+          style = "minimal",
+          border = "rounded",
+          source = "always",
+          header = "",
+          prefix = "",
         },
       })
     end,
