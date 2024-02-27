@@ -14,38 +14,81 @@ return {
     },
     cmd = "Neotest",
     init = function()
-      local bind = vim.keymap.set
+      require("which-key").register({
+        ["<leader>t"] = {
+          name = "+test",
 
-      bind("n", "<leader>t\\", function()
-        require("neotest").summary.toggle()
-      end, {})
-      bind("n", "<leader>tr", function()
-        vim.cmd.write()
-        require("neotest").run.run()
-      end, {})
-      bind("n", "<leader>tar", function()
-        vim.cmd.write()
-        require("neotest").run.run(vim.fn.expand("%"))
-      end, {})
-      bind("n", "<leader>tdr", function()
-        vim.cmd.write()
-        require("neotest").run.run({ strategy = "dap" })
-      end, {})
-      bind("n", "<leader>tdar", function()
-        vim.cmd.write()
-        require("neotest").run.run({ vim.fn.expand("%"), strategy = "dap" })
-      end, {})
-      bind("n", "<leader>tlr", function()
-        vim.cmd.write()
-        require("neotest").run.run_last()
-      end, {})
-      bind("n", "<leader>ts", function()
-        vim.cmd.write()
-        require("neotest").run.stop()
-      end, {})
-      bind("n", "<leader>to", function()
-        require("neotest").output.open({ enter = true })
-      end, {})
+          ["\\"] = {
+            function()
+              require("neotest").summary.toggle()
+            end,
+            "Toggle summary",
+          },
+          r = {
+            function()
+              vim.cmd.write()
+              require("neotest").run.run()
+            end,
+            "Run",
+          },
+          a = {
+            name = "+ all",
+            r = {
+              function()
+                vim.cmd.write()
+                require("neotest").run.run(vim.fn.expand("%"))
+              end,
+              "Run",
+            },
+          },
+          d = {
+            name = "+ debug",
+            a = {
+              name = "+ all",
+              r = {
+                function()
+                  vim.cmd.write()
+                  require("neotest").run.run({
+                    vim.fn.expand("%"),
+                    strategy = "dap",
+                  })
+                end,
+                "Run",
+              },
+            },
+            r = {
+              function()
+                vim.cmd.write()
+                require("neotest").run.run({ strategy = "dap" })
+              end,
+              "Run",
+            },
+          },
+          l = {
+            name = "+ last",
+            r = {
+              function()
+                vim.cmd.write()
+                require("neotest").run.run_last()
+              end,
+              "Run",
+            },
+          },
+          s = {
+            function()
+              vim.cmd.write()
+              require("neotest").run.stop()
+            end,
+            "Stop",
+          },
+          o = {
+            function()
+              require("neotest").output.open({ enter = true })
+            end,
+            "Show Output",
+          },
+        },
+      })
     end,
     config = function()
       require("neotest").setup({
