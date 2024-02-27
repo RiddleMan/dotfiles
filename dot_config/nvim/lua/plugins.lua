@@ -9,10 +9,11 @@ return {
     end,
   },
 
-  "tpope/vim-unimpaired",
+  { "tpope/vim-unimpaired", event = "VeryLazy" },
 
   {
     "nvim-tree/nvim-web-devicons",
+    lazy = true,
     opts = {
       default = true,
     },
@@ -22,6 +23,13 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
+      options = {
+        disabled_filetypes = {
+          "statusline",
+          "winbar",
+          "NvimTree",
+        },
+      },
       sections = {
         lualine_a = { "mode" },
         lualine_b = { "diff", "diagnostics" },
@@ -33,9 +41,9 @@ return {
     },
   },
 
-  { "numToStr/Comment.nvim", opts = {} },
+  { "numToStr/Comment.nvim", event = "VeryLazy", opts = {} },
 
-  { "tpope/vim-speeddating" },
+  { "tpope/vim-speeddating", event = "VeryLazy" },
 
   {
     "kylechui/nvim-surround",
