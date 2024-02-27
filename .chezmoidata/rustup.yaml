@@ -8,6 +8,7 @@ rustup:
   component:
     - clippy
     - rustfmt
+    - rust-analyzer
   toolchain:
     - stable
     - nightly

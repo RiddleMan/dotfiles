@@ -55,4 +55,10 @@ return {
     end,
     opts = {},
   },
+
+  {
+    "mrcjkb/rustaceanvim",
+    version = "^4",
+    ft = { "rust" },
+  },
 }
