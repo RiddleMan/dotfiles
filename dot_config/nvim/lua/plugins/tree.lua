@@ -4,16 +4,6 @@ return {
     config = function()
       local wk = require("which-key")
       local function my_on_attach(bufnr)
-        local function opts(desc)
-          return {
-            desc = "nvim-tree: " .. desc,
-            buffer = bufnr,
-            noremap = true,
-            silent = true,
-            nowait = true,
-          }
-        end
-
         wk.register({
           ["<leader>p"] = {
             name = "+project",
@@ -22,6 +12,10 @@ return {
                 require("treeutils").launch_find_files(opt)
               end,
               "Find Files",
+              buffer = bufnr,
+              noremap = true,
+              silent = true,
+              nowait = true,
             },
           },
 
@@ -32,6 +26,10 @@ return {
                 require("treeutils").launch_live_grep(opt)
               end,
               "Grep",
+              buffer = bufnr,
+              noremap = true,
+              silent = true,
+              nowait = true,
             },
           },
         })
