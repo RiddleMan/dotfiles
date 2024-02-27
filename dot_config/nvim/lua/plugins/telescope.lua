@@ -19,24 +19,49 @@ return {
     },
 
     init = function()
-      vim.keymap.set("n", "<leader>pf", function()
-        require("telescope.builtin").find_files()
-      end, {})
-      vim.keymap.set("n", "<leader>paf", function()
-        require("telescope.builtin").find_files({
-          hidden = true,
-        })
-      end, {})
-      vim.keymap.set("n", "<leader>fg", function()
-        require("telescope.builtin").live_grep()
-      end, {})
-      vim.keymap.set("n", "<leader>fag", function()
-        require("telescope.builtin").live_grep({
-          additional_args = function()
-            return { "--hidden" }
-          end,
-        })
-      end, {})
+      require("which-key").register({
+        ["<leader>p"] = {
+          name = "+project",
+          f = {
+            function()
+              require("telescope.builtin").find_files()
+            end,
+            "Find Files",
+          },
+          a = {
+            name = "+all",
+            f = {
+
+              function()
+                require("telescope.builtin").find_files({ hidden = true })
+              end,
+              "Find Files",
+            },
+          },
+        },
+        ["<leader>f"] = {
+          name = "+files",
+          g = {
+            function()
+              require("telescope.builtin").live_grep()
+            end,
+            "Grep",
+          },
+          a = {
+            name = "+all",
+            g = {
+              function()
+                require("telescope.builtin").live_grep({
+                  additional_args = function()
+                    return { "--hidden" }
+                  end,
+                })
+              end,
+              "Grep",
+            },
+          },
+        },
+      })
     end,
 
     config = function()

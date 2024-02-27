@@ -2,6 +2,7 @@ return {
   {
     "nvim-tree/nvim-tree.lua",
     config = function()
+      local wk = require("which-key")
       local function my_on_attach(bufnr)
         local function opts(desc)
           return {
@@ -13,12 +14,27 @@ return {
           }
         end
 
-        vim.keymap.set("n", "<Leader>pf", function(options)
-          require("treeutils").launch_find_files(options)
-        end, opts("Launch Find Files"))
-        vim.keymap.set("n", "<Leader>fg", function(options)
-          require("treeutils").launch_live_grep(options)
-        end, opts("Launch Live Grep"))
+        wk.register({
+          ["<leader>p"] = {
+            name = "+project",
+            f = {
+              function(opt)
+                require("treeutils").launch_find_files(opt)
+              end,
+              "Find Files",
+            },
+          },
+
+          ["<leader>f"] = {
+            name = "+files",
+            g = {
+              function(opt)
+                require("treeutils").launch_live_grep(opt)
+              end,
+              "Grep",
+            },
+          },
+        })
       end
 
       require("nvim-tree").setup({
@@ -66,9 +82,13 @@ return {
         api.tree.find_file(curr_buff)
       end
 
-      vim.keymap.set("n", "<leader>tc", open_current_file_in_tree, {})
-
-      vim.keymap.set("n", "<c-\\>", api.tree.toggle, {})
+      wk.register({
+        ["<leader>tc"] = {
+          open_current_file_in_tree,
+          "Locate current file in Tree View",
+        },
+        ["<c-\\>"] = { api.tree.toggle, "Toggle Tree View" },
+      })
     end,
     dependencies = {
       "nvim-tree/nvim-web-devicons",

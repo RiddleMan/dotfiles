@@ -31,56 +31,106 @@ return {
     },
     init = function()
       -- Set of default mappings
-      vim.keymap.set("n", "<F5>", function()
-        require("dap").continue()
-      end)
-      vim.keymap.set("n", "<F10>", function()
-        require("dap").step_over()
-      end)
-      vim.keymap.set("n", "<F11>", function()
-        require("dap").step_into()
-      end)
-      vim.keymap.set("n", "<F12>", function()
-        require("dap").step_out()
-      end)
-      vim.keymap.set("n", "<Leader>dr", function()
-        require("dap").repl.open()
-      end)
-      vim.keymap.set("n", "<Leader>dl", function()
-        require("dap").run_last()
-      end)
-      vim.keymap.set("n", "<Leader>b", function()
-        require("dap").toggle_breakpoint()
-      end)
-      vim.keymap.set("n", "<Leader>B", function()
-        require("dap").set_breakpoint()
-      end)
-      vim.keymap.set("n", "<Leader>lp", function()
-        require("dap").set_breakpoint(
-          nil,
-          nil,
-          vim.fn.input("Log point message: ")
-        )
-      end)
+      require("which-key").register({
+        ["<F5>"] = {
+          function()
+            require("dap").continue()
+          end,
+          "Debugger Continue",
+        },
+        ["<F10>"] = {
+          function()
+            require("dap").step_over()
+          end,
+          "Debugger Step Over",
+        },
+        ["<F11>"] = {
+          function()
+            require("dap").step_into()
+          end,
+          "Debugger Step Into",
+        },
+        ["<F12>"] = {
+          function()
+            require("dap").step_out()
+          end,
+          "Debugger Step Out",
+        },
 
-      vim.keymap.set("n", "<Leader>du", function()
-        require("dapui").toggle()
-        tmux_full_screen_toggle()
-      end)
-      vim.keymap.set({ "n", "v" }, "<Leader>dh", function()
-        require("dap.ui.widgets").hover()
-      end)
-      vim.keymap.set({ "n", "v" }, "<Leader>dp", function()
-        require("dap.ui.widgets").preview()
-      end)
-      vim.keymap.set("n", "<Leader>df", function()
-        local widgets = require("dap.ui.widgets")
-        widgets.centered_float(widgets.frames)
-      end)
-      vim.keymap.set("n", "<Leader>ds", function()
-        local widgets = require("dap.ui.widgets")
-        widgets.centered_float(widgets.scopes)
-      end)
+        ["<leader>d"] = {
+          r = {
+            function()
+              require("dap").repl.open()
+            end,
+            "Repl",
+          },
+
+          l = {
+            name = "+last",
+            r = {
+              function()
+                require("dap").run_last()
+              end,
+              "Run",
+            },
+          },
+
+          h = {
+            function()
+              require("dap.ui.widgets").hover()
+            end,
+            "Hover",
+          },
+
+          p = {
+            function()
+              require("dap.ui.widgets").preview()
+            end,
+            "Preview",
+          },
+
+          f = {
+            function()
+              local widgets = require("dap.ui.widgets")
+              widgets.centered_float(widgets.frames)
+            end,
+            "Frames",
+          },
+
+          s = {
+            function()
+              local widgets = require("dap.ui.widgets")
+              widgets.centered_float(widgets.scopes)
+            end,
+            "Scopes",
+          },
+
+          u = {
+            function()
+              require("dapui").toggle()
+              tmux_full_screen_toggle()
+            end,
+            "UI Toggle",
+          },
+        },
+        ["<leader>b"] = {
+          function()
+            require("dap").toggle_breakpoint()
+          end,
+          "Toggle breakpoint",
+        },
+
+        ["<leader>B"] = {
+          function()
+            require("dap").set_breakpoint(
+              nil,
+              nil,
+              vim.fn.input("Log point message: ")
+            )
+          end,
+          "Set breakpoint",
+        },
+      })
     end,
     config = function()
       local dap = require("dap")

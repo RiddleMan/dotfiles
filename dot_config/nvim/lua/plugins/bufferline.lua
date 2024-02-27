@@ -4,8 +4,10 @@ return {
     dependencies = "nvim-tree/nvim-web-devicons",
     opts = {},
     init = function()
-      vim.keymap.set("n", "H", vim.cmd.bprev, {})
-      vim.keymap.set("n", "L", vim.cmd.bnext, {})
+      require("which-key").register({
+        H = { vim.cmd.bprev, "Previous buffer" },
+        L = { vim.cmd.bprev, "Next buffer" },
+      })
     end,
   },
 }

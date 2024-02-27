@@ -35,14 +35,26 @@ return {
 
     config = function()
       local lsp_zero = require("lsp-zero")
+      local wk = require("which-key")
 
       lsp_zero.on_attach(function(_, bufnr)
         local opts = { buffer = bufnr }
         local bind = vim.keymap.set
 
         lsp_zero.default_keymaps({ buffer = bufnr })
-        bind("n", "<leader>r", vim.lsp.buf.rename, opts)
-        bind("n", "<leader>K", vim.lsp.buf.signature_help, opts)
+
+        wk.register({
+          ["<leader>"] = {
+            r = {
+              vim.lsp.buf.rename,
+              "Rename",
+            },
+            K = {
+              vim.lsp.buf.signature_help,
+              "Symbol signature",
+            },
+          },
+        })
       end)
 
       require("mason-lspconfig").setup({
