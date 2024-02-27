@@ -2,13 +2,19 @@ return {
   {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v3.x",
-    dependencies = {
-      "neovim/nvim-lspconfig",
-      { "williamboman/mason.nvim", opts = {} },
-      { "williamboman/mason-lspconfig.nvim" },
+    lazy = true,
+    init = function()
+      -- Disable automatic setup, we are doing it manually
+      vim.g.lsp_zero_extend_cmp = 0
+      vim.g.lsp_zero_extend_lspconfig = 0
+      vim.g.lsp_zero_extend_null_ls = 0
+    end,
+  },
 
-      "hrsh7th/nvim-cmp",
-      "hrsh7th/cmp-nvim-lsp",
+  {
+    "hrsh7th/nvim-cmp",
+    event = "InsertEnter",
+    dependencies = {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
       "saadparwaiz1/cmp_luasnip",
@@ -17,11 +23,9 @@ return {
       "L3MON4D3/LuaSnip",
       "rafamadriz/friendly-snippets",
       "onsails/lspkind.nvim",
-
       {
         "zbirenbaum/copilot.lua",
         cmd = "Copilot",
-        event = "InsertEnter",
         opts = {},
       },
 
@@ -35,70 +39,7 @@ return {
 
     config = function()
       local lsp_zero = require("lsp-zero")
-      local wk = require("which-key")
-
-      lsp_zero.on_attach(function(_, bufnr)
-        local opts = { buffer = bufnr }
-        local bind = vim.keymap.set
-
-        lsp_zero.default_keymaps({ buffer = bufnr, preserve_mappings = false })
-
-        wk.register({
-          ["<leader>"] = {
-            r = {
-              vim.lsp.buf.rename,
-              "Rename",
-            },
-            K = {
-              vim.lsp.buf.signature_help,
-              "Symbol signature",
-            },
-          },
-        })
-      end)
-
-      require("mason-lspconfig").setup({
-        -- List of language servers: https://github.com/neovim/nvim-lsp_zero.onfig/blob/master/doc/server_configurations.md
-        ensure_installed = {
-          "html",
-          "cssls",
-          "tsserver",
-          "ansiblels",
-          "bashls",
-          "dockerls",
-          "eslint",
-          "graphql",
-          "ltex",
-          "jsonls",
-          "marksman",
-          "lua_ls",
-          "yamlls",
-          "vimls",
-        },
-        handlers = {
-          lsp_zero.default_setup,
-          lua_ls = function()
-            local lua_opts = lsp_zero.nvim_lua_ls({
-              runtime = {
-                version = "LuaJIT",
-              },
-              diagnostics = {
-                globals = { "vim" },
-              },
-              workspace = {
-                library = vim.api.nvim_get_runtime_file("", true),
-              },
-              telemetry = {
-                enable = false,
-              },
-              completion = {
-                callSnippet = "Replace",
-              },
-            })
-            require("lspconfig").lua_ls.setup(lua_opts)
-          end,
-        },
-      })
+      lsp_zero.extend_cmp()
 
       lsp_zero.set_sign_icons({
         error = "✘",
@@ -174,6 +115,63 @@ return {
           source = "always",
           header = "",
           prefix = "",
+        },
+      })
+    end,
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    cmd = { "LspInfo", "LspInstall", "LspStart" },
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "williamboman/mason-lspconfig.nvim",
+    },
+    config = function()
+      local wk = require("which-key")
+      local lsp_zero = require("lsp-zero")
+      lsp_zero.extend_lspconfig()
+
+      lsp_zero.on_attach(function(_, bufnr)
+        lsp_zero.default_keymaps({ buffer = bufnr, preserve_mappings = false })
+
+        wk.register({
+          ["<leader>"] = {
+            r = {
+              vim.lsp.buf.rename,
+              "Rename",
+              buffer = bufnr,
+            },
+            K = {
+              vim.lsp.buf.signature_help,
+              "Symbol signature",
+              buffer = bufnr,
+            },
+          },
+        })
+      end)
+
+      require("mason-lspconfig").setup({
+        -- List of language servers: https://github.com/neovim/nvim-lsp_zero.onfig/blob/master/doc/server_configurations.md
+        ensure_installed = {
+          "html",
+          "cssls",
+          "tsserver",
+          "ansiblels",
+          "bashls",
+          "dockerls",
+          "eslint",
+          "graphql",
+          "ltex",
+          "jsonls",
+          "marksman",
+          "lua_ls",
+          "yamlls",
+          "vimls",
+        },
+        handlers = {
+          lsp_zero.default_setup,
         },
       })
     end,

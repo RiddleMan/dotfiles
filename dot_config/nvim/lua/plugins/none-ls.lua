@@ -32,12 +32,11 @@ return {
       })
     end,
     dependencies = {
-      "VonHeikemen/lsp-zero.nvim",
       {
         "jay-babu/mason-null-ls.nvim",
         opts = {
           ensure_installed = {
-            "sylua",
+            "stylua",
             "prettier",
             "shfmt",
           },

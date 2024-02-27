@@ -1,6 +1,10 @@
 return {
   {
     "folke/neodev.nvim",
+    event = { "BufReadPre", "BufNewFile" },
+    dependencies = {
+      "neovim/nvim-lspconfig",
+    },
     opts = {
       override = function(root_dir, library)
         if

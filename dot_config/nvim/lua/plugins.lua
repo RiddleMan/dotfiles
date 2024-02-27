@@ -61,4 +61,6 @@ return {
     version = "^4",
     ft = { "rust" },
   },
+
+  { "williamboman/mason.nvim", lazy = false, config = true },
 }
