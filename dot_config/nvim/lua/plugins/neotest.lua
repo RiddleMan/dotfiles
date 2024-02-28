@@ -94,6 +94,7 @@ return {
         adapters = {
           require("neotest-vitest"),
           require("neotest-jest"),
+          require("rustaceanvim.neotest"),
         },
         quickfix = {
           enabled = false,
