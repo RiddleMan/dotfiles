@@ -6,7 +6,7 @@ return {
     init = function()
       require("which-key").register({
         H = { vim.cmd.bprev, "Previous buffer" },
-        L = { vim.cmd.bprev, "Next buffer" },
+        L = { vim.cmd.bnext, "Next buffer" },
       })
     end,
   },
