@@ -137,14 +137,13 @@ return {
       "williamboman/mason-lspconfig.nvim",
       {
         "folke/neodev.nvim",
-        event = { "BufReadPre", "BufNewFile" },
         cond = function()
           local neodev_utils = require("neodev.util")
 
           return neodev_utils.is_nvim_config() or is_chezmoi_path()
         end,
         opts = {
-          override = function(root_dir, library)
+          override = function(_, library)
             if is_chezmoi_path() then
               library.enabled = true
               library.plugins = true
