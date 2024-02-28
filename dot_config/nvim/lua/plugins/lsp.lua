@@ -113,18 +113,6 @@ return {
           },
         },
       })
-
-      vim.diagnostic.config({
-        virtual_text = false,
-        severity_sort = true,
-        float = {
-          style = "minimal",
-          border = "rounded",
-          source = "always",
-          header = "",
-          prefix = "",
-        },
-      })
     end,
   },
 
@@ -198,6 +186,18 @@ return {
         },
         handlers = {
           lsp_zero.default_setup,
+        },
+      })
+
+      vim.diagnostic.config({
+        virtual_text = false,
+        severity_sort = true,
+        float = {
+          style = "minimal",
+          border = "rounded",
+          source = "always",
+          header = "",
+          prefix = "",
         },
       })
     end,
