@@ -3,6 +3,9 @@
 
 set -e
 
+# Disable unnatural scrolling
+defaults write -g com.apple.swipescrolldirection -boolean NO
+
 # Turns off useless dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 
