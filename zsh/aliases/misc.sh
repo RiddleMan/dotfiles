@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 # K8s aliases
 alias kucl="kubectl config use-context docker-for-desktop"

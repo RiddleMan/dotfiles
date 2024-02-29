@@ -1,10 +1,10 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 # Load sub files
-for filename in $HOME/zsh/aliases/{*.sh,*/aliases.sh}; do
+find "$HOME/zsh/aliases" -name '*.sh' -type f -exec echo {} \; | while read -r filename; do
   # Non-constant script couldn't be followed
-  # shellcheck disable=SC1090
-  source "$filename"
+  # shellcheck source=/dev/null
+  . "$filename"
 done
 
 # Dotfiles

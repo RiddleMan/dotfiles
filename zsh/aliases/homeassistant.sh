@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 update_home_asistant_config() {
   commit_hash=$(git rev-parse HEAD)

@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 get_task_id_from_branch() {
   git symbolic-ref HEAD | sed -E 's!^refs/heads/((feat|feature)/)?([a-zA-Z]*-?[0-9]+).*$!\3!;s!^refs/heads/.*!!'
@@ -10,12 +10,12 @@ commit_with_issue_tag() {
 
   # For github ids `#` character is required at the beginning
   task_id_prefix=""
-  if [[ "$task_id" =~ ^[0-9] ]]; then
+  if echo "$task_id" | grep -qE '^[0-9]+$'; then
     task_id_prefix="#"
   fi
 
   task_id_phrase=""
-  if [[ -n "$task_id" ]]; then
+  if [ -n "$task_id" ]; then
     task_id_phrase="\n\nCloses: $task_id_prefix$task_id"
   fi
 
@@ -83,11 +83,11 @@ alias gl="git log --oneline --all --graph --decorate"
 alias gco="git checkout"
 alias gf="git fetch --prune"
 
-function gi() {
+gi() {
   curl -sL "https://www.toptal.com/developers/gitignore/api/$*"
 }
 
-function git_cleanup() {
+git_cleanup() {
   # Delete all local branches
   git for-each-ref --format '%(refname:short)' refs/heads | grep -v "master\|main" | tr '\n' '\0' | xargs -0 git branch -D "{}"
 

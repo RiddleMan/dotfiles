@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 bindkey '^ ' autosuggest-accept
 bindkey -v '^ ' autosuggest-accept

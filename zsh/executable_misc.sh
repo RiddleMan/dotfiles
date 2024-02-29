@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 # GPG support for SSH
 GPG_TTY="$(tty)"

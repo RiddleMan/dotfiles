@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-export ANDROID_SDK_HOME=/Users/$USER/Library/Android/sdk
+export ANDROID_HOME="/Users/$USER/Library/Android/sdk"
+export ANDROID_SDK_HOME="/Users/$USER/Library/Android/sdk"
 export NDK_HOME="$ANDROID_HOME/ndk/26.1.10909125"
 
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
@@ -20,12 +20,12 @@ PATH="$PATH:$HOME/npm/bin"
 PATH="$PATH:/usr/local/MacGPG2/bin/"
 PATH="$PATH:/usr/local/Cellar/esptool/2.5.1/bin/"
 PATH="$PATH:$HOME/.local/bin"
-PATH=/usr/local/bin:/opt/homebrew/bin:~/npm/bin:/usr/local/sbin:$PATH:$GOPATH/bin
-PATH=$PATH:/usr/local/opt/go/libexec/bin
-PATH=$PATH:~/.cabal/bin
-PATH=$PATH:~/.config/yarn/global/node_modules/.bin
-PATH=$PATH:$(go env GOPATH)/bin
-PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+PATH="/usr/local/bin:/opt/homebrew/bin:$HOME/npm/bin:/usr/local/sbin:$PATH:$GOPATH/bin"
+PATH="$PATH:/usr/local/opt/go/libexec/bin"
+PATH="$PATH:$HOME/.cabal/bin"
+PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+PATH="$PATH:$(go env GOPATH)/bin"
+PATH="${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 PATH="$HOME/.cargo/bin:$PATH"
 PATH="$JAVA_HOME/bin:$PATH"
@@ -36,5 +36,4 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 GOPATH=$(go env GOPATH)
 export GOPATH
 
-# shellcheck disable=SC1091
-source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
