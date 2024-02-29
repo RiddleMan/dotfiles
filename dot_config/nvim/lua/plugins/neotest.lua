@@ -101,7 +101,12 @@ return {
               elseif vim.fn.filereadable(test) == 1 then
                 vim.cmd("e " .. test)
               else
-                print("No spect file found")
+                local answer =
+                  vim.fn.input("No spec file found. Create a test file? (y/N) ")
+
+                if answer == "y" or answer == "Y" then
+                  vim.cmd("e " .. spec)
+                end
               end
             end,
             "Open test file",
