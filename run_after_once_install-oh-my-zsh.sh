@@ -1,5 +1,6 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 
 set -e
 
-sh ~/.oh-my-zsh/tools/install.sh || true
+# shellcheck disable=SC1090
+. ~/.oh-my-zsh/tools/install.sh || true
