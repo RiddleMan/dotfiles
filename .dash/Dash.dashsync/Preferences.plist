@@ -448,7 +448,36 @@
 	<key>DHGitHubRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>react-hook-form/react-hook-form</key>
+			<dict>
+				<key>date</key>
+				<date>2024-02-28T14:55:49Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>react-hook-form/react-hook-form</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>react-hook-form/react-hook-form</string>
+				</dict>
+			</dict>
+			<key>reduxjs/redux-toolkit</key>
+			<dict>
+				<key>date</key>
+				<date>2024-02-28T14:56:18Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reduxjs/redux-toolkit</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reduxjs/redux-toolkit</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
