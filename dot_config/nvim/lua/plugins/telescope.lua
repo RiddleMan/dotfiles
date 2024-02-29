@@ -61,6 +61,42 @@ return {
             },
           },
         },
+        ["q:"] = {
+          function()
+            require("telescope.builtin").command_history()
+          end,
+          "Command History",
+        },
+        ["<leader>h"] = {
+          name = "+help",
+          h = {
+            function()
+              require("telescope.builtin").help_tags()
+            end,
+            "Help Tags",
+          },
+        },
+        ["<leader>g"] = {
+          name = "+git",
+          s = {
+            function()
+              require("telescope.builtin").git_status()
+            end,
+            "Status",
+          },
+          b = {
+            function()
+              require("telescope.builtin").git_branches()
+            end,
+            "Branches",
+          },
+          c = {
+            function()
+              require("telescope.builtin").git_commits()
+            end,
+            "Commits",
+          },
+        },
       })
     end,
 
