@@ -86,6 +86,26 @@ return {
             end,
             "Show Output",
           },
+          f = {
+            function()
+              local file =
+                vim.api.nvim_buf_get_name(vim.api.nvim_get_current_buf())
+              local basename = vim.fn.fnamemodify(file, ":p:r")
+              local ext = vim.fn.fnamemodify(file, ":e")
+
+              local spec = basename .. ".spec." .. ext
+              local test = basename .. ".test." .. ext
+
+              if vim.fn.filereadable(spec) == 1 then
+                vim.cmd("e " .. spec)
+              elseif vim.fn.filereadable(test) == 1 then
+                vim.cmd("e " .. test)
+              else
+                print("No spect file found")
+              end
+            end,
+            "Open test file",
+          },
         },
       })
     end,
