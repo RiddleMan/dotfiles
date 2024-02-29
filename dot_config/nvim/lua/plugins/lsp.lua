@@ -7,6 +7,8 @@ local is_chezmoi_path = function()
 end
 
 return {
+  { "aznhe21/actions-preview.nvim", lazy = true },
+
   {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v3.x",
@@ -148,7 +150,11 @@ return {
       lsp_zero.extend_lspconfig()
 
       lsp_zero.on_attach(function(_, bufnr)
-        lsp_zero.default_keymaps({ buffer = bufnr, preserve_mappings = false })
+        lsp_zero.default_keymaps({
+          buffer = bufnr,
+          preserve_mappings = false,
+          exclude = { "<F4>" },
+        })
 
         wk.register({
           ["<leader>"] = {
@@ -162,6 +168,12 @@ return {
               "Symbol signature",
               buffer = bufnr,
             },
+          },
+          ["<F4>"] = {
+            function()
+              require("actions-preview").code_actions()
+            end,
+            "LSP Code actions",
           },
         })
       end)
