@@ -7,7 +7,7 @@ Create an optional config file in `~/.config/chezmoi/chezmoi.toml`
 ```toml
 encryption = "gpg"
 [gpg]
-  recipient = "0xPUBLI_CKEY_ID"
+  recipient = "0xPUBLIC_KEY_ID"
 
 [data]
   hosttype = "private" # private | work
@@ -29,6 +29,5 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply RiddleMan --ssh
 
 ## Documentation
 
-* [Neovim](./docs/neovim.md)
-* [Music](./docs/music.md)
-
+- [Neovim](./docs/neovim.md)
+- [Music](./docs/music.md)
