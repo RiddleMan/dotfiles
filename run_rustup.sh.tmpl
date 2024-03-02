@@ -22,3 +22,8 @@ rustup component add {{ range .rustup.component -}}
 {{- end }}
 
 ln -sf ~/.cargo/bin/cargo-binstall-raw/cargo-binstall ~/.cargo/bin/cargo-binstall
+
+cargo binstall -y {{ range .rustup.binstall -}}
+{{ printf "%s " . }}
+{{- end }}
+

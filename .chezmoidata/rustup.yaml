@@ -12,3 +12,5 @@ rustup:
   toolchain:
     - stable
     - nightly
+  binstall:
+    - cargo-dist
