@@ -13,6 +13,7 @@ packages:
       - teamookla/speedtest
       - OJFord/formulae
     brew:
+      - act
       - bash
       - bat
       - chezmoi
@@ -98,9 +99,9 @@ packages:
       - vagrant
       - webstorm
     mas:
-      - name: 'Lungo'
+      - name: "Lungo"
         id: 1263070803
-      - name: 'Snap'
+      - name: "Snap"
         id: 418073146
-      - name: 'Xcode'
+      - name: "Xcode"
         id: 497799835

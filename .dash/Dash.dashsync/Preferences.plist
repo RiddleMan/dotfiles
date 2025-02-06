@@ -281,7 +281,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2024-05-06T06:20:07Z</date>
+				<date>2024-05-06T18:14:26Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -449,10 +449,38 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>airbnb/enzyme</key>
+			<dict>
+				<key>date</key>
+				<date>2024-03-06T20:14:00Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>airbnb/enzyme</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>airbnb/enzyme</string>
+				</dict>
+			</dict>
+			<key>date-fns/date-fns</key>
+			<dict>
+				<key>date</key>
+				<date>2024-04-18T01:38:43Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>date-fns/date-fns</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>date-fns/date-fns</string>
+				</dict>
+			</dict>
 			<key>react-hook-form/react-hook-form</key>
 			<dict>
 				<key>date</key>
-				<date>2025-02-03T07:43:09Z</date>
+				<date>2025-02-02T14:49:42Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -463,10 +491,24 @@
 					<string>react-hook-form/react-hook-form</string>
 				</dict>
 			</dict>
+			<key>reactjs/reselect</key>
+			<dict>
+				<key>date</key>
+				<date>2024-09-30T12:46:53Z</date>
+				<key>entry</key>
+				<dict>
+					<key>name</key>
+					<string>reactjs/reselect</string>
+					<key>platform</key>
+					<string>github</string>
+					<key>uniqueIdentifier</key>
+					<string>reactjs/reselect</string>
+				</dict>
+			</dict>
 			<key>reduxjs/redux-toolkit</key>
 			<dict>
 				<key>date</key>
-				<date>2025-01-27T07:14:40Z</date>
+				<date>2025-02-02T14:50:12Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -537,7 +579,7 @@
 			<key>anyhow</key>
 			<dict>
 				<key>date</key>
-				<date>2024-12-29T18:27:13Z</date>
+				<date>2025-01-23T17:39:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -551,7 +593,7 @@
 			<key>clap</key>
 			<dict>
 				<key>date</key>
-				<date>2025-02-04T07:54:38Z</date>
+				<date>2025-02-05T11:59:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -565,7 +607,7 @@
 			<key>thiserror</key>
 			<dict>
 				<key>date</key>
-				<date>2025-01-13T07:59:13Z</date>
+				<date>2025-01-23T17:39:06Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -604,7 +646,72 @@
 	<key>DHUserRepo</key>
 	<dict>
 		<key>installed</key>
-		<dict/>
+		<dict>
+			<key>Elm</key>
+			<dict>
+				<key>date</key>
+				<date>2024-07-11T17:59:07Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Elm#readme</string>
+					<key>authorLinkText</key>
+					<string>Tomas Latal</string>
+					<key>name</key>
+					<string>Elm</string>
+					<key>platform</key>
+					<string>usercontribElm</string>
+					<key>uniqueIdentifier</key>
+					<string>Elm</string>
+				</dict>
+			</dict>
+			<key>Kotlin</key>
+			<dict>
+				<key>date</key>
+				<date>2024-03-27T21:03:53Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Kotlin#readme</string>
+					<key>authorLinkText</key>
+					<string>Igor Kurek</string>
+					<key>name</key>
+					<string>Kotlin</string>
+					<key>platform</key>
+					<string>usercontribKotlin</string>
+					<key>uniqueIdentifier</key>
+					<string>Kotlin</string>
+				</dict>
+			</dict>
+			<key>Terraform</key>
+			<dict>
+				<key>date</key>
+				<date>2024-09-30T12:47:53Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terraform</string>
+						<string>tf</string>
+						<string>terra</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Terraform#readme</string>
+					<key>authorLinkText</key>
+					<string>Roberth Kulbin</string>
+					<key>name</key>
+					<string>Terraform</string>
+					<key>platform</key>
+					<string>usercontribTerraform</string>
+					<key>uniqueIdentifier</key>
+					<string>Terraform</string>
+				</dict>
+			</dict>
+		</dict>
 		<key>uninstalled</key>
 		<dict/>
 	</dict>
