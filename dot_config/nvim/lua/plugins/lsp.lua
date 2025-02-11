@@ -156,24 +156,25 @@ return {
           exclude = { "<F4>" },
         })
 
-        wk.register({
-          ["<leader>"] = {
-            r = {
-              vim.lsp.buf.rename,
-              "Rename",
-              buffer = bufnr,
-            },
-            K = {
-              vim.lsp.buf.signature_help,
-              "Symbol signature",
-              buffer = bufnr,
-            },
+        wk.add({
+          {
+            "<leader>r",
+            vim.lsp.buf.rename,
+            desc = "Rename",
+            buffer = bufnr,
           },
-          ["<F4>"] = {
+          {
+            "<leader>K",
+            vim.lsp.buf.signature_help,
+            desc = "Symbol signature",
+            buffer = bufnr,
+          },
+          {
+            "<F4>",
             function()
               require("actions-preview").code_actions()
             end,
-            "LSP Code actions",
+            desc = "LSP Code actions",
           },
         })
       end)

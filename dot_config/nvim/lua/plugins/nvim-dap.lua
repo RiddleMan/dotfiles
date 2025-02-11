@@ -31,96 +31,105 @@ return {
     },
     init = function()
       -- Set of default mappings
-      require("which-key").register({
-        ["<F5>"] = {
+      require("which-key").add({
+        {
+          "<F5>",
           function()
             require("dap").continue()
           end,
-          "Debugger Continue",
+          desc = "Debugger Continue",
         },
-        ["<F10>"] = {
+        {
+          "<F10>",
           function()
             require("dap").step_over()
           end,
-          "Debugger Step Over",
+          desc = "Debugger Step Over",
         },
-        ["<F11>"] = {
+        {
+          "<F11>",
           function()
             require("dap").step_into()
           end,
-          "Debugger Step Into",
+          desc = "Debugger Step Into",
         },
-        ["<F12>"] = {
+        {
+          "<F12>",
           function()
             require("dap").step_out()
           end,
-          "Debugger Step Out",
+          desc = "Debugger Step Out",
         },
 
-        ["<leader>d"] = {
-          r = {
-            function()
-              require("dap").repl.open()
-            end,
-            "Repl",
-          },
-
-          l = {
-            name = "+last",
-            r = {
-              function()
-                require("dap").run_last()
-              end,
-              "Run",
-            },
-          },
-
-          h = {
-            function()
-              require("dap.ui.widgets").hover()
-            end,
-            "Hover",
-          },
-
-          p = {
-            function()
-              require("dap.ui.widgets").preview()
-            end,
-            "Preview",
-          },
-
-          f = {
-            function()
-              local widgets = require("dap.ui.widgets")
-              widgets.centered_float(widgets.frames)
-            end,
-            "Frames",
-          },
-
-          s = {
-            function()
-              local widgets = require("dap.ui.widgets")
-              widgets.centered_float(widgets.scopes)
-            end,
-            "Scopes",
-          },
-
-          u = {
-            function()
-              require("dapui").toggle()
-              tmux_full_screen_toggle()
-            end,
-            "UI Toggle",
-          },
+        {
+          "<leader>dr",
+          function()
+            require("dap").repl.open()
+          end,
+          desc = "Repl",
         },
-        ["<leader>b"] = {
+
+        { "<leader>dl", group = "last" },
+        {
+          "<leader>dlr",
+          function()
+            require("dap").run_last()
+          end,
+          desc = "Run",
+        },
+
+        {
+          "<leader>dh",
+          function()
+            require("dap.ui.widgets").hover()
+          end,
+          desc = "Hover",
+        },
+
+        {
+          "<leader>dp",
+          function()
+            require("dap.ui.widgets").preview()
+          end,
+          desc = "Preview",
+        },
+
+        {
+          "<leader>df",
+          function()
+            local widgets = require("dap.ui.widgets")
+            widgets.centered_float(widgets.frames)
+          end,
+          desc = "Frames",
+        },
+
+        {
+          "<leader>ds",
+          function()
+            local widgets = require("dap.ui.widgets")
+            widgets.centered_float(widgets.scopes)
+          end,
+          desc = "Scopes",
+        },
+
+        {
+          "<leader>du",
+          function()
+            require("dapui").toggle()
+            tmux_full_screen_toggle()
+          end,
+          desc = "UI Toggle",
+        },
+        {
+          "<leader>b",
           function()
             require("dap").toggle_breakpoint()
           end,
-          "Toggle breakpoint",
+          desc = "Toggle breakpoint",
         },
 
-        ["<leader>B"] = {
+        {
+          "<leader>B",
           function()
             require("dap").set_breakpoint(
               nil,
@@ -128,7 +137,7 @@ return {
               vim.fn.input("Log point message: ")
             )
           end,
-          "Set breakpoint",
+          desc = "Set breakpoint",
         },
       })
     end,

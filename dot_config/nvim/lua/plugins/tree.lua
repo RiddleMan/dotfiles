@@ -3,8 +3,9 @@ return {
     "nvim-tree/nvim-tree.lua",
     lazy = true,
     init = function()
-      require("which-key").register({
-        ["<leader>tc"] = {
+      require("which-key").add({
+        {
+          "<leader>tc",
 
           function()
             local api = require("nvim-tree.api")
@@ -13,14 +14,15 @@ return {
             api.tree.focus()
             api.tree.find_file(curr_buff)
           end,
-          "Locate current file in Tree View",
+          desc = "Locate current file in Tree View",
         },
-        ["<c-\\>"] = {
+        {
+          "<c-\\>",
           function()
             local api = require("nvim-tree.api")
             api.tree.toggle()
           end,
-          "Toggle Tree View",
+          desc = "Toggle Tree View",
         },
       })
 
@@ -54,33 +56,31 @@ return {
     end,
     config = function()
       local function my_on_attach(bufnr)
-        require("which-key").register({
-          ["<leader>p"] = {
-            name = "+project",
-            f = {
-              function(opt)
-                require("treeutils").launch_find_files(opt)
-              end,
-              "Find Files",
-              buffer = bufnr,
-              noremap = true,
-              silent = true,
-              nowait = true,
-            },
+        require("which-key").add({
+          { "<leader>p", group = "project" },
+          {
+            "<leader>pf",
+            function(opt)
+              require("treeutils").launch_find_files(opt)
+            end,
+            desc = "Find Files",
+            buffer = bufnr,
+            noremap = true,
+            silent = true,
+            nowait = true,
           },
 
-          ["<leader>f"] = {
-            name = "+files",
-            g = {
-              function(opt)
-                require("treeutils").launch_live_grep(opt)
-              end,
-              "Grep",
-              buffer = bufnr,
-              noremap = true,
-              silent = true,
-              nowait = true,
-            },
+          { "<leader>f", group = "project" },
+          {
+            "<leader>fg",
+            function(opt)
+              require("treeutils").launch_live_grep(opt)
+            end,
+            desc = "Grep",
+            buffer = bufnr,
+            noremap = true,
+            silent = true,
+            nowait = true,
           },
         })
       end

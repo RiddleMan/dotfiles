@@ -21,10 +21,11 @@ return {
     dependencies = "nvim-tree/nvim-web-devicons",
     opts = {},
     init = function()
-      require("which-key").register({
-        H = { vim.cmd.bprev, "Previous buffer" },
-        L = { vim.cmd.bnext, "Next buffer" },
-        ["<leader>cab"] = {
+      require("which-key").add({
+        { "H", vim.cmd.bprev, desc = "Previous buffer" },
+        { "L", vim.cmd.bnext, desc = "Next buffer" },
+        {
+          "<leader>cab",
           function()
             local buffers = vim.api.nvim_list_bufs()
 
@@ -39,7 +40,7 @@ return {
 
             require("bufferline.ui").refresh()
           end,
-          "Close all unmodified buffers",
+          desc = "Close all unmodified buffers",
         },
       })
     end,

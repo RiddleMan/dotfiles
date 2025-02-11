@@ -19,83 +19,91 @@ return {
     },
 
     init = function()
-      require("which-key").register({
-        ["<leader>p"] = {
-          name = "+project",
-          f = {
-            function()
-              require("telescope.builtin").find_files()
-            end,
-            "Find Files",
-          },
-          a = {
-            name = "+all",
-            f = {
-
-              function()
-                require("telescope.builtin").find_files({ hidden = true })
-              end,
-              "Find Files",
-            },
-          },
+      require("which-key").add({
+        {
+          "<leader>p",
+          group = "project",
         },
-        ["<leader>f"] = {
-          name = "+files",
-          g = {
-            function()
-              require("telescope.builtin").live_grep()
-            end,
-            "Grep",
-          },
-          a = {
-            name = "+all",
-            g = {
-              function()
-                require("telescope.builtin").live_grep({
-                  additional_args = function()
-                    return { "--hidden" }
-                  end,
-                })
-              end,
-              "Grep",
-            },
-          },
+        {
+          "<leader>pf",
+          function()
+            require("telescope.builtin").find_files()
+          end,
+          desc = "Find Files",
         },
-        ["q:"] = {
+        {
+          "<leader>pa",
+          group = "all",
+        },
+        {
+          "<leader>paf",
+          function()
+            require("telescope.builtin").find_files({ hidden = true })
+          end,
+          desc = "Find Files",
+        },
+        {
+          "<leader>f",
+          group = "files",
+        },
+        {
+          "<leader>fg",
+          function()
+            require("telescope.builtin").live_grep()
+          end,
+          desc = "Grep",
+        },
+        {
+          "<leader>fa",
+          group = "all",
+        },
+        {
+          "<leader>fag",
+          function()
+            require("telescope.builtin").live_grep({
+              additional_args = function()
+                return { "--hidden" }
+              end,
+            })
+          end,
+          desc = "Grep",
+        },
+        {
+          "q:",
           function()
             require("telescope.builtin").command_history()
           end,
-          "Command History",
+          desc = "Command History",
         },
-        ["<leader>h"] = {
-          name = "+help",
-          h = {
-            function()
-              require("telescope.builtin").help_tags()
-            end,
-            "Help Tags",
-          },
+        { "<leader>h", group = "+help" },
+        {
+          "<leader>hh",
+          function()
+            require("telescope.builtin").help_tags()
+          end,
+          desc = "Help Tags",
         },
-        ["<leader>g"] = {
-          name = "+git",
-          s = {
-            function()
-              require("telescope.builtin").git_status()
-            end,
-            "Status",
-          },
-          b = {
-            function()
-              require("telescope.builtin").git_branches()
-            end,
-            "Branches",
-          },
-          c = {
-            function()
-              require("telescope.builtin").git_commits()
-            end,
-            "Commits",
-          },
+        { "<leader>g", group = "git" },
+        {
+          "<leader>gs",
+          function()
+            require("telescope.builtin").git_status()
+          end,
+          desc = "Status",
+        },
+        {
+          "<leader>gb",
+          function()
+            require("telescope.builtin").git_branches()
+          end,
+          desc = "Branches",
+        },
+        {
+          "<leader>gc",
+          function()
+            require("telescope.builtin").git_commits()
+          end,
+          desc = "Commits",
         },
       })
     end,
