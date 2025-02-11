@@ -184,7 +184,7 @@ return {
         ensure_installed = {
           "html",
           "cssls",
-          "tsserver",
+          "ts_ls",
           "ansiblels",
           "bashls",
           "dockerls",
