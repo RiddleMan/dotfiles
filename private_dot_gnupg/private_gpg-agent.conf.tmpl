@@ -1,7 +1,6 @@
 enable-ssh-support
 default-cache-ttl 60
 max-cache-ttl 120
-keyserver hkps://keys.openpgp.org
 {{- if or (eq .chezmoi.arch "arm") (eq .chezmoi.arch "arm64") }}
 pinentry-program /opt/homebrew/bin/pinentry-mac
 {{- else }}
