@@ -68,8 +68,8 @@ return {
 
   {
     "mrcjkb/rustaceanvim",
-    version = "^4",
-    ft = { "rust" },
+    version = "^6",
+    lazy = false,
   },
 
   { "williamboman/mason.nvim", lazy = false, config = true },
