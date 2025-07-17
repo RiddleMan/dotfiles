@@ -6,6 +6,7 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
+      "nvim-telescope/telescope-ui-select.nvim",
       {
         "junegunn/fzf",
         build = function()
@@ -112,6 +113,7 @@ return {
       local telescope = require("telescope")
       telescope.setup({})
       telescope.load_extension("fzf")
+      telescope.load_extension("ui-select")
     end,
   },
 }

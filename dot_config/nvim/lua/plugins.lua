@@ -73,4 +73,27 @@ return {
   },
 
   { "williamboman/mason.nvim", lazy = false, config = true },
+
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      { "zbirenbaum/copilot.lua" },
+      { "nvim-lua/plenary.nvim", branch = "master" },
+    },
+    build = "make tiktoken",
+    opts = {},
+    cmd = {
+      "CopilotChat",
+      "CopilotChatOpen",
+      "CopilotChatClose",
+      "CopilotChatToggle",
+      "CopilotChatStop",
+      "CopilotChatReset",
+      "CopilotChatSave",
+      "CopilotChatLoad",
+      "CopilotChatPrompts",
+      "CopilotChatModels",
+      "CopilotChatAgents",
+    },
+  },
 }
