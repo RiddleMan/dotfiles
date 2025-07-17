@@ -81,7 +81,11 @@ return {
       { "nvim-lua/plenary.nvim", branch = "master" },
     },
     build = "make tiktoken",
-    opts = {},
+    opts = {
+      window = {
+        width = 0.3,
+      },
+    },
     cmd = {
       "CopilotChat",
       "CopilotChatOpen",
@@ -95,5 +99,17 @@ return {
       "CopilotChatModels",
       "CopilotChatAgents",
     },
+    init = function()
+      require("which-key").add({
+        {
+          "<leader>c\\",
+          function()
+            local chat = require("CopilotChat")
+            chat.toggle()
+          end,
+          desc = "Copilot chat toggle",
+        },
+      })
+    end,
   },
 }
