@@ -8,6 +8,7 @@ export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
 
 PATH="/usr/local/opt/python@2/libexec/bin"
 PATH="$PATH:/usr/local/bin"
+PATH="$PATH:$HOME/.bin"
 PATH="$PATH:/usr/bin"
 PATH="$PATH:/bin"
 PATH="$PATH:/usr/sbin"

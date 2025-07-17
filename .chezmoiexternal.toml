@@ -38,3 +38,9 @@
   type = "archive"
   url = "https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-universal-apple-darwin.zip"
   refreshPeriod = 0
+[".bin"]
+  type = "archive"
+  url = "https://github.com/oauth2-proxy/oauth2-proxy/releases/download/v7.10.0/oauth2-proxy-v7.10.0.darwin-amd64.tar.gz"
+  exact = false
+  stripComponents = 1
+  refreshPeriod = 0
