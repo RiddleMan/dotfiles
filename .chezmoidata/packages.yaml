@@ -21,6 +21,7 @@ packages:
       - node
       - cargo-nextest
       - cocoapods
+      - colordiff
       - corepack
       - ctop
       - dive
