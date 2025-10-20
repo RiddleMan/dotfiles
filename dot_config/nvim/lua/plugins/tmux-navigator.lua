@@ -1,36 +1,38 @@
 return {
-  "alexghergh/nvim-tmux-navigation",
-  keys = {
-    {
-      "<C-h>",
-      function()
-        require("nvim-tmux-navigation").NvimTmuxNavigateLeft()
-      end,
-      desc = "NeoTree",
+  {
+    "alexghergh/nvim-tmux-navigation",
+    keys = {
+      {
+        "<C-h>",
+        function()
+          require("nvim-tmux-navigation").NvimTmuxNavigateLeft()
+        end,
+        desc = "Tmux Navigate Left",
+      },
+      {
+        "<C-j>",
+        function()
+          require("nvim-tmux-navigation").NvimTmuxNavigateDown()
+        end,
+        desc = "Tmux Navigate Down",
+      },
+      {
+        "<C-k>",
+        function()
+          require("nvim-tmux-navigation").NvimTmuxNavigateUp()
+        end,
+        desc = "Tmux Navigate Up",
+      },
+      {
+        "<C-l>",
+        function()
+          require("nvim-tmux-navigation").NvimTmuxNavigateRight()
+        end,
+        desc = "Tmux Navigate Right",
+      },
     },
-    {
-      "<C-j>",
-      function()
-        require("nvim-tmux-navigation").NvimTmuxNavigateDown()
-      end,
-      desc = "NeoTree",
+    opts = {
+      disable_when_zoomed = true,
     },
-    {
-      "<C-k>",
-      function()
-        require("nvim-tmux-navigation").NvimTmuxNavigateUp()
-      end,
-      desc = "NeoTree",
-    },
-    {
-      "<C-l>",
-      function()
-        require("nvim-tmux-navigation").NvimTmuxNavigateRight()
-      end,
-      desc = "NeoTree",
-    },
-  },
-  opts = {
-    disable_when_zoomed = true,
   },
 }
