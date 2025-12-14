@@ -11,6 +11,10 @@ rustup:
     - rust-analyzer
   toolchain:
     - stable
-    - nightly
   binstall:
     - cargo-dist
+    - espup
+    - esp-generate
+    - espflash
+    - probe-rs-tools
+    - esp-config

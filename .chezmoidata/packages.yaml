@@ -6,7 +6,6 @@ packages:
       - ekvedaras/cask
       - hashicorp/tap
       - homebrew/bundle
-      - homebrew/cask-fonts
       - homebrew/services
       - riddleman/tap
       - samuelmeuli/tap
@@ -43,6 +42,7 @@ packages:
       - hyperfine
       - jq
       - k9s
+      - llvm
       - loginitems
       - mas
       - mprocs
@@ -78,7 +78,7 @@ packages:
       - adobe-creative-cloud
       - alacritty
       - dash
-      - docker
+      - docker-desktop
       - elgato-stream-deck
       - figma
       - firefox
