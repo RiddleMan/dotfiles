@@ -107,3 +107,5 @@ packages:
         id: 418073146
       - name: "Xcode"
         id: 497799835
+      - name: "Final Cut Pro"
+        id: 424389933
