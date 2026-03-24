@@ -5,8 +5,6 @@ packages:
     tap:
       - ekvedaras/cask
       - hashicorp/tap
-      - homebrew/bundle
-      - homebrew/services
       - riddleman/tap
       - samuelmeuli/tap
       - teamookla/speedtest
@@ -62,6 +60,7 @@ packages:
       - tmux
       - trunk
       - tree
+      - tree-sitter-cli
       - volta
       - wget
       - ykman
@@ -85,15 +84,12 @@ packages:
       - font-fira-code
       - font-hack
       - font-hack-nerd-font
-      - grammarly
-      - karabiner-elements
       - keybase
       - maccy
       - microsoft-remote-desktop
       # TODO: find how to install it automatically
       # - obinskit
       - opera
-      - origin
       - rectangle
       - spotify
       - steam
@@ -103,8 +99,6 @@ packages:
     mas:
       - name: "Lungo"
         id: 1263070803
-      - name: "Snap"
-        id: 418073146
       - name: "Xcode"
         id: 497799835
       - name: "Final Cut Pro"

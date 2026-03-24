@@ -98,6 +98,6 @@ return {
     dependencies = {
       "nvim-tree/nvim-web-devicons",
     },
-    tag = "nightly",
+    version = "*",
   },
 }

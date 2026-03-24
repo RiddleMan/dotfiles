@@ -9,7 +9,7 @@
 			<key>Bash_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:56Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -27,7 +27,7 @@
 			<key>Bash_Test_Operators</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:58Z</date>
+				<date>2026-03-23T16:58:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -45,7 +45,7 @@
 			<key>CSS_Device_Media_Queries</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:56Z</date>
+				<date>2026-03-23T16:58:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -61,7 +61,7 @@
 			<key>CSS_Named_Colors</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:57Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -77,7 +77,7 @@
 			<key>Cargo</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:08:51Z</date>
+				<date>2026-03-23T16:58:31Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -95,7 +95,7 @@
 			<key>Chrome_Dev_Tools</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:08:55Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -113,7 +113,7 @@
 			<key>Chromium_Command_Line_Switches</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:58Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -129,7 +129,7 @@
 			<key>Conventional_Commits</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:58Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -145,7 +145,7 @@
 			<key>Crontab</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:58Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -161,7 +161,7 @@
 			<key>Docker</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:57Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -177,7 +177,7 @@
 			<key>Dockerfile</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:56Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -193,7 +193,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:08:00Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -214,7 +214,7 @@
 			<key>Gitmoji</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:57Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -233,7 +233,7 @@
 			<key>HTTP_Header_Fields</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:44Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -249,7 +249,7 @@
 			<key>HTTP_Status_Codes</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:09:45Z</date>
+				<date>2026-03-23T16:58:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -265,7 +265,7 @@
 			<key>Jira_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:56Z</date>
+				<date>2026-03-23T16:58:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -281,7 +281,7 @@
 			<key>Kubernetes</key>
 			<dict>
 				<key>date</key>
-				<date>2024-05-06T18:14:26Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -297,7 +297,7 @@
 			<key>Licenses</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:57Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -313,7 +313,7 @@
 			<key>MIME_Types</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:57Z</date>
+				<date>2026-03-23T16:58:30Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -329,7 +329,7 @@
 			<key>Regular_Expressions</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:10:30Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -348,7 +348,7 @@
 			<key>Vim</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:10:48Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -364,7 +364,7 @@
 			<key>Vimdiff</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:57Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -380,7 +380,7 @@
 			<key>tmux</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:56Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -452,7 +452,7 @@
 			<key>airbnb/enzyme</key>
 			<dict>
 				<key>date</key>
-				<date>2024-03-06T20:14:00Z</date>
+				<date>2026-03-23T16:59:15Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -466,7 +466,7 @@
 			<key>date-fns/date-fns</key>
 			<dict>
 				<key>date</key>
-				<date>2024-04-18T01:38:43Z</date>
+				<date>2026-03-23T16:59:34Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -480,7 +480,7 @@
 			<key>react-hook-form/react-hook-form</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-22T11:39:44Z</date>
+				<date>2026-03-23T16:59:33Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -494,7 +494,7 @@
 			<key>reactjs/reselect</key>
 			<dict>
 				<key>date</key>
-				<date>2025-04-28T20:10:27Z</date>
+				<date>2026-03-23T16:59:21Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -508,7 +508,7 @@
 			<key>reduxjs/redux-toolkit</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-19T16:35:46Z</date>
+				<date>2026-03-23T16:59:43Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -579,7 +579,7 @@
 			<key>anyhow</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-22T13:49:57Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -593,7 +593,7 @@
 			<key>clap</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-16T13:58:03Z</date>
+				<date>2026-03-23T16:58:38Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -607,7 +607,7 @@
 			<key>thiserror</key>
 			<dict>
 				<key>date</key>
-				<date>2026-01-25T12:11:51Z</date>
+				<date>2026-03-23T16:58:29Z</date>
 				<key>entry</key>
 				<dict>
 					<key>name</key>
@@ -650,7 +650,7 @@
 			<key>Elm</key>
 			<dict>
 				<key>date</key>
-				<date>2026-02-25T01:11:43Z</date>
+				<date>2026-03-23T16:59:46Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -670,7 +670,7 @@
 			<key>Kotlin</key>
 			<dict>
 				<key>date</key>
-				<date>2024-03-27T21:03:53Z</date>
+				<date>2026-03-23T16:59:45Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -690,7 +690,7 @@
 			<key>Terraform</key>
 			<dict>
 				<key>date</key>
-				<date>2026-03-16T13:59:05Z</date>
+				<date>2026-03-23T16:58:58Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -758,87 +758,87 @@
 			<key>http://kapeli.com/feeds/AppleScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:15:13Z</date>
+				<date>2026-03-23T16:59:05Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Bash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:04:40Z</date>
+				<date>2026-03-23T16:58:31Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/CSS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:05:01Z</date>
+				<date>2026-03-23T16:59:11Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Docker.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:04:59Z</date>
+				<date>2026-03-23T16:58:46Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTML.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:05:57Z</date>
+				<date>2026-03-23T16:58:54Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/HTTP.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:15:00Z</date>
+				<date>2026-03-23T16:59:18Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/JavaScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:08Z</date>
+				<date>2026-03-23T16:59:46Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Lo-Dash.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:16Z</date>
+				<date>2026-03-23T16:58:55Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Man_Pages.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:58Z</date>
+				<date>2026-03-23T16:58:55Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Markdown.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:13:58Z</date>
+				<date>2026-03-23T16:58:56Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Nginx.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:14:02Z</date>
+				<date>2026-03-23T16:59:19Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/NodeJS.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:06:41Z</date>
+				<date>2026-03-23T16:59:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/PostgreSQL.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:14:10Z</date>
+				<date>2026-03-23T16:58:57Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/React.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:07:05Z</date>
+				<date>2026-03-23T16:58:59Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/Rust.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:07:22Z</date>
+				<date>2026-03-23T16:59:13Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/SQLite.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T19:14:27Z</date>
+				<date>2026-03-23T16:59:21Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/TypeScript.xml</key>
 			<dict>
 				<key>date</key>
-				<date>2024-02-08T07:07:37Z</date>
+				<date>2026-03-23T16:59:17Z</date>
 			</dict>
 		</dict>
 		<key>uninstalled</key>
