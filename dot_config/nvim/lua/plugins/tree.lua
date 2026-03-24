@@ -1,7 +1,7 @@
 return {
   {
     "nvim-tree/nvim-tree.lua",
-    lazy = true,
+    lazy = false,
     init = function()
       require("which-key").add({
         {
@@ -56,6 +56,9 @@ return {
     end,
     config = function()
       local function my_on_attach(bufnr)
+        local api = require("nvim-tree.api")
+        api.map.on_attach.default(bufnr)
+
         require("which-key").add({
           { "<leader>p", group = "project" },
           {
