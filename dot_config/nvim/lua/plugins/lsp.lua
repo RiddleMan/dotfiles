@@ -33,18 +33,18 @@ return {
       "L3MON4D3/LuaSnip",
       "rafamadriz/friendly-snippets",
       "onsails/lspkind.nvim",
-      {
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        opts = {},
-      },
-
-      {
-        "zbirenbaum/copilot-cmp",
-        config = function()
-          require("copilot_cmp").setup()
-        end,
-      },
+      -- {
+      --   "zbirenbaum/copilot.lua",
+      --   cmd = "Copilot",
+      --   opts = {},
+      -- },
+      --
+      -- {
+      --   "zbirenbaum/copilot-cmp",
+      --   config = function()
+      --     require("copilot_cmp").setup()
+      --   end,
+      -- },
     },
 
     config = function()
@@ -74,7 +74,7 @@ return {
           completeopt = "menu,menuone,noinsert",
         },
         sources = {
-          { name = "copilot", group_index = 2 },
+          -- { name = "copilot", group_index = 2 },
           { name = "path" },
           { name = "nvim_lsp" },
           { name = "nvim_lua" },
@@ -99,7 +99,7 @@ return {
         sorting = {
           priority_weight = 2,
           comparators = {
-            require("copilot_cmp.comparators").prioritize,
+            -- require("copilot_cmp.comparators").prioritize,
 
             -- Below is the default comparator list and order for nvim-cmp
             cmp.config.compare.offset,

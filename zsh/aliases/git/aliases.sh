@@ -37,19 +37,20 @@ gbf() {
 }
 
 gph() {
-  git push origin "$(current_branch)" "$@"
+  git push origin "$(git_current_branch)" "$@"
 }
 
+# shellcheck disable=SC2329
 gprm() {
   # shellcheck disable=SC2317
-  branch="$(current_branch)"
+  branch="$(git_current_branch)"
   # shellcheck disable=SC2317
   git diff "$(git merge-base "$branch" origin/main)" HEAD
 }
 
 gprm() {
   # shellcheck disable=SC2317
-  branch="$(current_branch)"
+  branch="$(git_current_branch)"
   # shellcheck disable=SC2317
   git diff "$(git merge-base "$branch" origin/main)" HEAD
 }

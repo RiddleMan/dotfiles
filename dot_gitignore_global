@@ -7,3 +7,5 @@ npm-debug.log
 *.swp
 Session.vim
 __MACOSX
+
+**/.claude/settings.local.json

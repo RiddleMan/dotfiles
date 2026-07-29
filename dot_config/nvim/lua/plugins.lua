@@ -75,23 +75,6 @@ return {
   { "williamboman/mason.nvim", lazy = false, config = true },
 
   {
-    "zbirenbaum/copilot.lua",
-    event = "InsertEnter",
-    opts = {
-      panel = {
-        enabled = false,
-      },
-      suggestion = {
-        auto_trigger = true,
-        hide_during_completion = false,
-        keymap = {
-          accept = "<Tab>",
-        },
-      },
-    },
-  },
-
-  {
     "ravitemer/mcphub.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -114,15 +97,15 @@ return {
       -- this file can contain specific instructions for your project
       instructions_file = "avante.md",
       -- for example
-      provider = "copilot",
+      provider = "claude",
       providers = {
-        copilot = {
-          model = "gpt-5-mini",
-        },
         ollama = {
           endpoint = "http://localhost:11434",
-          model = "gpt-oss:120b",
+          model = "qwen3-coder:30b",
           disabled_tools = true,
+        },
+        claude = {
+          auth_type = "max",
         },
       },
       selector = {
@@ -183,7 +166,6 @@ return {
       "stevearc/dressing.nvim", -- for input provider dressing
       "folke/snacks.nvim", -- for input provider snacks
       "nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-      "zbirenbaum/copilot.lua", -- for providers='copilot'
       {
         -- support for image pasting
         "HakonHarnes/img-clip.nvim",

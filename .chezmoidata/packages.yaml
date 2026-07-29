@@ -86,9 +86,6 @@ packages:
       - font-hack-nerd-font
       - keybase
       - maccy
-      - microsoft-remote-desktop
-      # TODO: find how to install it automatically
-      # - obinskit
       - opera
       - rectangle
       - spotify

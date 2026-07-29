@@ -21,7 +21,7 @@ PATH="$PATH:$HOME/npm/bin"
 PATH="$PATH:/usr/local/MacGPG2/bin/"
 PATH="$PATH:/usr/local/Cellar/esptool/2.5.1/bin/"
 PATH="$PATH:$HOME/.local/bin"
-PATH="/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/npm/bin:/usr/local/sbin:$PATH:$GOPATH/bin"
+PATH="/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/opt/rustup/bin:/opt/homebrew/sbin:$HOME/npm/bin:/usr/local/sbin:$PATH:$GOPATH/bin"
 PATH="$PATH:/usr/local/opt/go/libexec/bin"
 PATH="$PATH:$HOME/.cabal/bin"
 PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
@@ -36,5 +36,3 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 GOPATH=$(go env GOPATH)
 export GOPATH
-
-. "$HOME/.cargo/env"
