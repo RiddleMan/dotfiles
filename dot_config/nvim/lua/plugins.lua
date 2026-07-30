@@ -107,6 +107,9 @@ return {
         claude = {
           auth_type = "max",
         },
+        copilot = {
+          hide_in_model_selector = true,
+        },
       },
       selector = {
         exclude_auto_select = { "NvimTree" },
