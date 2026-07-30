@@ -31,7 +31,9 @@ function M.launch_telescope(func_name, opts)
     return
   end
   local node = api.tree.get_node_under_cursor()
-  local is_folder = node.fs_stat and node.fs_stat.type == "directory" or false
+  local is_folder = node.nodes ~= nil
+    or (node.fs_stat and node.fs_stat.type == "directory")
+    or false
   local basedir = is_folder and node.absolute_path
     or vim.fn.fnamemodify(node.absolute_path, ":h")
   if node.name == ".." and TreeExplorer ~= nil then
